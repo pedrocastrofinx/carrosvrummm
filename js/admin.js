@@ -406,7 +406,11 @@ function avCasar(texto) {
 }
 function marcarMarcaDagua() {
   const lista = new Set(window.VIDEOS_MARCA_DAGUA || []); if (!lista.size) return;
-  for (const m of S.midias) if (m.tipo === 'video' && lista.has(String(m.nomeOriginal || '').split('/').pop())) m.tags = [...new Set([...(m.tags || []), 'marca-dagua-terceiros'])];
+  for (const m of S.midias) {
+    if (m.tipo !== 'video') continue;
+    if ((m.tags || []).includes('liberado-criador')) { m.tags = m.tags.filter(x => x !== 'marca-dagua-terceiros'); continue; }   // autorizado pelo criador: sem aviso
+    if (lista.has(String(m.nomeOriginal || '').split('/').pop())) m.tags = [...new Set([...(m.tags || []), 'marca-dagua-terceiros'])];
+  }
 }
 async function autoVincularMidias() {
   const plano = [], soltar = [];

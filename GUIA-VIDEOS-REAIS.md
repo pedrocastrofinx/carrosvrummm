@@ -17,7 +17,7 @@ Os perfis aparecem na marca d'água de cada vídeo (ex.: `@pinguimveiculos`, `@c
 
 > Olá! Aqui é o Pedro, da **Dryve** (carro por assinatura, em parceria com Movida e Localiza). Gostamos muito do seu vídeo do **[modelo]**. Você autoriza a Dryve a usar o arquivo original (sem a marca d'água do TikTok) em atendimento e venda, enviando ao cliente por WhatsApp? Podemos dar o crédito ao seu perfil. Se sim, pode me mandar o MP4 aqui mesmo. Obrigado!
 
-Guarde a resposta (print) de cada autorização. Só então suba o arquivo.
+Guarde a resposta (print) de cada autorização. Para vídeos que o criador **já autoriza** (perfis que liberam o uso), abra Editar no Hub e acrescente a tag `liberado-criador`: o aviso vermelho de marca d'água some e não volta.
 
 ## Caminho 3 — Filmar (garante todos os modelos, na identidade Dryve)
 Roteiro de 15 a 25 s por carro, vertical (9:16), celular na vertical, gravação em 1080p:
