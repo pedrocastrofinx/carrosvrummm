@@ -322,7 +322,7 @@ function linhasMidia(lista) {
 }
 function adMidias() {
   const q = norm(AM.q), l = S.midias.filter(m => !q || norm([m.titulo, m.nomeOriginal, nomeCat(m.categoria), nomeVeiculo(veiculo(m.veiculoId))].join(' ')).includes(q)).sort((a, b) => b.criadoEm.localeCompare(a.criadoEm));
-  return `<div class="sec-head"><h2>Mídias (${S.midias.length})</h2><span class="sp"></span><input type="search" data-am="q" placeholder="Filtrar..." value="${esc(AM.q)}" style="width:220px"><button class="btn primary" data-act="novaMidia">${ico('upload', 'sm')} Adicionar</button></div>
+  return `<div class="sec-head"><h2>Mídias (${S.midias.length})</h2><span class="sp"></span><input type="search" data-am="q" placeholder="Filtrar..." value="${esc(AM.q)}" style="width:220px"><button class="btn" data-act="autoVincular" title="Liga cada vídeo ao carro citado no nome do arquivo">${ico('link', 'sm')} Vincular pelo nome</button><button class="btn primary" data-act="novaMidia">${ico('upload', 'sm')} Adicionar</button></div>
   ${S.midias.length ? `<div class="card tbl-wrap"><table class="table"><thead><tr><th></th><th>Título</th><th>Categoria</th><th>Veículo</th><th>Autorização</th><th>Cadastro</th><th></th></tr></thead><tbody id="amBody">${linhasMidia(l)}</tbody></table></div>${l.length > 200 ? '<p class="muted small">Mostrando 200. Use o filtro.</p>' : ''}` : vazio('video', 'Nenhuma mídia', 'Envie arquivos ou use a aba Importar para os ZIPs.', '<button class="btn primary" data-act="novaMidia">Adicionar mídia</button>')}`;
 }
 function adClientes() {
@@ -372,4 +372,61 @@ function adDados() {
     <div class="row">${demo ? '<button class="btn danger" data-act="removerDemo">Remover demonstração</button>' : '<button class="btn" data-act="carregarDemo">Carregar demonstração</button>'}</div></div>
     <div class="card pad" style="display:grid;gap:10px"><h2>Armazenamento</h2><p class="small muted" id="storageInfo">Calculando...</p></div>
     <div class="card pad" style="display:grid;gap:10px"><h2 style="color:var(--bad)">Zona de risco</h2><p class="small muted">Apaga todos os dados e arquivos deste navegador e volta ao cadastro-base.</p><div><button class="btn danger" data-act="resetTudo">Apagar tudo</button></div></div></div>`;
+}
+
+
+/* ===== vincular midias aos veiculos pelo NOME do arquivo/titulo ===== */
+const AV_STOP = new Set('flex aut autom automatico automatica manual turbo com sem pack base plus novo nova cd cs ce tb mpi tsi gdi tgdi 4x2 4x4 5p 4p 12v 16v 8v 6v diesel gasolina hibrido mec mecanico cabine dupla simples sedan hatch'.split(' '));
+const avToks = s => norm(s).match(/[a-z0-9]+(?:\.[0-9]+)?/g) || [];
+const avCil = s => { const m = String(s || '').match(/(?<!\d)(\d)[.,](\d)(?!\d)/); return m ? m[1] + '.' + m[2] : null; };
+const avTrans = s => { const n = norm(s); if (/\b(aut|autom|automatico|automatica|cvt|dct|at)\b/.test(n)) return 'A'; if (/\b(manual|mt|mec)\b/.test(n)) return 'M'; return null; };
+function avCasar(texto) {
+  const txt = ' ' + avToks(texto.replace(/-/g, ' ')).join(' ') + ' ', grupos = new Map();
+  for (const v of veiculosAtivos()) { if (v.demo) continue; const k = modeloChaveDe(v); if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(v); }
+  let achados = [];
+  for (const [k, vs] of grupos) {
+    const mt = avToks(vs[0].modelo.replace(/-/g, ' ')); if (!mt.length) continue;
+    const alvo = mt.join(''); let ok = txt.includes(' ' + mt.join(' ') + ' ');
+    if (!ok && alvo.length >= 3) { const ft = txt.trim().split(' '); ok = [1, 2, 3].some(w => ft.some((_, i) => ft.slice(i, i + w).join('') === alvo)); }   // "HRV" x "HR-V"
+    if (ok) achados.push([alvo.length, vs]);
+  }
+  if (!achados.length) return null;
+  achados.sort((x, y) => y[0] - x[0]); achados = achados.filter(x => x[0] === achados[0][0]);
+  if (achados.length > 1) return null;                         // modelo ambiguo: nao arrisca
+  const vs = achados[0][1], ft = new Set(avToks(texto));
+  const pont = vs.map(v => {
+    const mt = avToks(v.modelo), vt = avToks(v.versao).filter(t => t.length >= 3 && !AV_STOP.has(t) && !/^[\d.]+v?$/.test(t) && !mt.includes(t));
+    let p = 3 * new Set(vt.filter(t => ft.has(t))).size;
+    const cv = avCil(v.versao), cf = avCil(texto), tv = avTrans(v.versao), tf = avTrans(texto);
+    if (cv && cf) p += cv === cf ? 2 : -6; if (tv && tf) p += tv === tf ? 1 : -6;
+    return [p, v];
+  }).sort((x, y) => y[0] - x[0]);
+  if (pont[0][0] >= 4 && (pont.length === 1 || pont[0][0] > pont[1][0])) return { v: pont[0][1], modelo: false };
+  return { v: vs[0], modelo: true };                           // so o modelo: vale para todas as versoes
+}
+function marcarMarcaDagua() {
+  const lista = new Set(window.VIDEOS_MARCA_DAGUA || []); if (!lista.size) return;
+  for (const m of S.midias) if (m.tipo === 'video' && lista.has(String(m.nomeOriginal || '').split('/').pop())) m.tags = [...new Set([...(m.tags || []), 'marca-dagua-terceiros'])];
+}
+async function autoVincularMidias() {
+  const plano = [], soltar = [];
+  for (const m of S.midias) {
+    if (m.tipo !== 'video' || m.cliente || m.arquivado || ehSugerida(m) || (m.tags || []).includes('reel-dryve')) continue;
+    const r = avCasar([m.titulo, m.nomeOriginal].filter(Boolean).join(' ').replace(/\.(mp4|mov|m4v|webm)\b/gi, ' '));
+    if (!r) { if (m.categoria === 'outros' && m.veiculoId && !(m.tags || []).includes('vinculado-pelo-nome')) soltar.push(m); continue; }   // sem carro no nome, preso a um carro qualquer
+    const atual = veiculo(m.veiculoId), mesmoModelo = atual && modeloChaveDe(atual) === modeloChaveDe(r.v);
+    if (mesmoModelo && (r.modelo ? !!m.modeloChave : m.veiculoId === r.v.id) && m.categoria !== 'outros') continue;
+    plano.push([m, r]);
+  }
+  marcarMarcaDagua();
+  if (!plano.length && !soltar.length) { salvar(); return toast('Nada a vincular: todos os vídeos já estão ligados ou o nome não cita um carro do catálogo.'); }
+  const porVersao = plano.filter(([, r]) => !r.modelo).length;
+  if (!await confirmar({ titulo: 'Vincular pelo nome do arquivo?', texto: `Vou ligar <b>${plano.length}</b> vídeo(s) ao carro citado no nome: <b>${porVersao}</b> na versão exata e <b>${plano.length - porVersao}</b> no modelo (valem para todas as versões). A categoria "Outros" vira "Vídeo completo do carro".${soltar.length ? ` Outros <b>${soltar.length}</b> não citam carro no nome e ficam como material geral (sem veículo).` : ''} Você pode ajustar qualquer um depois em Editar.`, btn: 'Vincular', perigo: false })) return;
+  for (const m of soltar) { m.veiculoId = ''; m.modeloChave = ''; }
+  for (const [m, r] of plano) {
+    m.veiculoId = r.v.id; m.locadoraId = m.locadoraId || r.v.locadoraId || ''; m.modeloChave = r.modelo ? modeloChaveDe(r.v) : '';
+    if (!m.categoria || m.categoria === 'outros') m.categoria = /\b(interna|interior|por dentro|painel)\b/.test(norm(m.titulo + ' ' + m.nomeOriginal)) ? 'interior' : 'avaliacao';
+    m.tags = [...new Set([...(m.tags || []), 'vinculado-pelo-nome'])];
+  }
+  salvar(); toast(`${plano.length} vídeo(s) vinculados (${porVersao} por versão, ${plano.length - porVersao} por modelo).`); rotear();
 }

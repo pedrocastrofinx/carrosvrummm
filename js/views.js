@@ -50,7 +50,7 @@ function cardMidia(m, modo = 'grade') {
   const dl = podeBaixar(m), tem3d = m.tipo === 'giro' || m.tipo === 'modelo3d';
   const thumb = `<div class="mthumb" data-act="abrirMidia" data-id="${m.id}" role="button" tabindex="0" aria-label="Abrir ${esc(m.titulo)}">${thumbMidia(m)}
       ${bl ? `<div class="lock"><div>${ico('lock', 'lg')}<div>Restrito — uso não liberado</div></div></div>` : (m.tipo === 'video' ? `<span class="play">${ico('play')}</span>` : tem3d ? `<span class="play">${ico('refresh')}</span>` : '')}
-      <div class="tl">${m.tipo === 'giro' ? '<span class="tag blue">360°</span>' : m.tipo === 'modelo3d' ? '<span class="tag blue">3D</span>' : ''}${m.demo ? '<span class="tag demo">DEMO</span>' : ''}${(m.tags || []).includes('sugerido-auto') ? '<span class="tag warn">SUGERIDO · revisar</span>' : ''}${a && m.cliente ? `<span class="tag ${a[1]}">${a[0]}</span>` : ''}</div></div>`;
+      <div class="tl">${m.tipo === 'giro' ? '<span class="tag blue">360°</span>' : m.tipo === 'modelo3d' ? '<span class="tag blue">3D</span>' : ''}${m.demo ? '<span class="tag demo">DEMO</span>' : ''}${(m.tags || []).includes('sugerido-auto') ? '<span class="tag warn">SUGERIDO · revisar</span>' : ''}${(m.tags || []).includes('marca-dagua-terceiros') ? '<span class="tag bad" title="Vídeo do TikTok de outra loja: não envie ao cliente sem autorização">Marca d’água de terceiros</span>' : ''}${a && m.cliente ? `<span class="tag ${a[1]}">${a[0]}</span>` : ''}</div></div>`;
   const meta = `${esc(nomeCat(m.categoria))}${v ? ' · ' + esc(marcaModelo(v)) : ''}`;
   const acts = bl ? '' : `<button class="icon-btn" data-act="abrirMidia" data-id="${m.id}" title="${m.tipo === 'video' ? 'Reproduzir' : tem3d ? 'Girar' : 'Ver'}">${ico(m.tipo === 'video' ? 'play' : tem3d ? 'refresh' : 'expand', 'sm')}</button>
       <button class="icon-btn" data-act="copiarLinkMidia" data-id="${m.id}" title="Copiar link">${ico('link', 'sm')}</button>
@@ -270,7 +270,7 @@ function viewLocadora(id) {
 let B = { q: '', cat: '', loc: '', vid: '', tipo: '', ord: 'recente', modo: 'grade', escopo: 'todos' };
 function viewBiblioteca(params) {
   if (params) { for (const [k, v] of params) if (k in B) B[k] = v; }
-  return `<div class="page-head"><div><h1>Biblioteca de vídeos</h1><p>Fotos e vídeos de todos os veículos, tutoriais de atendimento e materiais das locadoras.</p></div><span class="sp"></span>${isAdmin() ? `<button class="btn primary" data-act="novaMidia">${ico('upload', 'sm')} Adicionar mídia</button>` : ''}</div>
+  return `<div class="page-head"><div><h1>Biblioteca de vídeos</h1><p>Fotos e vídeos de todos os veículos, tutoriais de atendimento e materiais das locadoras.</p></div><span class="sp"></span>${isAdmin() ? `<button class="btn" data-act="autoVincular" title="Liga cada vídeo ao carro citado no nome do arquivo">${ico('link', 'sm')} Vincular pelo nome</button><button class="btn primary" data-act="novaMidia">${ico('upload', 'sm')} Adicionar mídia</button>` : ''}</div>
   <div class="card pad" style="margin-bottom:18px"><div class="form-grid" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr">
     <label class="f">Busca<input type="search" data-b="q" value="${esc(B.q)}" placeholder="Título, modelo, palavra-chave"></label>
     <label class="f">Categoria<select data-b="cat">${opts(categoriasMidia(), B.cat)}</select></label>

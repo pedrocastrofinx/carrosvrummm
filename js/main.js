@@ -169,6 +169,7 @@ const ACOES = {
   copiarLinkMidia: d => copiarLinkMidia(midia(d.id)),
   copiarMsgMidia: d => copiarMsgMidia(midia(d.id)),
   baixarMidia: d => baixar(midia(d.id)),
+  autoVincular: () => autoVincularMidias(),
   toggleSugeridos: () => { S.config.mostrarSugeridos = !S.config.mostrarSugeridos; aplicarSugeridas(); salvar(); rotear(); },
   copiarTexto: d => copiar(d.t),
   /* catálogo */
@@ -284,6 +285,6 @@ window.addEventListener('hashchange', rotear);
     try { importarCatalogo(cat); S.catalogosImportados.push(cat.id); salvar(); } catch (e) { console.error('catálogo inicial', e); }
   }
   if (window.Nuvem) window.Nuvem.mesclar();   // depois dos catalogos: a nuvem precisa dos veiculos para ligar cada video ao carro
-  aplicarSugeridas(); salvar();
+  aplicarSugeridas(); marcarMarcaDagua(); salvar();
   desenharShell(); rotear();
 })();
