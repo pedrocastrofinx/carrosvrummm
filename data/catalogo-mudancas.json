@@ -1,0 +1,22 @@
+{
+  "geradoEm": "2026-10-28T13:54:00.341Z",
+  "data": "2026-10-28",
+  "locadoras": {
+    "movida": {
+      "total": 105,
+      "antes": 105,
+      "semMudancas": false,
+      "novos": [],
+      "removidos": [],
+      "preco": []
+    },
+    "localiza": {
+      "total": 175,
+      "antes": 175,
+      "semMudancas": false,
+      "novos": [],
+      "removidos": [],
+      "preco": []
+    }
+  }
+}

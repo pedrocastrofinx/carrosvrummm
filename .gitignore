@@ -22,3 +22,6 @@ data/tabela-localiza.js
 .vercel
 .env*
 !.env.example
+
+# reels gerados (arquivos grandes; ficam no Supabase)
+saida-reels/

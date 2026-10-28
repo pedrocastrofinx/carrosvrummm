@@ -10,7 +10,7 @@ Faça na ordem. Os passos 1 e 2 são no Supabase; o 3 e o 4 (GitHub e Vercel) po
 | Interno e externo | Busca dedicada por modelo (interior e exterior). Vídeos de avaliação completa aparecem nas duas abas. |
 | Motor e consumo | Vêm da tabela oficial do Inmetro (PBE Veicular 2026). Cada ficha mostra a fonte e a linha do Inmetro usada no casamento. |
 | IA (Clove) | `/api/clove` na Vercel, com a chave da Anthropic só no servidor e login obrigatório. |
-| Preços da Localiza | Ficam no Supabase, atrás de login. **Não vão para o GitHub nem para o site público.** |
+| Preços | A tabela de preços da Localiza foi **removida** do Hub. Os preços exibidos são só o "a partir de" público da Movida. |
 
 ## 1. Supabase (uma vez)
 1. **Authentication → Sign In / Providers → Email → desligue "Allow new users to sign up".** Obrigatório: sem isso qualquer pessoa cria conta e lê os preços.
@@ -26,12 +26,12 @@ Ele pergunta (com digitação oculta) a URL do Supabase, a `service_role` e a se
 Para outro analista: `python tools/criar_usuario_supabase.py --email pessoa@empresa.com` (com `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` e `DRYVE_SENHA_ADMIN` definidos na janela). Sem `--admin` o papel é atendente.
 Depois do primeiro login, use o botão **Trocar senha** (canto inferior direito).
 
-## 2b. Biblioteca de vídeos para baixar (vídeos dos carros, compartilhados)
-Os vídeos que a equipe já tem (arquivos MP4) ficam num bucket **privado** do Supabase; todos os analistas logados veem e **baixam o arquivo original**. As referências do YouTube ficam ocultas por padrão (só consulta, não baixáveis).
-1. **SQL Editor**: cole e rode `supabase/midias.sql` (cria a tabela e o bucket `midias`; limite de 50 MB por arquivo no plano gratuito).
-2. No PowerShell: `powershell -ExecutionPolicy Bypass -File "C:\Users\PedroCastro\Downloads\DryveHub-completa-com-videos\dryvehub-final\supabase\ENVIAR-VIDEOS.ps1"` (peça só a chave secreta; `-SoTestar` mostra o casamento sem enviar nada).
-3. O script casa o nome de cada arquivo com o veículo (versão exata quando dá; senão vale para **todas as versões do modelo**) e grava o relatório em `data/videos-biblioteca-relatorio.json`. Corrija qualquer vínculo no Hub (Administração → Mídias → editar). Vídeos novos: o administrador envia pelo Hub (Adicionar mídia) e eles vão direto para a nuvem.
-Se o `midias.sql` ainda não foi rodado, o Hub funciona como antes (uploads ficam só no navegador).
+## 2b. Videos para baixar (reels da Dryve + videos proprios)
+O Hub guarda os videos num bucket **privado** do Supabase; todo analista logado ve na ficha do carro e **baixa o arquivo**. Referencias do YouTube ficam ocultas por padrao.
+1. **SQL Editor**: rode `supabase/midias.sql` (uma vez).
+2. **Reels da Dryve (um por modelo, 9 s, vertical):** `python tools/gerar_reels.py` gera em `REELS-DRYVE/` (requer `pip install pillow` e ffmpeg). Use as fotos publicas da Movida/Localiza e so dados com fonte; **confirme que a Dryve pode usar essas imagens**.
+3. **Enviar:** `powershell -ExecutionPolicy Bypass -File supabase\ENVIAR-VIDEOS.ps1 -Pasta "C:\caminho\REELS-DRYVE"` (pede so a chave secreta; `-SoTestar` nao envia nada). Pode rodar de novo: o que ja subiu e pulado.
+4. **Videos de terceiros (TikTok):** a pasta `VIDEOS...\CARROS- VIDEOS` tem 93 de 111 arquivos com marca d'agua do TikTok de outras lojas (lista em `data/videos-com-marca-dagua.json`). O enviador **pula esses por padrao**; use `--incluir-com-marca-dagua` so com autorizacao.
 
 ## 3. GitHub
 Repositório **privado**. O `.gitignore` já deixa de fora `data/tabela-localiza.js` e arquivos de chave:
@@ -59,9 +59,8 @@ Em **Actions**, rode manualmente os dois workflows (*Run workflow*) para testar.
 ## 5. Teste de fumaça
 - Sem login, o site mostra só a tela de entrada (nenhum dado é carregado antes).
 - Depois do login: Catálogo com 277 veículos, vídeos com o selo SUGERIDO e motor/consumo nas fichas.
-- A tabela de preços da Localiza abre (vem do Supabase).
 - O Clove responde (não deve dizer "modo demonstração").
-- `https://SEU-SITE/data/tabela-localiza.js` deve dar **404**.
+- `https://SEU-SITE/data/tabela-localiza.js` deve dar **404** (o arquivo nunca deve subir).
 
 ## Fichas técnicas: o que há e o que falta
 - **Motor e consumo (Inmetro, oficial):** 187 de 277 veículos com motor e 146 com consumo.

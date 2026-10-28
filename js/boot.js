@@ -1,8 +1,8 @@
 'use strict';
 /* ===== Inicializacao do Hub =====
    - Hospedado (Vercel + Supabase configurados em /api/config): exige LOGIN antes de carregar o app. Depois do login busca,
-     no Supabase, o papel do usuario (tabela perfis) e a tabela de precos PRIVADA da Localiza (tabelas_privadas, protegida por RLS).
-   - Local (duplo clique no index.html, sem /api/config): abre direto, como antes, usando data/tabela-localiza.js se existir.
+     no Supabase, o papel do usuario (tabela perfis) e a biblioteca de videos compartilhada (midias_compartilhadas).
+   - Local (duplo clique no index.html, sem /api/config): abre direto, como antes.
    Os dados publicos (catalogos Movida/Localiza e videos sugeridos) continuam vindo dos arquivos em data/. */
 (function () {
   const BASE = ['data/catalogo-localiza.js', 'data/catalogo-movida.js', 'data/fichas-tecnicas.js', 'data/videos-sugeridos.js'];
@@ -73,21 +73,18 @@
     let { data: { session } } = await sb.auth.getSession();
     if (!session) session = await telaLogin(sb);
     const user = session.user;
-    const [perfil, tabela, nuvem] = await Promise.all([
+    const [perfil, nuvem] = await Promise.all([
       sb.from('perfis').select('papel').eq('id', user.id).maybeSingle(),
-      sb.from('tabelas_privadas').select('dados').eq('chave', 'tabela_localiza').maybeSingle(),
       sb.from('midias_compartilhadas').select('*').order('criado_em', { ascending: true }).range(0, 4999)
     ]);
     window.DRYVE = {
       email: user.email,
       papel: perfil.data && perfil.data.papel === 'admin' ? 'admin' : 'atendente',
-      tabelaPrivada: !!(tabela.data && tabela.data.dados),
       sb,
       midiasNuvem: nuvem.error ? null : (nuvem.data || []),   // null = tabela ainda nao criada (rode supabase/midias.sql)
       token: async () => { const { data } = await sb.auth.getSession(); return data.session ? data.session.access_token : null; },
       sair: async () => { await sb.auth.signOut(); location.reload(); }
     };
-    if (tabela.data && tabela.data.dados) window.TABELA_LOCALIZA = tabela.data.dados;   // precos privados: so chegam ao navegador depois do login
     sb.auth.onAuthStateChange(ev => { if (ev === 'SIGNED_OUT') location.reload(); });
     const conta = document.createElement('div'); conta.id = 'dryveConta';
     const senha = document.createElement('button'); senha.id = 'dryveSenha'; senha.type = 'button'; senha.textContent = 'Trocar senha';
@@ -107,6 +104,6 @@
   (async function iniciar() {
     const cfg = await configuracao();
     if (cfg) return hospedado(cfg);
-    await seq([...BASE, 'data/tabela-localiza.js', ...APP]);   // modo local
+    await seq([...BASE, ...APP]);   // modo local
   })();
 })();

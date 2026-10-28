@@ -8,7 +8,14 @@ function imgDe(m, alt = '') {
 }
 function fotoPrincipal(v) {
   const fs = midiasDe(v.id).filter(m => m.tipo === 'foto');
-  return fs.find(m => m.id === v.fotoPrincipalId) || fs[0] || null;
+  return fs.find(m => m.id === v.fotoPrincipalId) || fs[0] || fotoDoModelo(v) || null;
+}
+/* versao sem foto propria usa a foto de outra versao do mesmo modelo (marca + modelo) */
+let _fm = { k: '', m: new Map() };
+function fotoDoModelo(v) {
+  const k = S.midias.length + ':' + S.veiculos.length;
+  if (_fm.k !== k) { _fm = { k, m: new Map() }; for (const m of S.midias) if (m.tipo === 'foto' && !m.arquivado && m.veiculoId) { const x = veiculo(m.veiculoId); const c = x && modeloChaveDe(x); if (c && !_fm.m.has(c)) _fm.m.set(c, m); } }
+  return _fm.m.get(modeloChaveDe(v)) || null;
 }
 function thumbMidia(m) {
   if (m.tipo === 'giro') { const f = m.frames?.[0]; return f ? (f.url ? `<img src="${esc(f.url)}" alt="">` : `<img data-fid="${f.fileId}" alt="">`) : ''; }
@@ -23,19 +30,18 @@ const favBtn = (tipo, id) => `<button class="icon-btn ${ehFav(tipo, id) ? 'on' :
 function cardVeiculo(v) {
   const p = precoMin(v), pl = planoPrincipal(v), loc = locadora(v.locadoraId);
   const nv = midiasDe(v.id).filter(m => m.tipo === 'video').length;
-  const specs = [v.cambio, v.combustivel, v.lugares ? v.lugares + ' lugares' : '', v.ano].filter(Boolean);
+  const carroceria = (v.segmento && v.segmento.includes('|')) ? v.segmento.split('|').pop().trim() : (v.categoria ? nomeCatVeic(v.categoria) : '');
+  const plano = pl && (pl.prazo || pl.km) ? [pl.prazo ? pl.prazo + 'm' : '', pl.km ? Number(pl.km).toLocaleString('pt-BR') + ' km' : ''].filter(Boolean).join(' · ') : '';
   return `<a class="card vcard" href="#/veiculo/${v.id}" aria-label="${esc(nomeVeiculo(v))}">
     <div class="vimg">${imgDe(fotoPrincipal(v), nomeVeiculo(v))}
-      <div class="badges">${v.demo ? '<span class="tag demo">DEMONSTRAÇÃO</span>' : ''}${v.categoria ? `<span class="tag">${esc(nomeCatVeic(v.categoria))}</span>` : ''}${v.entregaRapida === true && v.fonte ? '<span class="tag ok">Entrega rápida</span>' : ''}</div>
+      <div class="badges">${v.demo ? '<span class="tag demo">DEMO</span>' : ''}${v.combustivel ? `<span class="tag">${esc(v.combustivel)}</span>` : ''}${v.categoria === 'premium' ? '<span class="tag dark">Premium</span>' : ''}${v.entregaRapida === true && v.fonte ? '<span class="tag ok">Entrega rápida</span>' : ''}</div>
       <span class="fav" data-stop="1">${favBtn('veiculos', v.id)}</span></div>
     <div class="vbody">
-      <div class="brand-l">${esc(v.marca || NI)}</div>
-      <h3>${esc(v.modelo || NI)}</h3>
-      <div class="ver">${esc(v.versao || 'Versão não informada')}</div>
-      <div class="specs">${specs.length ? specs.map(s => `<span>${esc(s)}</span>`).join('') : '<span>Especificações não informadas</span>'}</div>
-      <div class="vmeta">${loc ? esc(loc.nome) : 'Locadora não informada'}${pl && (pl.prazo || pl.km) ? ' · ' + [pl.prazo ? pl.prazo + ' meses' : '', pl.km ? Number(pl.km).toLocaleString('pt-BR') + ' km/mês' : ''].filter(Boolean).join(' · ') : ''}</div>
-      <div class="price ${p == null ? 'ni' : ''}">${p != null ? `<small>a partir de</small><b>${brl(p)}</b>` : '<b>Mensalidade não informada</b>'}</div>${p != null ? '<div class="xs" style="color:var(--warn)">Sujeito a alteração — confira no site oficial</div>' : ''}
-      <div class="vmeta">${ico('video', 'sm')} ${nv} vídeo${nv === 1 ? '' : 's'} · ${v.disponibilidade ? esc(v.disponibilidade) : 'Disponibilidade não informada'}</div>
+      <div class="vtitle"><h3>${esc([v.marca, v.modelo].filter(Boolean).join(' ') || NI)}</h3>${carroceria ? `<span class="tag cat">${esc(carroceria)}</span>` : ''}</div>
+      <div class="ver">${esc(v.versao || 'Versão não informada')}${v.ano ? ' · ' + esc(v.ano) : ''}</div>
+      <div class="vinfo"><div><small>${loc ? esc(loc.nome) : 'Locadora'}</small><span>${plano ? esc(plano) : 'Plano sob consulta'}</span></div>
+        <div class="vpreco">${p != null ? `<small>a partir de</small><b>${brl(p)}</b>` : '<b class="ni">Sob consulta</b>'}</div></div>
+      ${nv ? `<div class="vmeta">${ico('video', 'sm')} ${nv} vídeo${nv === 1 ? '' : 's'} para baixar</div>` : ''}
     </div></a>`;
 }
 
@@ -64,6 +70,11 @@ function cardLocadora(l) {
 }
 
 /* ===== VISÃO GERAL ===== */
+/* carro do hero: primeiro veiculo ativo com foto (de preferencia imagem transparente da Movida/Localiza) */
+function heroCarro() {
+  for (const v of veiculosAtivos()) { const f = fotoPrincipal(v); if (f && f.origem === 'link' && /\.webp|_next\/image/.test(f.url || '')) return `<img class="hero-car" src="${esc(f.url)}" alt="" onerror="this.remove()">`; }
+  return '';
+}
 function viewHome() {
   const ativos = veiculosAtivos();
   const videos = S.midias.filter(m => m.tipo === 'video' && !m.arquivado);
@@ -76,11 +87,14 @@ function viewHome() {
   const incompletas = ativos.filter(v => camposFaltando(v).length).length;
   return `
   <section class="hero">
-    <div class="hello"><h1>${saudacao()}, ${esc((S.config.usuario || 'Atendente').split(' ')[0])}</h1><span class="mono-pill">${esc(new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }).toUpperCase())}</span></div>
-    <div class="kick">Atendimento</div><h2 class="hero-q">Qual veículo você está procurando?</h2>
-    <form data-form="busca-home"><span class="gs-ico">${ico('search', 'sm')}</span><input type="search" name="q" placeholder="Marca, modelo, versão ou locadora" aria-label="Buscar veículo" autofocus><button class="btn primary" type="submit">Buscar</button></form>
-    <div class="chips" style="margin-top:16px">${S.locadoras.map(l => `<a class="chip" href="#/catalogo?loc=${l.id}">${esc(l.nome)}</a>`).join('')}<a class="chip" href="#/catalogo">Todo o catálogo</a></div>
-    <div class="kpis"><div class="kpi"><b>${ativos.length}</b><span>Veículos</span></div><div class="kpi"><b>${S.midias.filter(m => !m.arquivado).length}</b><span>Mídias</span></div><div class="kpi"><b>${S.locadoras.length}</b><span>Locadoras</span></div><div class="kpi"><b>${cli.length}</b><span>Vídeos de clientes liberados</span></div><div class="kpi"><b>${incompletas}</b><span>Fichas incompletas</span></div></div>
+    <div class="hero-txt">
+      <div class="hello"><div class="kick">Atendimento · ${esc(new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }))}</div><h1>${saudacao()}, <span class="hl">${esc((S.config.usuario || 'Atendente').split(' ')[0])}</span></h1></div>
+      <h2 class="hero-q">Qual veículo você está procurando?</h2>
+      <form data-form="busca-home"><span class="gs-ico">${ico('search', 'sm')}</span><input type="search" name="q" placeholder="Marca, modelo, versão ou locadora" aria-label="Buscar veículo" autofocus><button class="btn primary" type="submit">Buscar</button></form>
+      <div class="chips" style="margin-top:16px">${S.locadoras.map(l => `<a class="chip" href="#/catalogo?loc=${l.id}">${esc(l.nome)}</a>`).join('')}<a class="chip" href="#/catalogo">Todo o catálogo</a></div>
+      <div class="kpis"><div class="kpi"><b>${ativos.length}</b><span>Veículos</span></div><div class="kpi"><b>${videos.filter(m => !m.cliente).length}</b><span>Vídeos para baixar</span></div><div class="kpi"><b>${S.locadoras.length}</b><span>Locadoras</span></div><div class="kpi"><b>${incompletas}</b><span>Fichas incompletas</span></div></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="hero-circle"><div class="hero-badge">Carro 0 km<b>por assinatura</b></div>${heroCarro()}</div></div>
   </section>
 
   <div class="sec-head"><div><h2>Consultados recentemente</h2></div></div>
@@ -463,60 +477,4 @@ function avisoPreco(locId, compacto) {
   const ids = locId && siteOficial(locId) ? [locId] : ['loc_localiza', 'loc_movida'];
   return `<div class="aviso-preco ${compacto ? 'compacto' : ''}" role="note">${ico('alert', 'sm')}<div class="txt"><b>Valores de referência.</b> Os preços podem não ser exatos e já ter sido atualizados. <b>Confira sempre no site oficial</b> antes de passar ao cliente.</div>
     <div class="bts">${ids.map(i => { const s = siteOficial(i); return s ? `<a class="btn sm" target="_blank" rel="noopener" href="${esc(s[1])}">${ico('external', 'sm')} Conferir na ${esc(s[0])}</a>` : ''; }).join('')}</div></div>`;
-}
-
-/* ===== TABELA DE PREÇOS (Localiza / Meoo) ===== */
-let P = { q: '', marca: '', cat: '', ano: '', prazo: '', fr: '', blind: '', pint: '', ref: 8, pmin: '', pmax: '', ord: 'modelo', pg: 0 };
-const PRECOS_POR_PAGINA = 100;
-const nomeCatTab = c => ({ ELETRICO: 'Elétrico', HIBRIDO: 'Híbrido', 'HIBRIDO PLUG IN': 'Híbrido plug-in', Suv: 'SUV' }[c] || c);
-const nomeMarcaTab = m => m.split(' ').map(x => x.length <= 3 ? x : cap(x.toLowerCase())).join(' ');
-function viewPrecos() {
-  const T = window.TABELA_LOCALIZA;
-  if (!T) return `<div class="page-head"><div><h1>Tabela de preços</h1></div></div>` + vazio('tag', 'Tabela não carregada', 'O arquivo data/tabela-localiza.js não foi encontrado ao lado do index.html.');
-  const L = T.linhas, uq = i => [...new Set(L.map(r => r[i]))].sort((a, b) => a - b);
-  const nomeCol = i => T.colunas[i - 8];
-  return `<div class="page-head"><div><h1>Tabela de preços — Localiza</h1><p>Tabela especial Meoo, período ${esc(T.periodo)}. ${L.length.toLocaleString('pt-BR')} combinações liberadas.</p></div></div>
-  ${avisoPreco(null)}
-  <div class="card pad" style="margin:16px 0"><div class="form-grid" style="grid-template-columns:repeat(4,1fr)">
-    <label class="f">Busca (modelo/versão)<input type="search" data-pr="q" value="${esc(P.q)}" placeholder="ex.: mobi like, compass"></label>
-    <label class="f">Marca<select data-pr="marca">${opts(T.marcas.map((m, i) => [i, nomeMarcaTab(m)]), P.marca)}</select></label>
-    <label class="f">Categoria<select data-pr="cat">${opts(T.categorias.map((m, i) => [i, nomeCatTab(m)]), P.cat)}</select></label>
-    <label class="f">Ano do modelo<select data-pr="ano">${opts(uq(2), P.ano)}</select></label>
-    <label class="f">Prazo (meses)<select data-pr="prazo">${opts(uq(3), P.prazo)}</select></label>
-    <label class="f">Km por mês<select data-pr="fr">${opts(uq(4).map(k => [k, k.toLocaleString('pt-BR') + ' km']), P.fr)}</select></label>
-    <label class="f">Blindado<select data-pr="blind">${opts([['0', 'Não'], ['1', 'Sim']], P.blind)}</select></label>
-    <label class="f">Pintura<select data-pr="pint">${opts(T.pinturas.map((m, i) => [i, cap(m.toLowerCase())]), P.pint)}</select></label>
-    <label class="f">Coluna de preço de referência<select data-pr="ref">${T.colunas.map((c, k) => k === 1 ? '' : `<option value="${k + 8}" ${P.ref == k + 8 ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select></label>
-    <label class="f">Preço de<input type="number" min="0" step="100" data-pr="pmin" value="${esc(P.pmin)}" placeholder="R$"></label>
-    <label class="f">até<input type="number" min="0" step="100" data-pr="pmax" value="${esc(P.pmax)}" placeholder="R$"></label>
-    <label class="f">Ordenar<select data-pr="ord"><option value="modelo" ${P.ord === 'modelo' ? 'selected' : ''}>Marca e modelo</option><option value="menor" ${P.ord === 'menor' ? 'selected' : ''}>Menor preço</option><option value="maior" ${P.ord === 'maior' ? 'selected' : ''}>Maior preço</option></select></label></div>
-    <div class="row" style="margin-top:12px"><button class="btn sm" data-act="limparPrecos">Limpar filtros</button><button class="btn sm" data-act="csvPrecos">${ico('download', 'sm')} Exportar CSV do filtro</button><span class="sp"></span><span class="small muted" id="precoCount"></span></div></div>
-  <div class="infobox" style="margin-bottom:14px">${ico('info', 'sm')} As colunas “QAP” são os níveis da tabela Meoo, com o nome original do arquivo. Qual nível vale para cada negociação deve ser confirmado com o time comercial — o Hub não escolhe por você. A coluna escolhida acima é usada no filtro de preço, na ordenação e no texto copiado.</div>
-  <div id="precoRes"></div>`;
-}
-function filtrarPrecos() {
-  const T = window.TABELA_LOCALIZA, q = norm(P.q).split(/\s+/).filter(Boolean), ref = Number(P.ref), pmin = num(P.pmin), pmax = num(P.pmax);
-  let l = T.linhas.filter(r => {
-    if (P.marca !== '' && r[0] != P.marca) return false; if (P.cat !== '' && r[6] != P.cat) return false; if (P.ano !== '' && r[2] != P.ano) return false;
-    if (P.prazo !== '' && r[3] != P.prazo) return false; if (P.fr !== '' && r[4] != P.fr) return false; if (P.blind !== '' && r[5] != P.blind) return false; if (P.pint !== '' && r[7] != P.pint) return false;
-    if (pmin != null && (r[ref] == null || r[ref] < pmin)) return false; if (pmax != null && (r[ref] == null || r[ref] > pmax)) return false;
-    if (q.length) { const t = T._idx?.[r[1]] ?? (T._idx = T._idx || {}, T._idx[r[1]] = norm(T.marcas[r[0]] + ' ' + T.modelos[r[1]])); if (!q.every(x => t.includes(x))) return false; }
-    return true;
-  });
-  if (P.ord === 'menor') l = l.slice().sort((a, b) => (a[ref] ?? 1e12) - (b[ref] ?? 1e12)); else if (P.ord === 'maior') l = l.slice().sort((a, b) => (b[ref] ?? -1) - (a[ref] ?? -1));
-  return l;
-}
-function pintarPrecos() {
-  const box = $('#precoRes'); if (!box) return; const T = window.TABELA_LOCALIZA; if (!T) return;
-  const l = filtrarPrecos(), ref = Number(P.ref), pags = Math.max(1, Math.ceil(l.length / PRECOS_POR_PAGINA)); if (P.pg >= pags) P.pg = pags - 1;
-  $('#precoCount').textContent = `${l.length.toLocaleString('pt-BR')} resultado(s) · página ${P.pg + 1} de ${pags}`;
-  if (!l.length) { box.innerHTML = vazio('search', 'Nenhuma combinação com esses filtros', 'Afrouxe algum filtro ou limpe tudo.', '<button class="btn" data-act="limparPrecos">Limpar filtros</button>'); return; }
-  const fm = n => n == null ? '—' : brlSimples(n), pag = l.slice(P.pg * PRECOS_POR_PAGINA, (P.pg + 1) * PRECOS_POR_PAGINA);
-  box.innerHTML = `<div class="card tbl-wrap"><table class="table tab-precos"><thead><tr><th>Modelo</th><th>Marca</th><th>Ano</th><th>Prazo</th><th>Km/mês</th><th>Pintura</th><th>Cat.</th><th>Blind.</th>${T.colunas.map((c, k) => `<th class="num ${k + 8 === ref ? 'ref' : ''}">${esc(c)}</th>`).join('')}<th class="num">Km excedente</th><th></th></tr></thead><tbody>${pag.map((r, k) => `<tr><td><b>${esc(T.modelos[r[1]])}</b></td><td>${esc(nomeMarcaTab(T.marcas[r[0]]))}</td><td>${r[2]}</td><td>${r[3]} m</td><td>${r[4].toLocaleString('pt-BR')}</td><td class="small muted">${esc(cap(T.pinturas[r[7]].toLowerCase().replace('pintura ', '')))}</td><td>${esc(nomeCatTab(T.categorias[r[6]]))}</td><td>${r[5] ? '<span class="tag warn">Sim</span>' : '—'}</td>${r.slice(8, 17).map((x, j) => `<td class="num ${j + 8 === ref ? 'ref' : ''}">${fm(x)}</td>`).join('')}<td class="num">${r[17] != null ? brlSimples(r[17]) : '—'}</td><td><button class="icon-btn" data-act="copiarPreco" data-i="${P.pg * PRECOS_POR_PAGINA + k}" title="Copiar resumo" aria-label="Copiar resumo">${ico('copy', 'sm')}</button></td></tr>`).join('')}</tbody></table></div>
-  <div class="row" style="margin-top:14px;justify-content:center"><button class="btn sm" data-act="pgPrecos" data-d="-1" ${P.pg ? '' : 'disabled'}>← Anterior</button><span class="small muted">${P.pg + 1} / ${pags}</span><button class="btn sm" data-act="pgPrecos" data-d="1" ${P.pg + 1 < pags ? '' : 'disabled'}>Próxima →</button></div>`;
-  P._ultimo = l;
-}
-function textoPreco(r) {
-  const T = window.TABELA_LOCALIZA, ref = Number(P.ref);
-  return `${T.modelos[r[1]]} (${nomeMarcaTab(T.marcas[r[0]])}) · ${r[2]} · ${r[3]} meses · ${r[4].toLocaleString('pt-BR')} km/mês · ${brlSimples(r[ref])} [${T.colunas[ref - 8]}] — valor da tabela Localiza de ${T.periodo}; confirme no site oficial antes de passar ao cliente.`;
 }

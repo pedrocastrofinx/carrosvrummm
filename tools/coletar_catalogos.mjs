@@ -57,6 +57,8 @@ function tituloVersao(texto, modelo) {
     return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
   }).join(' ');
 }
+/* a CDN da Localiza bloqueia (403) quem nao e o proprio site; o endpoint de imagem do site entrega o mesmo arquivo (WebP transparente) */
+const fotoLocaliza = u => 'https://assinatura.localiza.com/_next/image?url=' + encodeURIComponent(u) + '&w=700&q=75';
 const marcaMovida = b => String(b || '').replace(/^GM\s*-\s*/i, '').trim();
 const catMovida = c => ({ hatch: 'hatch', sedan: 'sedan', suv: 'suv', picape: 'picape', premium: 'premium', eletrico: 'eletrico' })[slug(c)] || '';
 const fichaMovida = a => `https://www.movidacarroporassinatura.com.br/assinatura/detalhes/${encodeURIComponent(a.model)}-${encodeURIComponent(a.brand)}/${a.pdmVersionId}`;
@@ -81,6 +83,7 @@ async function coletarMovida(browser, hoje) {
       marca: marcaMovida(a.brand), modelo: a.model, versao: antigo?.versao || tituloVersao(a.version, a.model),
       categoria: antigo?.categoria || catMovida(a.category), locadora: 'Movida', planos: [plano], condicoes: '',
       fichaUrl: fichaMovida(a), fotoChave: fotos.length ? [fotos[fotos.length - 1].split('/').pop()] : (antigo?.fotoChave || []),
+      fotos: (fotos.find(u => /-large\.webp$/.test(u)) || fotos[0]) ? [fotos.find(u => /-large\.webp$/.test(u)) || fotos[0]] : [],
       fonte: `Movida - lista de carros (movidacarroporassinatura.com.br/assinatura/busca), coletada automaticamente em ${dataBR(hoje)}.`,
       _id: a.pdmVersionId
     };
@@ -111,7 +114,7 @@ function paraVeiculoLoc(m, antigo, hoje) {
     ...(conectividade.length ? { conectividade } : {}), ...(conforto.length ? { conforto } : {}), entregaRapida: m.fastDelivery === true,
     fichaUrl: `https://assinatura.localiza.com/personalize-seu-plano/${slug(m.category) || 'carros'}/${m.slug}`, segmentoOrigem: seg, condicoes: '',
     fonte: `Localiza Assinatura - lista de carros, coletada automaticamente em ${dataBR(hoje)}. Mensalidade, prazo e km nao constam na lista (ficam na pagina de cada carro).`,
-    fotos: m.image ? [m.image] : [], _id: m.slug
+    fotos: m.image ? [fotoLocaliza(m.image)] : [], _id: m.slug
   };
 }
 

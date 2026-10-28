@@ -134,7 +134,10 @@ def main():
         elif re.search(r"whatsapp video", nome, re.I):    # sem nome do carro: fica na biblioteca como "sem identificacao" para o admin vincular
             item = {"marca": "", "modelo": "", "versao": "", "locadora": "", "todas_versoes": False, "confianca": "sem-carro", "categoria": "outros", "tags": ["sem-identificacao"]}
         else: item = {"marca": "", "modelo": "", "versao": "", "locadora": "", "todas_versoes": False, "confianca": "sem-carro", "categoria": "apoio_locadora", "tags": ["institucional"]}
-        plano.append({"arquivo": p, "titulo": titulo_de(nome), **item})
+        titulo = titulo_de(nome)
+        if p.name.startswith("REEL - "):                  # reels gerados por tools/gerar_reels.py
+            titulo = p.stem[len("REEL - "):] + " · Reel Dryve"; item = {**item, "tags": item["tags"] + ["reel-dryve"]}
+        plano.append({"arquivo": p, "titulo": titulo, **item})
     resumo = {c: sum(1 for x in plano if x["confianca"] == c) for c in ("versao", "modelo", "sem-carro")}
     print(f"{len(plano)} videos | casados por versao: {resumo['versao']} | por modelo (todas as versoes): {resumo['modelo']} | sem carro (institucional): {resumo['sem-carro']}")
     rel = [{"arquivo": x["arquivo"].name, "titulo": x["titulo"], "marca": x["marca"], "modelo": x["modelo"], "versao": x["versao"], "confianca": x["confianca"], "categoria": x["categoria"]} for x in plano]

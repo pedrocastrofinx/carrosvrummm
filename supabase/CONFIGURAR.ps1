@@ -1,4 +1,4 @@
-# Configura o Supabase do Dryve Hub: cria seu usuario administrador e envia a tabela de precos privada da Localiza.
+# Configura o Supabase do Dryve Hub: cria seu usuario administrador (a tabela de precos foi removida do Hub).
 # Rode DEPOIS de executar supabase/schema.sql no SQL Editor do Supabase.
 # Uso (PowerShell, na pasta do projeto):   powershell -ExecutionPolicy Bypass -File supabase\CONFIGURAR.ps1
 # As chaves sao digitadas na hora (ocultas), usadas so nesta janela e apagadas ao final. Nada e gravado em arquivo.
@@ -18,12 +18,6 @@ $env:DRYVE_SENHA_ADMIN = Texto $senha
 try {
     python tools/criar_usuario_supabase.py --email $Email --admin
     if ($LASTEXITCODE -ne 0) { throw "Falha ao criar o usuario." }
-    if (Test-Path "data/tabela-localiza.js") {
-        python tools/enviar_tabela_supabase.py
-        if ($LASTEXITCODE -ne 0) { throw "Falha ao enviar a tabela de precos." }
-    } else {
-        Write-Warning "data/tabela-localiza.js nao encontrado: a tabela de precos NAO foi enviada."
-    }
     Write-Host "`nPronto. Entre no Hub com $Email e troque a senha pelo botao 'Trocar senha'." -ForegroundColor Green
 }
 finally {

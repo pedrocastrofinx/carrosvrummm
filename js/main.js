@@ -1,8 +1,8 @@
 'use strict';
 /* ===== navegação ===== */
-const NAV = [['/', 'Visão geral', 'home'], ['/catalogo', 'Catálogo de veículos', 'car'], ['/precos', 'Tabela de preços', 'tag'], ['/locadoras', 'Locadoras', 'building'], ['/biblioteca', 'Biblioteca de vídeos', 'video'], ['/clientes', 'Clientes e retiradas', 'users'], ['/mensagens', 'Materiais de atendimento', 'message'], ['/clove', 'Clove Assistente', 'sparkles'], ['/favoritos', 'Favoritos', 'star'], ['/admin', 'Administração', 'sliders']];
+const NAV = [['/', 'Visão geral', 'home'], ['/catalogo', 'Catálogo de veículos', 'car'], ['/locadoras', 'Locadoras', 'building'], ['/biblioteca', 'Biblioteca de vídeos', 'video'], ['/clientes', 'Clientes e retiradas', 'users'], ['/mensagens', 'Materiais de atendimento', 'message'], ['/clove', 'Clove Assistente', 'sparkles'], ['/favoritos', 'Favoritos', 'star'], ['/admin', 'Administração', 'sliders']];
 let ultimoVeic = null;
-const TITULOS = { '': 'Home', catalogo: 'Catálogo', precos: 'Tabela de preços', veiculo: 'Ficha do veículo', locadoras: 'Locadoras', locadora: 'Locadora', biblioteca: 'Biblioteca', midia: 'Biblioteca', clientes: 'Clientes e retiradas', mensagens: 'Materiais de atendimento', clove: 'Clove Assistente', favoritos: 'Favoritos', admin: 'Administração' };
+const TITULOS = { '': 'Home', catalogo: 'Catálogo', veiculo: 'Ficha do veículo', locadoras: 'Locadoras', locadora: 'Locadora', biblioteca: 'Biblioteca', midia: 'Biblioteca', clientes: 'Clientes e retiradas', mensagens: 'Materiais de atendimento', clove: 'Clove Assistente', favoritos: 'Favoritos', admin: 'Administração' };
 function aplicarRail() { let r = true; try { r = localStorage.getItem('dh_rail') !== '0'; } catch (e) { } $('#app').classList.toggle('rail', r); }
 function saudacao() { const h = new Date().getHours(); return h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite'; }
 
@@ -30,7 +30,6 @@ function rotear() {
     switch (a) {
       case undefined: html = viewHome(); break;
       case 'catalogo': html = viewCatalogo(qs ? params : null); pos = pintarCatalogo; break;
-      case 'precos': html = viewPrecos(); pos = pintarPrecos; break;
       case 'veiculo':
         if (ultimoVeic !== b) { ultimoVeic = b; fichaTab = 'fotos'; planoSel = 0; registrarVeiculo(b); }
         html = viewVeiculo(b); break;
@@ -145,16 +144,6 @@ function copiarMsgMidia(m) {
 }
 
 const ACOES = {
-  limparPrecos: () => { P = { q: '', marca: '', cat: '', ano: '', prazo: '', fr: '', blind: '', pint: '', ref: 8, pmin: '', pmax: '', ord: 'modelo', pg: 0 }; rotear(); },
-  pgPrecos: d => { P.pg = Math.max(0, P.pg + Number(d.d)); pintarPrecos(); window.scrollTo(0, 0); },
-  copiarPreco: d => { const r = P._ultimo?.[Number(d.i)]; if (r) copiar(textoPreco(r), 'Resumo copiado (com aviso para conferir no site).'); },
-  csvPrecos: () => {
-    const T = window.TABELA_LOCALIZA, l = filtrarPrecos(); if (!l.length) return toast('Nada para exportar.', 'err');
-    const cab = ['Marca', 'Modelo', 'Ano', 'Prazo (meses)', 'Km/mês', 'Blindado', 'Categoria', 'Pintura', ...T.colunas, 'Km excedente'];
-    const csvl = r => [T.marcas[r[0]], T.modelos[r[1]], r[2], r[3], r[4], r[5] ? 'Sim' : 'Não', T.categorias[r[6]], T.pinturas[r[7]], ...r.slice(8, 17), r[17]].map(x => x == null ? '' : '"' + String(x).replace(/"/g, '""') + '"').join(';');
-    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['\ufeff' + [cab.join(';'), ...l.map(csvl)].join('\n')], { type: 'text/csv;charset=utf-8' })); a.download = 'tabela-localiza-filtro.csv'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
-    toast(`${l.length.toLocaleString('pt-BR')} linhas exportadas. Lembre: valores de ${T.periodo}.`);
-  },
   spinAuto: () => { const r = $('#spin'); if (!r) return; if (giroAuto) r._parar(); else r._auto(); },
   rail: () => { const r = $('#app').classList.toggle('rail'); try { localStorage.setItem('dh_rail', r ? '1' : '0'); } catch (e) { } },
   menu: () => { $('#side').classList.toggle('open'); $('#scrim').classList.toggle('open'); },
@@ -250,7 +239,6 @@ document.addEventListener('input', e => {
   const t = e.target, d = t.dataset;
   if (t.id === 'gsearch') return pintarBuscaGlobal(t.value);
   if (d.f !== undefined) { F[d.f] = t.type === 'checkbox' ? t.checked : t.value; return pintarCatalogo(); }
-  if (d.pr !== undefined) { P[d.pr] = t.value; P.pg = 0; return pintarPrecos(); }
   if (d.b !== undefined) { B[d.b] = t.value; return pintarBiblioteca(); }
   if (d.c !== undefined) { C[d.c] = t.value; return pintarClientes(); }
   if (d.am !== undefined) { AM.q = t.value; const b = $('#amBody'); if (b) { const q = norm(AM.q); b.innerHTML = linhasMidia(S.midias.filter(m => !q || norm([m.titulo, m.nomeOriginal, nomeCat(m.categoria), nomeVeiculo(veiculo(m.veiculoId))].join(' ')).includes(q)).sort((a, b) => b.criadoEm.localeCompare(a.criadoEm))); hidratar(b); } return; }
@@ -286,6 +274,7 @@ window.addEventListener('hashchange', rotear);
 (async function init() {
   carregar();
   try { await DB.open(); } catch (e) { toast('Armazenamento de arquivos indisponível neste navegador (modo privado?). Uploads não funcionarão.', 'err'); }
+  S.midias = S.midias.filter(x => !(x.origem === 'link' && x.tipo === 'foto' && /^https?:\/\/cdn-meoobackoffice-veiculos-api-prd\.localiza\.com/.test(x.url || '')));
   for (const cat of (window.CATALOGOS_INICIAIS || [])) {
     if (S.catalogosImportados.includes(cat.id)) continue;
     try { importarCatalogo(cat); S.catalogosImportados.push(cat.id); salvar(); } catch (e) { console.error('catálogo inicial', e); }
