@@ -1,0 +1,16 @@
+{
+  "name": "dryvehub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dryve Assinatura Hub: catalogo Movida/Localiza, videos e assistente Clove.",
+  "scripts": {
+    "coletar": "node tools/coletar_catalogos.mjs",
+    "serve": "python -m http.server 8080"
+  },
+  "devDependencies": {
+    "playwright-core": "1.49.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

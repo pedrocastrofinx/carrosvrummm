@@ -1,0 +1,44 @@
+name: Pesquisar e classificar videos
+
+on:
+  workflow_dispatch: {}   # manual: as referencias do YouTube nao sao mais o foco (a biblioteca usa videos proprios)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pesquisar-videos
+  cancel-in-progress: false
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Retomaveis: ao bater a cota (429/403) param sozinhos, salvam o progresso e saem com sucesso.
+      - name: Incluir veiculos novos do catalogo no inventario
+        run: python tools/atualizar_inventario.py
+      - name: Atualizar fichas tecnicas (Inmetro) dos veiculos
+        run: python tools/montar_fichas.py
+      - name: Pesquisa por veiculo (avaliacao)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python tools/pesquisar_videos.py
+      - name: Pesquisa por modelo (interior e exterior)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python tools/pesquisar_videos_foco.py
+      - name: Classificar sugestoes para o Hub
+        if: always()
+        run: python tools/classificar_videos.py
+      - name: Commit se houve mudanca
+        if: always()
+        run: |
+          git config user.name "dryve-bot"
+          git config user.email "dryve-bot@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet; then echo "Sem mudancas."; else git commit -m "dados: pesquisa de videos (progresso e sugestoes)" && git pull --rebase && git push; fi

@@ -1,0 +1,73 @@
+{
+  "dataAuditoria": "2026-10-27",
+  "status": "PARCIAL_NAO_CONCLUIDO",
+  "totalOfertas": 280,
+  "totalVeiculosUnicos": 277,
+  "criterioDeduplicacao": [
+    "marca",
+    "modelo",
+    "versao",
+    "ano"
+  ],
+  "totalVeiculosComVideoValidado": 0,
+  "totalVeiculosSemVideoValidado": 277,
+  "totalCorrespondenciaExata": 0,
+  "totalCorrespondenciaExataSemAnoConfirmado": 0,
+  "totalCorrespondenciaModeloCompativel": 0,
+  "totalCorrespondenciaAproximada": 0,
+  "totalLinksValidosConfirmados": 0,
+  "totalLinksQuebradosConfirmados": 0,
+  "totalLinksPendentesDeValidacao": 0,
+  "totalDadosTecnicosPreenchidos": 1015,
+  "camposTecnicosPorCampo": {
+    "ano": 175,
+    "motor": 0,
+    "potencia": 0,
+    "torque": 0,
+    "cambio": 174,
+    "combustivel": 150,
+    "consumo": 0,
+    "autonomia": 0,
+    "bateria": 0,
+    "portas": 0,
+    "lugares": 175,
+    "portaMalas": 0,
+    "dimensoes": 0,
+    "equipamento": 0,
+    "conforto": 175,
+    "conectividade": 166,
+    "seguranca": 0,
+    "fabricanteFonte": 0
+  },
+  "totalVeiculosPendentes": 277,
+  "chaveYouTubeApiConfigurada": false,
+  "pesquisaApiExecutada": false,
+  "testes": {
+    "estruturaZipExtraida": true,
+    "catalogosParseados": true,
+    "javascriptSyntax": true,
+    "execucaoBrowser": false,
+    "javascriptFilesChecked": 8,
+    "pythonResearchScriptSyntax": true,
+    "browserSmokeTest": false
+  },
+  "limitacoes": [
+    "A chave YOUTUBE_API_KEY não estava configurada; nenhuma consulta à YouTube Data API foi executada.",
+    "Nenhum vídeo foi cadastrado como validado. Não foram inventados links.",
+    "Não foi possível confirmar disponibilidade, conteúdo visual, compatibilidade por versão/ano ou links quebrados.",
+    "Dados técnicos não foram enriquecidos com fontes externas nesta execução; os campos ausentes permanecem pendentes."
+  ],
+  "fontesBase": [
+    "data/catalogo-localiza.js",
+    "data/catalogo-movida.js"
+  ],
+  "arquivosPesquisa": [
+    "data/veiculos-pesquisa.json",
+    "data/videos-validados.json",
+    "data/pendencias-pesquisa.json",
+    "data/youtube-cache.json",
+    "data/progresso-pesquisa.json",
+    "data/candidatos-youtube.json",
+    "tools/pesquisar_videos.py"
+  ]
+}

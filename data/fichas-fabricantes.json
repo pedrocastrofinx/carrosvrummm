@@ -1,0 +1,685 @@
+{
+ "aviso": "Fichas OFICIAIS de fabricante para potencia, torque e porta-malas. Cada item exige fonteUrl (pagina/PDF oficial da montadora, aberta e conferida por uma pessoa). Nao copie de agregadores nem estime. tools/montar_fichas.py casa por marca + modelo + cilindrada (+ turbo, anoMin) e preenche so os campos informados.",
+ "exemplo_de_formato (renomeie para um item real dentro de 'fichas')": {
+  "marca": "Marca",
+  "modelo": "Modelo",
+  "cilindrada": "1.0",
+  "turbo": true,
+  "anoMin": 2026,
+  "potencia": "XXX cv (combustivel)",
+  "torque": "XX,X kgfm (combustivel)",
+  "portaMalas": "XXX L",
+  "fonteUrl": "https://pagina-oficial-da-montadora/ficha"
+ },
+ "fichas": [
+  {
+   "marca": "Fiat",
+   "modelo": "Strada",
+   "cilindrada": "1.3",
+   "turbo": false,
+   "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=294353"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Strada",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "130 cv",
+   "torque": "20,4 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=37616"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Strada",
+   "versaoContem": [
+    "cd"
+   ],
+   "portaMalas": "Caçamba: 844 L (cabine dupla)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=294353"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Strada",
+   "versaoContem": [
+    "cs"
+   ],
+   "portaMalas": "Caçamba: 1.354 L (cabine simples)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=294353"
+  },
+  {
+   "marca": "Nissan",
+   "modelo": "Kicks",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+   "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+   "portaMalas": "470 L",
+   "fonteTipo": "concessionaria",
+   "fonteUrl": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Virtus",
+   "portaMalas": "521 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/volkswagen/virtus/2026"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "T-Cross",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+   "torque": "20,4 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=17851"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "T-Cross",
+   "cilindrada": "1.4",
+   "turbo": true,
+   "potencia": "150 cv",
+   "torque": "25,5 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.car.blog.br/2025/07/novo-t-cross-extreme-2026-preco-consumo.html"
+  },
+  {
+   "marca": "Ram",
+   "modelo": "Rampage",
+   "cilindrada": "2.2",
+   "turbo": true,
+   "potencia": "200 cv",
+   "torque": "45,9 kgfm",
+   "portaMalas": "Caçamba: 980 L",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+  },
+  {
+   "marca": "Ram",
+   "modelo": "Rampage",
+   "cilindrada": "2.0",
+   "turbo": true,
+   "potencia": "272 cv",
+   "torque": "40,8 kgfm",
+   "portaMalas": "Caçamba: 980 L",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "I20",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "115 cv (gasolina ou etanol)",
+   "torque": "17,5 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/hyundai/i20/2027"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "I20",
+   "portaMalas": "346 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/hyundai/i20/2027"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Onix",
+   "portaMalas": "275 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=293249"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Onix Plus",
+   "portaMalas": "469 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=293249"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Montana",
+   "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+   "portaMalas": "Caçamba: 874 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/chevrolet/montana/2026"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Tracker",
+   "portaMalas": "393 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/chevrolet/tracker/2026"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Polo",
+   "cilindrada": "1.0",
+   "turbo": false,
+   "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+   "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=5965"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Tera",
+   "cilindrada": "1.0",
+   "turbo": false,
+   "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+   "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=33979"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Tera",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+   "torque": "16,8 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Tera",
+   "portaMalas": "350 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/volkswagen/tera/2026"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "Creta",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+   "torque": "17,5 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=312327"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "Creta",
+   "portaMalas": "422 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html"
+  },
+  {
+   "marca": "Renault",
+   "modelo": "Kwid",
+   "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+   "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+   "portaMalas": "290 L",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "HB20",
+   "cilindrada": "1.0",
+   "turbo": false,
+   "potencia": "80 cv (etanol)",
+   "torque": "10,2 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "HB20",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+   "torque": "17,5 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/hyundai/hb20-limited-1-0-turbo-at-2026"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "HB20",
+   "portaMalas": "300 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://aceleratudo.com.br/blog/hyundai-hb20-2026-preco-versoes-ficha-tecnica"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Cronos",
+   "cilindrada": "1.3",
+   "potencia": "107 cv (etanol) / 98 cv (gasolina)",
+   "torque": "13,7 kgfm (etanol) / 13,2 kgfm (gasolina)",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/fiat-cronos-2026-1-3-firefly-flex-drive-cvt-387240"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Cronos",
+   "cilindrada": "1.0",
+   "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://revistacarro.com.br/fiat-cronos-chega-a-250-mil-unidades-comercializadas-no-brasil/"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Cronos",
+   "portaMalas": "525 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://aceleratudo.com.br/blog/fiat-cronos-2026-preco-versoes-ficha-tecnica"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Toro",
+   "cilindrada": "1.3",
+   "turbo": true,
+   "potencia": "176 cv",
+   "torque": "27,5 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=34476"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Toro",
+   "cilindrada": "2.2",
+   "potencia": "200 cv",
+   "torque": "45,9 kgfm",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://www.media.stellantis.com/br-pt/download-model-document/408"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Toro",
+   "portaMalas": "Caçamba: 937 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/fiat-toro-endurance-1-3-turbo-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-tem-937-litros-de-cacamba-e-autonomia-de-ate-616-km.html"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Fastback",
+   "cilindrada": "1.0",
+   "turbo": true,
+   "potencia": "130 cv (etanol) / 125 cv (gasolina)",
+   "torque": "20,4 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://blog.autosdr.com.br/blog/fiat-fastback-2026-versoes-precos-ficha-tecnica"
+  },
+  {
+   "marca": "Renault",
+   "modelo": "Boreal",
+   "potencia": "163 cv (etanol) / 156 cv (gasolina)",
+   "torque": "27,5 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=292952"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Nivus",
+   "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+   "torque": "20,4 kgfm",
+   "portaMalas": "415 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://garagem360.com.br/?p=285038"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Virtus",
+   "versaoContem": [
+    "200"
+   ],
+   "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+   "torque": "20,4 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.motoragora.com.br/?p=185100"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Virtus",
+   "versaoContem": [
+    "170"
+   ],
+   "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+   "torque": "16,8 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.icarros.com.br/catalogo/marcas/volkswagen/virtus/1.0-170-tsi-2026-2026"
+  },
+  {
+   "marca": "Honda",
+   "modelo": "City",
+   "potencia": "126 cv",
+   "torque": "15,8 kgfm (etanol) / 15,5 kgfm (gasolina)",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026"
+  },
+  {
+   "marca": "Honda",
+   "modelo": "City",
+   "versaoContem": [
+    "sedan"
+   ],
+   "portaMalas": "519 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=37448"
+  },
+  {
+   "marca": "Toyota",
+   "modelo": "Yaris",
+   "potencia": "110 cv (etanol) / 105 cv (gasolina)",
+   "torque": "14,9 kgfm (etanol) / 14,3 kgfm (gasolina)",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025"
+  },
+  {
+   "marca": "Toyota",
+   "modelo": "Yaris",
+   "versaoContem": [
+    "sedan"
+   ],
+   "portaMalas": "473 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025"
+  },
+  {
+   "marca": "Toyota",
+   "modelo": "Corolla Cross",
+   "versaoNaoContem": [
+    "hybrid",
+    "hibrido",
+    "híbrido"
+   ],
+   "portaMalas": "440 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/toyota/corolla-cross/2026"
+  },
+  {
+   "marca": "Nissan",
+   "modelo": "Kait",
+   "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+   "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+   "portaMalas": "432 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/nissan/kait/2026"
+  },
+  {
+   "marca": "Ford",
+   "modelo": "Ranger",
+   "cilindrada": "3.0",
+   "potencia": "250 cv",
+   "torque": "61,2 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/ford-ranger-limited-3-0-v6-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-entrega-forca-conforto-e-tecnologia-para-trabalho-e-lazer.html"
+  },
+  {
+   "marca": "Ford",
+   "modelo": "Ranger",
+   "cilindrada": "2.0",
+   "versaoNaoContem": [
+    "black",
+    "limited",
+    "storm",
+    "raptor"
+   ],
+   "potencia": "170 cv",
+   "torque": "41,3 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/ford-ranger-xl-2-0-mt-2026-robustez-economia-e-ficha-tecnica-da-picape-media-a-diesel.html"
+  },
+  {
+   "marca": "Ford",
+   "modelo": "Ranger",
+   "versaoContem": [
+    "cd"
+   ],
+   "portaMalas": "Caçamba: 1.250 L (cabine dupla)",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/ford/ranger/2026"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Saveiro",
+   "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+   "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "S10",
+   "potencia": "207 cv",
+   "torque": "52 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/carros/chevrolet/chevrolet-s10-100-anos-2-8-2026-ficha-tecnica-preco-consumo-equipamentos-e-fotos-serie-comemorativa-dos-100-anos-traz-motor-duramax-e-cacamba-de-1-061-litros-para-uso-intenso.html"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "S10",
+   "versaoContem": [
+    "cd"
+   ],
+   "portaMalas": "Caçamba: 1.061 L (cabine dupla)",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/chevrolet/s10/2026"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Spin",
+   "potencia": "111 cv (etanol) / 106 cv (gasolina)",
+   "torque": "17,7 kgfm (etanol) / 16,8 kgfm (gasolina)",
+   "portaMalas": "162 L (7 lugares) / 553 L (5 lugares)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html"
+  },
+  {
+   "marca": "Renault",
+   "modelo": "Kardian",
+   "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+   "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/junho/RMA-001825H-AJ-CATALOGO-KARDIAN.pdf.asset.pdf/c6545f3254.pdf"
+  },
+  {
+   "marca": "Citroen",
+   "modelo": "Basalt",
+   "portaMalas": "490 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://aceleratudo.com.br/blog/citroen-basalt-2026-preco-versoes-ficha-tecnica"
+  },
+  {
+   "marca": "Toyota",
+   "modelo": "Hilux",
+   "potencia": "204 cv",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/en/carros/toyota/hilux-srx-2-8-2026"
+  },
+  {
+   "marca": "Ford",
+   "modelo": "Territory",
+   "potencia": "169 cv",
+   "torque": "25,5 kgfm",
+   "portaMalas": "448 L",
+   "fonteTipo": "concessionaria",
+   "fonteUrl": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/07/Ford-Territory-2026-FichaTecnica.pdf"
+  },
+  {
+   "marca": "Jeep",
+   "modelo": "Compass",
+   "cilindrada": "1.3",
+   "turbo": true,
+   "potencia": "176 cv",
+   "torque": "27,5 kgfm",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=34476"
+  },
+  {
+   "marca": "Jeep",
+   "modelo": "Commander",
+   "cilindrada": "1.3",
+   "turbo": true,
+   "potencia": "176 cv",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.clubalfa.it/en/2026-jeep-commander-debuts-with-updated-styling-advanced-tech-and-off-road-upgrades-23823"
+  },
+  {
+   "marca": "GWM",
+   "modelo": "Haval",
+   "versaoContem": [
+    "hev2"
+   ],
+   "potencia": "243 cv (combinada)",
+   "torque": "54 kgfm (530 Nm, combinado)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://verificarauto.com.br/carros-eletricos/gwm-haval-h6-hev2/"
+  },
+  {
+   "marca": "GWM",
+   "modelo": "Haval",
+   "versaoContem": [
+    "h6"
+   ],
+   "portaMalas": "560 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/gwm/haval-h6/2026"
+  },
+  {
+   "marca": "BYD",
+   "modelo": "Song",
+   "versaoContem": [
+    "plus"
+   ],
+   "versaoNaoContem": [
+    "premium"
+   ],
+   "potencia": "235 cv (combinada)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.band.com.br/bandmotor/noticias/byd-song-plus-hibrido-sera-produzido-no-brasil-a-partir-de-2026-veja-fotos-202601100045"
+  },
+  {
+   "marca": "BYD",
+   "modelo": "Song",
+   "versaoContem": [
+    "plus",
+    "premium"
+   ],
+   "potencia": "324 cv (combinada)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.gazetasp.com.br/automotor/byd-song-plus-ganha-a-nova-versao-topo-de-linha-premium/"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Titano",
+   "potencia": "200 cv",
+   "torque": "40,9 kgfm (400 Nm) manual / 45,9 kgfm (450 Nm) automático",
+   "portaMalas": "Caçamba: 1.220 L",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf"
+  },
+  {
+   "marca": "Mitsubishi",
+   "modelo": "Triton",
+   "potencia": "205 cv",
+   "torque": "47,9 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/mitsubishi/triton/2026"
+  },
+  {
+   "marca": "Mitsubishi",
+   "modelo": "Eclipse Cross",
+   "portaMalas": "473 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/mitsubishi/eclipse-cross/2026"
+  },
+  {
+   "marca": "Jeep",
+   "modelo": "Renegade",
+   "cilindrada": "1.3",
+   "turbo": true,
+   "torque": "27,5 kgfm",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/carros/comparativo/renegade-sport-1-3-2026-vs-renegade-altitude-1-3-2026-vs-renegade-1-3-2025-vs-renegade-1-3-2024"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Fiorino",
+   "portaMalas": "Compartimento de carga: 3,3 m³ (carga útil 650 kg)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://acritica.net/automoveis/fiat-fiorino-campea-revenda-furgoneta-carga-2026/"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Mobi",
+   "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+   "torque": "10,7 kgfm",
+   "portaMalas": "200 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=14721"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Argo",
+   "portaMalas": "300 L",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=33700"
+  },
+  {
+   "marca": "Fiat",
+   "modelo": "Pulse",
+   "cilindrada": "1.3",
+   "turbo": false,
+   "potencia": "107 cv (etanol) / 98 cv (gasolina)",
+   "torque": "13,7 kgfm (etanol) / 13,2 kgfm (gasolina)",
+   "portaMalas": "370 L",
+   "fonteTipo": "concessionaria",
+   "fonteUrl": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf"
+  },
+  {
+   "marca": "Chevrolet",
+   "modelo": "Sonic",
+   "potencia": "115 cv",
+   "torque": "18,9 kgfm (etanol)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://www.gazetasp.com.br/automotor/novo-sonic-estreia-motor-turbo-do-tracker-e-pacote-avancado-de/"
+  },
+  {
+   "marca": "Citroen",
+   "modelo": "C3",
+   "versaoNaoContem": [
+    "turbo",
+    "you"
+   ],
+   "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+   "torque": "10,7 kgfm (105 Nm, etanol) / 10 kgfm (98 Nm, gasolina)",
+   "fonteTipo": "fabricante",
+   "fonteUrl": "https://www.media.stellantis.com/br-pt/download-model-document/506"
+  },
+  {
+   "marca": "Caoa Chery",
+   "modelo": "Tiggo",
+   "potencia": "187 cv",
+   "torque": "28 kgfm (275 Nm)",
+   "fonteTipo": "imprensa",
+   "fonteUrl": "https://jkcarros.com.br/?p=1287"
+  },
+  {
+   "marca": "Hyundai",
+   "modelo": "Hb20S",
+   "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+   "torque": "17,5 kgfm",
+   "portaMalas": "475 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.webmotors.com.br/hyundai/hb20s/2026"
+  },
+  {
+   "marca": "Volkswagen",
+   "modelo": "Taos",
+   "cilindrada": "1.4",
+   "potencia": "150 cv",
+   "torque": "25,5 kgfm",
+   "portaMalas": "498 L",
+   "fonteTipo": "catalogo",
+   "fonteUrl": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026"
+  }
+ ]
+}

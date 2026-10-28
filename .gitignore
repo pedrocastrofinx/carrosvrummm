@@ -1,0 +1,24 @@
+# dependencias e lixo local
+node_modules/
+__pycache__/
+*.pyc
+.vercel/
+.DS_Store
+
+# SEGREDOS: nunca versionar
+.env
+.env.*
+!.env.example
+*apiyotuba*
+*.key
+
+# PRECOS PRIVADOS da Localiza: ficam so no seu computador e no Supabase (tools/enviar_tabela_supabase.py)
+data/tabela-localiza.js
+
+# copias de seguranca locais
+*.antes-correcao.*
+*.tmp
+
+.vercel
+.env*
+!.env.example

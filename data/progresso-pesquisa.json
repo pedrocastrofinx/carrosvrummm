@@ -1,0 +1,1800 @@
+{
+  "processados": [
+    "veh-001",
+    "veh-002",
+    "veh-003",
+    "veh-004",
+    "veh-005",
+    "veh-006",
+    "veh-007",
+    "veh-008",
+    "veh-009",
+    "veh-010",
+    "veh-011",
+    "veh-012",
+    "veh-013",
+    "veh-014",
+    "veh-015",
+    "veh-016",
+    "veh-017",
+    "veh-018",
+    "veh-019",
+    "veh-020",
+    "veh-021",
+    "veh-022",
+    "veh-023",
+    "veh-024",
+    "veh-025",
+    "veh-026",
+    "veh-027",
+    "veh-028",
+    "veh-029",
+    "veh-030",
+    "veh-031",
+    "veh-032",
+    "veh-033",
+    "veh-034",
+    "veh-035",
+    "veh-036",
+    "veh-037",
+    "veh-038",
+    "veh-039",
+    "veh-040",
+    "veh-041",
+    "veh-042",
+    "veh-043",
+    "veh-044",
+    "veh-045",
+    "veh-046",
+    "veh-047",
+    "veh-048",
+    "veh-049",
+    "veh-050",
+    "veh-051",
+    "veh-052",
+    "veh-053",
+    "veh-054",
+    "veh-055",
+    "veh-056",
+    "veh-057",
+    "veh-058",
+    "veh-059",
+    "veh-060",
+    "veh-061",
+    "veh-062",
+    "veh-063",
+    "veh-064",
+    "veh-065",
+    "veh-066",
+    "veh-067",
+    "veh-068",
+    "veh-069",
+    "veh-070",
+    "veh-071",
+    "veh-072",
+    "veh-073",
+    "veh-074",
+    "veh-075",
+    "veh-076",
+    "veh-077",
+    "veh-078",
+    "veh-079",
+    "veh-080",
+    "veh-081",
+    "veh-082",
+    "veh-083",
+    "veh-084",
+    "veh-085",
+    "veh-086",
+    "veh-087",
+    "veh-088",
+    "veh-089",
+    "veh-090",
+    "veh-091",
+    "veh-092",
+    "veh-093",
+    "veh-094",
+    "veh-095",
+    "veh-096",
+    "veh-097",
+    "veh-098",
+    "veh-099",
+    "veh-100",
+    "veh-101",
+    "veh-102",
+    "veh-103",
+    "veh-104",
+    "veh-105",
+    "veh-107",
+    "veh-108",
+    "veh-111",
+    "veh-112",
+    "veh-113",
+    "veh-114",
+    "veh-116",
+    "veh-117",
+    "veh-121",
+    "veh-124",
+    "veh-127",
+    "veh-128",
+    "veh-130",
+    "veh-136",
+    "veh-145",
+    "veh-149",
+    "veh-161",
+    "veh-106",
+    "veh-109",
+    "veh-110",
+    "veh-115",
+    "veh-118",
+    "veh-119",
+    "veh-120",
+    "veh-122",
+    "veh-123",
+    "veh-125",
+    "veh-126",
+    "veh-129",
+    "veh-131",
+    "veh-132",
+    "veh-133",
+    "veh-134",
+    "veh-135",
+    "veh-137",
+    "veh-138",
+    "veh-139",
+    "veh-140",
+    "veh-141",
+    "veh-142",
+    "veh-143",
+    "veh-144",
+    "veh-146",
+    "veh-147",
+    "veh-148",
+    "veh-150",
+    "veh-151",
+    "veh-152",
+    "veh-153",
+    "veh-154",
+    "veh-155",
+    "veh-156",
+    "veh-157",
+    "veh-158",
+    "veh-159",
+    "veh-160",
+    "veh-162",
+    "veh-163",
+    "veh-164",
+    "veh-165",
+    "veh-166",
+    "veh-167",
+    "veh-168",
+    "veh-169",
+    "veh-170",
+    "veh-171",
+    "veh-172",
+    "veh-173",
+    "veh-174",
+    "veh-175",
+    "veh-176",
+    "veh-177",
+    "veh-178",
+    "veh-179",
+    "veh-180",
+    "veh-181",
+    "veh-182",
+    "veh-183",
+    "veh-184",
+    "veh-185",
+    "veh-186",
+    "veh-187",
+    "veh-188",
+    "veh-189",
+    "veh-190",
+    "veh-191",
+    "veh-192",
+    "veh-193",
+    "veh-194",
+    "veh-195",
+    "veh-196",
+    "veh-197",
+    "veh-198",
+    "veh-199",
+    "veh-200",
+    "veh-201",
+    "veh-202",
+    "veh-203",
+    "veh-204",
+    "veh-205",
+    "veh-206",
+    "veh-207",
+    "veh-208",
+    "veh-209",
+    "veh-210",
+    "veh-211",
+    "veh-212",
+    "veh-213",
+    "veh-214",
+    "veh-215",
+    "veh-216",
+    "veh-217",
+    "veh-218",
+    "veh-219",
+    "veh-220",
+    "veh-221",
+    "veh-222",
+    "veh-223",
+    "veh-224",
+    "veh-225",
+    "veh-226",
+    "veh-227",
+    "veh-228",
+    "veh-229",
+    "veh-230",
+    "veh-231"
+  ],
+  "erros": [
+    {
+      "veiculoId": "veh-106",
+      "erros": [
+        {
+          "termo": "RAM Rampage BIG Horn Turbo DIE 4X4 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:40+00:00"
+    },
+    {
+      "veiculoId": "veh-109",
+      "erros": [
+        {
+          "termo": "Geely EX5 EM-I Ultra Híbrido P 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:42+00:00"
+    },
+    {
+      "veiculoId": "veh-110",
+      "erros": [
+        {
+          "termo": "Honda City Hatchback EX 1.5 AT 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:43+00:00"
+    },
+    {
+      "veiculoId": "veh-115",
+      "erros": [
+        {
+          "termo": "Jeep Commander Overland 7L Turbo DI 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:47+00:00"
+    },
+    {
+      "veiculoId": "veh-118",
+      "erros": [
+        {
+          "termo": "Fiat Strada Ultra CD Turbo Flex AT 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:49+00:00"
+    },
+    {
+      "veiculoId": "veh-119",
+      "erros": [
+        {
+          "termo": "Geely EX5 EM-I PRO Híbrido PHE 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:49+00:00"
+    },
+    {
+      "veiculoId": "veh-120",
+      "erros": [
+        {
+          "termo": "Honda City Sedan Touring 1.5 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:50+00:00"
+    },
+    {
+      "veiculoId": "veh-122",
+      "erros": [
+        {
+          "termo": "BMW 330E M Sport 2.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:51+00:00"
+    },
+    {
+      "veiculoId": "veh-123",
+      "erros": [
+        {
+          "termo": "Hyundai I20 Platinum Tgdi Flex AT 1.0 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:51+00:00"
+    },
+    {
+      "veiculoId": "veh-125",
+      "erros": [
+        {
+          "termo": "Fiat Toro Ultra Turbo T270 Mhev FLE 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:53+00:00"
+    },
+    {
+      "veiculoId": "veh-126",
+      "erros": [
+        {
+          "termo": "Jeep Commander Limited 1.3 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:53+00:00"
+    },
+    {
+      "veiculoId": "veh-129",
+      "erros": [
+        {
+          "termo": "Toyota Corolla Cross XRE 2.0 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:55+00:00"
+    },
+    {
+      "veiculoId": "veh-131",
+      "erros": [
+        {
+          "termo": "Hyundai I20 Ultimate Tgdi Flex AT 1.0 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:56+00:00"
+    },
+    {
+      "veiculoId": "veh-132",
+      "erros": [
+        {
+          "termo": "Hyundai I20 X Line Tgdi Flex AT 1.0 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:57+00:00"
+    },
+    {
+      "veiculoId": "veh-133",
+      "erros": [
+        {
+          "termo": "BMW X6 Xdrive 40I M Sport 3.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:57+00:00"
+    },
+    {
+      "veiculoId": "veh-134",
+      "erros": [
+        {
+          "termo": "Volvo XC 60 XC60 T8 Ultra Híbrido Phev AWD 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:58+00:00"
+    },
+    {
+      "veiculoId": "veh-135",
+      "erros": [
+        {
+          "termo": "BMW X5 Xdrive 50E M Sport 3.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:58+00:00"
+    },
+    {
+      "veiculoId": "veh-137",
+      "erros": [
+        {
+          "termo": "Audi SQ5 Sportback Gasolina AT 3.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:45:59+00:00"
+    },
+    {
+      "veiculoId": "veh-138",
+      "erros": [
+        {
+          "termo": "Audi Q5 SUV S-line Tfsi Gasolina AT 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:00+00:00"
+    },
+    {
+      "veiculoId": "veh-139",
+      "erros": [
+        {
+          "termo": "Toyota Yaris Cross XRX AT 1.5 Flex 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:00+00:00"
+    },
+    {
+      "veiculoId": "veh-140",
+      "erros": [
+        {
+          "termo": "Chevrolet Equinox RS Turbo AT 1.5 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:00+00:00"
+    },
+    {
+      "veiculoId": "veh-141",
+      "erros": [
+        {
+          "termo": "GWM Poer P30 Exclusive AT 2.4 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:01+00:00"
+    },
+    {
+      "veiculoId": "veh-142",
+      "erros": [
+        {
+          "termo": "GWM Poer P30 Trail AT 2.4 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:01+00:00"
+    },
+    {
+      "veiculoId": "veh-143",
+      "erros": [
+        {
+          "termo": "Volvo EC40 Plus 70KW Elétrico AT 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:01+00:00"
+    },
+    {
+      "veiculoId": "veh-144",
+      "erros": [
+        {
+          "termo": "Volvo EX40 Plus 70KW Elétrico AT 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:02+00:00"
+    },
+    {
+      "veiculoId": "veh-146",
+      "erros": [
+        {
+          "termo": "Mitsubishi Eclipse Cross HPE 1.5 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:03+00:00"
+    },
+    {
+      "veiculoId": "veh-147",
+      "erros": [
+        {
+          "termo": "Audi A3 Sedan Performance Híbrido M 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:03+00:00"
+    },
+    {
+      "veiculoId": "veh-148",
+      "erros": [
+        {
+          "termo": "Toyota SW4 SRX Platinum 7L 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:04+00:00"
+    },
+    {
+      "veiculoId": "veh-150",
+      "erros": [
+        {
+          "termo": "Audi SQ5 SUV Tfsi Gasolina AT 3.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:05+00:00"
+    },
+    {
+      "veiculoId": "veh-151",
+      "erros": [
+        {
+          "termo": "Audi Q5 Sportback Q5 SUV SPB Tfsi Gasolina A 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:05+00:00"
+    },
+    {
+      "veiculoId": "veh-152",
+      "erros": [
+        {
+          "termo": "Toyota Yaris Cross XRE AT 1.5 Flex 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:06+00:00"
+    },
+    {
+      "veiculoId": "veh-153",
+      "erros": [
+        {
+          "termo": "Fiat Strada Ranch CD Turbo Flex AT 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:06+00:00"
+    },
+    {
+      "veiculoId": "veh-154",
+      "erros": [
+        {
+          "termo": "Fiat Titano Ranch Turbo Diesel AT 2 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:07+00:00"
+    },
+    {
+      "veiculoId": "veh-155",
+      "erros": [
+        {
+          "termo": "Chevrolet Trailblazer High Country 2.8 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:07+00:00"
+    },
+    {
+      "veiculoId": "veh-156",
+      "erros": [
+        {
+          "termo": "Chevrolet Equinox Activ Turbo AT 1.5 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:07+00:00"
+    },
+    {
+      "veiculoId": "veh-157",
+      "erros": [
+        {
+          "termo": "Fiat Titano Volcano Turbo Diesel AT 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:08+00:00"
+    },
+    {
+      "veiculoId": "veh-158",
+      "erros": [
+        {
+          "termo": "Toyota Hilux CD STD 2.8 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:08+00:00"
+    },
+    {
+      "veiculoId": "veh-159",
+      "erros": [
+        {
+          "termo": "Fiat Strada Nova Volcano 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:08+00:00"
+    },
+    {
+      "veiculoId": "veh-160",
+      "erros": [
+        {
+          "termo": "Mitsubishi Triton GLS DIE 4X4 AT 2.4 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:09+00:00"
+    },
+    {
+      "veiculoId": "veh-162",
+      "erros": [
+        {
+          "termo": "Audi A3 Sportback Perfor 2.0 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:10+00:00"
+    },
+    {
+      "veiculoId": "veh-163",
+      "erros": [
+        {
+          "termo": "Audi A3 Sportback Performance Black 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:11+00:00"
+    },
+    {
+      "veiculoId": "veh-164",
+      "erros": [
+        {
+          "termo": "Audi Q3 SUV Lauch Editon Gasolina 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:11+00:00"
+    },
+    {
+      "veiculoId": "veh-165",
+      "erros": [
+        {
+          "termo": "Audi Q3 SPB Launch Editon Gasolina 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:11+00:00"
+    },
+    {
+      "veiculoId": "veh-166",
+      "erros": [
+        {
+          "termo": "Volvo EC40 Ultra 82KW Elétrico AWD A 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:12+00:00"
+    },
+    {
+      "veiculoId": "veh-167",
+      "erros": [
+        {
+          "termo": "Volvo XC 60 XC60 T8 Ultra Dark Híbrido PHE 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:12+00:00"
+    },
+    {
+      "veiculoId": "veh-168",
+      "erros": [
+        {
+          "termo": "Audi Q8 Performance Black 3.0 Tfsi 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:12+00:00"
+    },
+    {
+      "veiculoId": "veh-169",
+      "erros": [
+        {
+          "termo": "BYD Song PRO GL DM-I 1.5 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:13+00:00"
+    },
+    {
+      "veiculoId": "veh-170",
+      "erros": [
+        {
+          "termo": "Chevrolet Onix Plus 12V Turbo Flex 1.0 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:13+00:00"
+    },
+    {
+      "veiculoId": "veh-171",
+      "erros": [
+        {
+          "termo": "GWM Haval H9 Selection 7L AT 2.4 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:14+00:00"
+    },
+    {
+      "veiculoId": "veh-172",
+      "erros": [
+        {
+          "termo": "Hyundai Kona Signature Híbrido HEV 1.6 2026 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:14+00:00"
+    },
+    {
+      "veiculoId": "veh-173",
+      "erros": [
+        {
+          "termo": "BYD Song Plus DM-I 1.5 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:14+00:00"
+    },
+    {
+      "veiculoId": "veh-174",
+      "erros": [
+        {
+          "termo": "RAM Rampage Laramie Turbo Flex 4X4 2027 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:15+00:00"
+    },
+    {
+      "veiculoId": "veh-175",
+      "erros": [
+        {
+          "termo": "Volkswagen Polo Highline TSI 1.0 Flex 12V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:15+00:00"
+    },
+    {
+      "veiculoId": "veh-176",
+      "erros": [
+        {
+          "termo": "Volkswagen Polo Track 1.0 Flex 12V 5P + VW Play avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:15+00:00"
+    },
+    {
+      "veiculoId": "veh-177",
+      "erros": [
+        {
+          "termo": "Fiat Strada Endurance 1.3 Flex 8V CS + Pack Worker avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:16+00:00"
+    },
+    {
+      "veiculoId": "veh-178",
+      "erros": [
+        {
+          "termo": "Fiat Strada Freedom 1.3 Flex 8V CD avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:16+00:00"
+    },
+    {
+      "veiculoId": "veh-179",
+      "erros": [
+        {
+          "termo": "Volkswagen NIVUS Comfortline 1.0 200 TSI Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:17+00:00"
+    },
+    {
+      "veiculoId": "veh-180",
+      "erros": [
+        {
+          "termo": "Volkswagen NIVUS Highline 1.0 200 TSI Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:17+00:00"
+    },
+    {
+      "veiculoId": "veh-181",
+      "erros": [
+        {
+          "termo": "Volkswagen T-Cross Comfortline 1.0 TSI Flex 5P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:17+00:00"
+    },
+    {
+      "veiculoId": "veh-182",
+      "erros": [
+        {
+          "termo": "Volkswagen Virtus TSI 1.0 Flex 12V 4P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:18+00:00"
+    },
+    {
+      "veiculoId": "veh-183",
+      "erros": [
+        {
+          "termo": "Volkswagen Virtus Comfort. 200 TSI 1.0 Flex 12V AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:18+00:00"
+    },
+    {
+      "veiculoId": "veh-184",
+      "erros": [
+        {
+          "termo": "Volkswagen Virtus Highline 200 TSI 1.0 Flex 12V AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:18+00:00"
+    },
+    {
+      "veiculoId": "veh-185",
+      "erros": [
+        {
+          "termo": "Volkswagen Virtus Exclusive 250TSI 1.4 Flex 16V AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:19+00:00"
+    },
+    {
+      "veiculoId": "veh-186",
+      "erros": [
+        {
+          "termo": "Fiat Toro Freedom 1.3 T270 4X2 Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:19+00:00"
+    },
+    {
+      "veiculoId": "veh-187",
+      "erros": [
+        {
+          "termo": "Chevrolet Tracker LT 1.0 Turbo 12V Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:19+00:00"
+    },
+    {
+      "veiculoId": "veh-188",
+      "erros": [
+        {
+          "termo": "Chevrolet Tracker Premier 1.2 Turbo 12V Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:20+00:00"
+    },
+    {
+      "veiculoId": "veh-189",
+      "erros": [
+        {
+          "termo": "Fiat Mobi Like 1.0 Fire Flex 5P. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:20+00:00"
+    },
+    {
+      "veiculoId": "veh-190",
+      "erros": [
+        {
+          "termo": "Fiat Strada Volcano 1.3 Flex 8V CD Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:21+00:00"
+    },
+    {
+      "veiculoId": "veh-191",
+      "erros": [
+        {
+          "termo": "Fiat Strada Volcano 1.3 Flex 8V CD avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:21+00:00"
+    },
+    {
+      "veiculoId": "veh-192",
+      "erros": [
+        {
+          "termo": "Fiat FASTBACK Audace 200 TB AUT (Hibrído) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:21+00:00"
+    },
+    {
+      "veiculoId": "veh-193",
+      "erros": [
+        {
+          "termo": "Fiat FASTBACK Impetus 200 T. AUT (Hibrído) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:22+00:00"
+    },
+    {
+      "veiculoId": "veh-194",
+      "erros": [
+        {
+          "termo": "Hyundai CRETA Comfort 1.0 TB 12V Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:22+00:00"
+    },
+    {
+      "veiculoId": "veh-195",
+      "erros": [
+        {
+          "termo": "Citroen Basalt Feel 1.0 Flex TB 200 5P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:23+00:00"
+    },
+    {
+      "veiculoId": "veh-196",
+      "erros": [
+        {
+          "termo": "Fiat PULSE Drive 1.3 8V Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:23+00:00"
+    },
+    {
+      "veiculoId": "veh-197",
+      "erros": [
+        {
+          "termo": "Fiat FASTBACK Abarth Turbo Flex 1.3 Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:23+00:00"
+    },
+    {
+      "veiculoId": "veh-198",
+      "erros": [
+        {
+          "termo": "Hyundai HB20 Comfort 1.0 Flex 12V Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:24+00:00"
+    },
+    {
+      "veiculoId": "veh-199",
+      "erros": [
+        {
+          "termo": "Hyundai CRETA Limited 1.0 TB 12V Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:24+00:00"
+    },
+    {
+      "veiculoId": "veh-200",
+      "erros": [
+        {
+          "termo": "Volkswagen TAOS Comfortline 1.4 250 TSI Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:24+00:00"
+    },
+    {
+      "veiculoId": "veh-201",
+      "erros": [
+        {
+          "termo": "Volkswagen TERA 1.0 170 TSI Flex 12V 5P Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:25+00:00"
+    },
+    {
+      "veiculoId": "veh-202",
+      "erros": [
+        {
+          "termo": "Volkswagen TERA High 1.0 170 TSI Flex 12V 5P AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:25+00:00"
+    },
+    {
+      "veiculoId": "veh-203",
+      "erros": [
+        {
+          "termo": "Volkswagen Polo Sense TSI 1.0 Flex 12V AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:26+00:00"
+    },
+    {
+      "veiculoId": "veh-204",
+      "erros": [
+        {
+          "termo": "Hyundai HB20S Limited 1.0 TB Flex 12V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:26+00:00"
+    },
+    {
+      "veiculoId": "veh-205",
+      "erros": [
+        {
+          "termo": "Nissan Kicks Sense 1.0 Turbo Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:26+00:00"
+    },
+    {
+      "veiculoId": "veh-206",
+      "erros": [
+        {
+          "termo": "Nissan Kicks Advance 1.0 Turbo Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:27+00:00"
+    },
+    {
+      "veiculoId": "veh-207",
+      "erros": [
+        {
+          "termo": "Nissan Kicks Exclusive 1.0 Turbo Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:27+00:00"
+    },
+    {
+      "veiculoId": "veh-208",
+      "erros": [
+        {
+          "termo": "Nissan Kicks Platinum 1.0 Turbo Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:28+00:00"
+    },
+    {
+      "veiculoId": "veh-209",
+      "erros": [
+        {
+          "termo": "Fiat Strada Ultra 1.0 Flex Turbo CD Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:28+00:00"
+    },
+    {
+      "veiculoId": "veh-210",
+      "erros": [
+        {
+          "termo": "Jeep Compass Long. T270 1.3 TB 4X2 Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:28+00:00"
+    },
+    {
+      "veiculoId": "veh-211",
+      "erros": [
+        {
+          "termo": "Jeep Compass S T270 1.3 TB 4X2 Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:29+00:00"
+    },
+    {
+      "veiculoId": "veh-212",
+      "erros": [
+        {
+          "termo": "Chevrolet Onix Plus Onix Sedan Plus 1.0 12V TB Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:29+00:00"
+    },
+    {
+      "veiculoId": "veh-213",
+      "erros": [
+        {
+          "termo": "Volkswagen T-Cross Highline 1.4 TSI Flex 16V 5P AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:29+00:00"
+    },
+    {
+      "veiculoId": "veh-214",
+      "erros": [
+        {
+          "termo": "Renault Kardian Evolut. Flex 1.0 TB 12V 5P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:30+00:00"
+    },
+    {
+      "veiculoId": "veh-215",
+      "erros": [
+        {
+          "termo": "Renault Kardian Techno Flex 1.0 TB 12V 5P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:30+00:00"
+    },
+    {
+      "veiculoId": "veh-216",
+      "erros": [
+        {
+          "termo": "RAM Rampage Rebel 2.2 TB CD 4X4 Diesel Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:31+00:00"
+    },
+    {
+      "veiculoId": "veh-217",
+      "erros": [
+        {
+          "termo": "GWM Haval H6 Premium HEV2 (Híbrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:31+00:00"
+    },
+    {
+      "veiculoId": "veh-218",
+      "erros": [
+        {
+          "termo": "GWM Haval H6 GT Phev AWD (Hibrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:31+00:00"
+    },
+    {
+      "veiculoId": "veh-219",
+      "erros": [
+        {
+          "termo": "GWM Haval H6 Premium Phev AWD Hibrido - 35 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:32+00:00"
+    },
+    {
+      "veiculoId": "veh-220",
+      "erros": [
+        {
+          "termo": "GWM Haval H6 Premium Phev AWD Hibrido - 19 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:32+00:00"
+    },
+    {
+      "veiculoId": "veh-221",
+      "erros": [
+        {
+          "termo": "Volkswagen TAOS Highline 1.4 250 TSI Flex Aut. + Teto Solar avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:32+00:00"
+    },
+    {
+      "veiculoId": "veh-222",
+      "erros": [
+        {
+          "termo": "Chevrolet Spin Premier 1.8 7 Lugares AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:33+00:00"
+    },
+    {
+      "veiculoId": "veh-223",
+      "erros": [
+        {
+          "termo": "Hyundai CRETA Platinum 1.0 TB 12V Flex AUT + Teto Solar avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:33+00:00"
+    },
+    {
+      "veiculoId": "veh-224",
+      "erros": [
+        {
+          "termo": "Volkswagen TERA 1.0 MPI Flex 12V 5P Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:34+00:00"
+    },
+    {
+      "veiculoId": "veh-225",
+      "erros": [
+        {
+          "termo": "GWM TANK 300 2.0 16V Aut.(hibrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:34+00:00"
+    },
+    {
+      "veiculoId": "veh-226",
+      "erros": [
+        {
+          "termo": "Nissan KAIT Sense 1.6 Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:34+00:00"
+    },
+    {
+      "veiculoId": "veh-227",
+      "erros": [
+        {
+          "termo": "Nissan KAIT Advance 1.6 16V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:35+00:00"
+    },
+    {
+      "veiculoId": "veh-228",
+      "erros": [
+        {
+          "termo": "Nissan KAIT Exclusive 1.6 16V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:35+00:00"
+    },
+    {
+      "veiculoId": "veh-229",
+      "erros": [
+        {
+          "termo": "Fiat Cronos Drive 1.0 6V Flex avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:35+00:00"
+    },
+    {
+      "veiculoId": "veh-230",
+      "erros": [
+        {
+          "termo": "Caoa Chery Tiggo 8 PRO 1.6 Tgdi Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:36+00:00"
+    },
+    {
+      "veiculoId": "veh-231",
+      "erros": [
+        {
+          "termo": "GWM Haval H9 Exclusive avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:36+00:00"
+    },
+    {
+      "veiculoId": "veh-232",
+      "erros": [
+        {
+          "termo": "Jeep Renegade Longitude Mhev T270 4X2 - AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:37+00:00"
+    },
+    {
+      "veiculoId": "veh-233",
+      "erros": [
+        {
+          "termo": "Citroen C3 Live Plus - MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:37+00:00"
+    },
+    {
+      "veiculoId": "veh-234",
+      "erros": [
+        {
+          "termo": "Chevrolet Onix Plus 1.0 MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:37+00:00"
+    },
+    {
+      "veiculoId": "veh-235",
+      "erros": [
+        {
+          "termo": "Jeep Commander Limited Mhev 4X2 - AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:38+00:00"
+    },
+    {
+      "veiculoId": "veh-236",
+      "erros": [
+        {
+          "termo": "Jeep Commander Longitude 7L 1.3 T270 4X2 - AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:38+00:00"
+    },
+    {
+      "veiculoId": "veh-237",
+      "erros": [
+        {
+          "termo": "Citroen C3 Feel Plus - MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:38+00:00"
+    },
+    {
+      "veiculoId": "veh-238",
+      "erros": [
+        {
+          "termo": "Volkswagen TERA Comfort 1.0 170 TSI Flex 12V 5P AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:39+00:00"
+    },
+    {
+      "veiculoId": "veh-239",
+      "erros": [
+        {
+          "termo": "BYD Song PRO GL 1.5 16V Aut. (Hibrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:39+00:00"
+    },
+    {
+      "veiculoId": "veh-240",
+      "erros": [
+        {
+          "termo": "Chevrolet Montana LTZ 1.2 Turbo AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:40+00:00"
+    },
+    {
+      "veiculoId": "veh-241",
+      "erros": [
+        {
+          "termo": "BYD KING GL 1.5 Aut. (Hibrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:40+00:00"
+    },
+    {
+      "veiculoId": "veh-242",
+      "erros": [
+        {
+          "termo": "Volkswagen T-Cross Extreme 1.4 TSI 250 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:40+00:00"
+    },
+    {
+      "veiculoId": "veh-243",
+      "erros": [
+        {
+          "termo": "Fiat Cronos Drive 1.3 Flex AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:41+00:00"
+    },
+    {
+      "veiculoId": "veh-244",
+      "erros": [
+        {
+          "termo": "RAM Rampage BIG Horn 2.2 TB CD 4X4 Die Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:41+00:00"
+    },
+    {
+      "veiculoId": "veh-245",
+      "erros": [
+        {
+          "termo": "BMW X1 Sdrive 20i GP 2.0 TB Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:41+00:00"
+    },
+    {
+      "veiculoId": "veh-246",
+      "erros": [
+        {
+          "termo": "BMW X1 Sdrive 20i GP 2.0 TB Aut. (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:42+00:00"
+    },
+    {
+      "veiculoId": "veh-247",
+      "erros": [
+        {
+          "termo": "BMW X1 Sdrive 20I M Sport 2.0 TB Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:42+00:00"
+    },
+    {
+      "veiculoId": "veh-248",
+      "erros": [
+        {
+          "termo": "BMW X1 Sdrive 20I M Sport 2.0 TB Aut. (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:43+00:00"
+    },
+    {
+      "veiculoId": "veh-249",
+      "erros": [
+        {
+          "termo": "BMW X3 30 Xdrive M Sport (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:43+00:00"
+    },
+    {
+      "veiculoId": "veh-250",
+      "erros": [
+        {
+          "termo": "Land Rover Discovery Sport Landmark avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:43+00:00"
+    },
+    {
+      "veiculoId": "veh-251",
+      "erros": [
+        {
+          "termo": "Land Rover Discovery Sport Landmark (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:44+00:00"
+    },
+    {
+      "veiculoId": "veh-252",
+      "erros": [
+        {
+          "termo": "BMW 320i M Sport avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:44+00:00"
+    },
+    {
+      "veiculoId": "veh-253",
+      "erros": [
+        {
+          "termo": "BMW X3 30 M Sport (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:44+00:00"
+    },
+    {
+      "veiculoId": "veh-254",
+      "erros": [
+        {
+          "termo": "BMW X3 30 Xdrive M Sport avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:45+00:00"
+    },
+    {
+      "veiculoId": "veh-255",
+      "erros": [
+        {
+          "termo": "Hyundai CRETA Comfort Safety 1.0 TB 12V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:45+00:00"
+    },
+    {
+      "veiculoId": "veh-256",
+      "erros": [
+        {
+          "termo": "Volvo XC 90 XC90 Plus (Híbrido) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:46+00:00"
+    },
+    {
+      "veiculoId": "veh-257",
+      "erros": [
+        {
+          "termo": "Lexus NX-350h 4x4 Dynamic 2.5 Aut. (Híb.) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:46+00:00"
+    },
+    {
+      "veiculoId": "veh-258",
+      "erros": [
+        {
+          "termo": "Volvo XC 90 XC90 Plus Hibrido (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:46+00:00"
+    },
+    {
+      "veiculoId": "veh-259",
+      "erros": [
+        {
+          "termo": "Chevrolet Onix Hatch 1.0 12V Flex 5P Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:47+00:00"
+    },
+    {
+      "veiculoId": "veh-260",
+      "erros": [
+        {
+          "termo": "Volvo XC 60 XC60 Plus avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:47+00:00"
+    },
+    {
+      "veiculoId": "veh-261",
+      "erros": [
+        {
+          "termo": "BYD Song Plus Dm-i - Híbrido avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:48+00:00"
+    },
+    {
+      "veiculoId": "veh-262",
+      "erros": [
+        {
+          "termo": "Citroen Basalt Shine 1.0 Turbo 200 - AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:48+00:00"
+    },
+    {
+      "veiculoId": "veh-263",
+      "erros": [
+        {
+          "termo": "Chevrolet Onix Plus Onix Sedan Plus LTZ 1.0 12V TB Flex Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:48+00:00"
+    },
+    {
+      "veiculoId": "veh-264",
+      "erros": [
+        {
+          "termo": "Volkswagen Saveiro Robust CS 1.6 MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:49+00:00"
+    },
+    {
+      "veiculoId": "veh-265",
+      "erros": [
+        {
+          "termo": "Volkswagen T-Cross 1.0 TSI Flex 12V 5P Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:49+00:00"
+    },
+    {
+      "veiculoId": "veh-266",
+      "erros": [
+        {
+          "termo": "Renault Kwid Intense 1.0 Flex 12V 5P Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:49+00:00"
+    },
+    {
+      "veiculoId": "veh-267",
+      "erros": [
+        {
+          "termo": "Renault Kwid Techno 1.0 avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:50+00:00"
+    },
+    {
+      "veiculoId": "veh-268",
+      "erros": [
+        {
+          "termo": "Renault Kwid Evolution 1.0 Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:50+00:00"
+    },
+    {
+      "veiculoId": "veh-269",
+      "erros": [
+        {
+          "termo": "Renault BOREAL Evolution 1.3 Turbo Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:51+00:00"
+    },
+    {
+      "veiculoId": "veh-270",
+      "erros": [
+        {
+          "termo": "Hyundai I20 Comfort 1.0 Mec. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:51+00:00"
+    },
+    {
+      "veiculoId": "veh-271",
+      "erros": [
+        {
+          "termo": "Ford Ranger Limited 3.0 4X4 CD TB Die. AUT + KIT Opcional avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:51+00:00"
+    },
+    {
+      "veiculoId": "veh-272",
+      "erros": [
+        {
+          "termo": "Hyundai HB20 Limited 1.0 Flex 12V MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:52+00:00"
+    },
+    {
+      "veiculoId": "veh-273",
+      "erros": [
+        {
+          "termo": "Ford Ranger XLT 3.0 V6 Diesel 4x4 CD AT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:52+00:00"
+    },
+    {
+      "veiculoId": "veh-274",
+      "erros": [
+        {
+          "termo": "Chevrolet Montana LT 1.2 Turbo MEC avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:52+00:00"
+    },
+    {
+      "veiculoId": "veh-275",
+      "erros": [
+        {
+          "termo": "BMW 320i M Sport (Blindado) avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:53+00:00"
+    },
+    {
+      "veiculoId": "veh-276",
+      "erros": [
+        {
+          "termo": "Fiat Argo Drive 1.0 6V Flex avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:53+00:00"
+    },
+    {
+      "veiculoId": "veh-277",
+      "erros": [
+        {
+          "termo": "Hyundai HB20 Limited 1.0 TB Flex 12V Aut. avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-27T20:46:54+00:00"
+    },
+    {
+      "veiculoId": "veh-232",
+      "erros": [
+        {
+          "termo": "Jeep Renegade Longitude Mhev T270 4X2 - AUT avaliação Brasil",
+          "erro": "HTTP 429: Too Many Requests"
+        }
+      ],
+      "em": "2026-10-28T12:21:14+00:00"
+    }
+  ],
+  "iniciadoEm": "2026-10-27T17:34:00-03:00",
+  "atualizadoEm": "2026-10-28T12:21:14+00:00",
+  "observacao": "Nenhuma pesquisa de API executada: YOUTUBE_API_KEY não estava configurada."
+}

@@ -1,0 +1,3248 @@
+{
+ "id": "fichas-tecnicas-2026-10-28-10ef1c98",
+ "resumo": {
+  "veiculos": 277,
+  "comAlgumDado": 225,
+  "motor": 187,
+  "consumo": 146,
+  "potencia": 131,
+  "torque": 109,
+  "portaMalas": 140,
+  "confiancaAltaPBE": 125,
+  "confiancaMediaPBE": 32,
+  "soMotor": 30,
+  "naoCasados": {
+   "modelo ausente no PBE": 24,
+   "sem cilindrada para confirmar": 21,
+   "ambiguo (linhas empatadas com consumo diferente)": 45
+  }
+ },
+ "veiculos": {
+  "veh-001": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "consumo": "Etanol: cidade 8,9 / estrada 10,5 km/l · Gasolina: cidade 13,0 / estrada 14,7 km/l (Inmetro PBE)",
+    "potencia": "107 cv (etanol) / 98 cv (gasolina)",
+    "torque": "13,7 kgfm (etanol) / 13,2 kgfm (gasolina)",
+    "portaMalas": "370 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT PULSE DRIVE AT 1.3-8V CVT-7"
+  },
+  "veh-002": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,9 / estrada 10,7 km/l · Gasolina: cidade 13,3 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "80 cv (etanol)",
+    "torque": "10,2 kgfm",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "torque": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "portaMalas": "https://aceleratudo.com.br/blog/hyundai-hb20-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "Hyundai HB20 Comfort 1.0-12V M-5"
+  },
+  "veh-003": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CHEVROLET ONIX MT 1.0 - 12 V M-6"
+  },
+  "veh-004": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 9,4 / estrada 10,4 km/l · Gasolina: cidade 13,6 / estrada 14,5 km/l (Inmetro PBE)",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://jkcarros.com.br/?p=33700 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT ARGO DRIVE 1.0 1.0-6V M-5"
+  },
+  "veh-005": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,2 / estrada 14,5 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+    "torque": "16,8 kgfm",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "torque": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TERA COMFORT TSI 1.0-12V A - 6"
+  },
+  "veh-006": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "BYD DOLPHIN  GS 180EV Elétrico"
+  },
+  "veh-007": {
+   "campos": {
+    "motor": "1.3 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,3 / estrada 8,6 km/l · Gasolina: cidade 10,1 / estrada 12,1 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "JEEP COMPASS LONGITUDE T 1.3T-16V A-6"
+  },
+  "veh-008": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Comfort 1.0-12V T A-6"
+  },
+  "veh-009": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 13,4 / estrada 15,0 km/l (Inmetro PBE)",
+    "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+    "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=33979 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=33979 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VW TERA MPI 1.0-12V M - 5"
+  },
+  "veh-010": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA ENDURAN CS13 1.3-8V M-5"
+  },
+  "veh-011": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "BYD DOLPHIN MINI  GS EV Elétrico"
+  },
+  "veh-012": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks SENSE AT 1.0 12V DCT"
+  },
+  "veh-013": {
+   "campos": {
+    "potencia": "235 cv (combinada)"
+   },
+   "fontes": {
+    "potencia": "https://www.band.com.br/bandmotor/noticias/byd-song-plus-hibrido-sera-produzido-no-brasil-a-partir-de-2026-veja-fotos-202601100045 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-014": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,2 / estrada 14,5 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+    "torque": "16,8 kgfm",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "torque": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TERA HIGH TSI 1.0-12V A - 6"
+  },
+  "veh-015": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 9,9 km/l · Gasolina: cidade 11,8 / estrada 14,2 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW T CROSS HIGHLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 6"
+  },
+  "veh-016": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,8 / estrada 12,1 km/l · Gasolina: cidade 13,9 / estrada 17,1 km/l (Inmetro PBE)",
+    "portaMalas": "469 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "CHEVROLET ONIX PLUS MT 1.0 - 12 V M-6"
+  },
+  "veh-017": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,4 / estrada 14,8 km/l (Inmetro PBE)",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm",
+    "portaMalas": "415 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=285038 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW NIVUS HIGHLINE 200TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-018": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Platinum 1.0-12V T A-6"
+  },
+  "veh-019": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks ADVANCE AT 1.0 12V DCT"
+  },
+  "veh-020": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,9 km/l · Gasolina: cidade 13,5 / estrada 15,7 km/l (Inmetro PBE)",
+    "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+    "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=5965 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=5965 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VW POLO MPI 1.0-12V M - 5"
+  },
+  "veh-021": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "VW T CROSS COMFORTLINE 200TSI AUTOMATICO 1.0-12V A - 6"
+  },
+  "veh-022": {
+   "campos": {
+    "potencia": "115 cv",
+    "torque": "18,9 kgfm (etanol)"
+   },
+   "fontes": {
+    "potencia": "https://www.gazetasp.com.br/automotor/novo-sonic-estreia-motor-turbo-do-tracker-e-pacote-avancado-de/ (imprensa)",
+    "torque": "https://www.gazetasp.com.br/automotor/novo-sonic-estreia-motor-turbo-do-tracker-e-pacote-avancado-de/ (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-023": {
+   "campos": {
+    "potencia": "243 cv (combinada)",
+    "torque": "54 kgfm (530 Nm, combinado)",
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "potencia": "https://verificarauto.com.br/carros-eletricos/gwm-haval-h6-hev2/ (imprensa)",
+    "torque": "https://verificarauto.com.br/carros-eletricos/gwm-haval-h6-hev2/ (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-024": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Limited 1.0-12V T A-6"
+  },
+  "veh-025": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,7 km/l · Gasolina: cidade 12,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET MONTANA LT 1.2T - 12V M-6"
+  },
+  "veh-026": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA FREEDOM CS13 1.3-8V M-5"
+  },
+  "veh-027": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait SENSE 1.6-16V CVT"
+  },
+  "veh-028": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "GEELY EX2 PRO Elétrico A"
+  },
+  "veh-029": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "consumo": "Etanol: cidade 8,7 / estrada 9,6 km/l · Gasolina: cidade 12,4 / estrada 13,6 km/l (Inmetro PBE)",
+    "portaMalas": "Compartimento de carga: 3,3 m³ (carga útil 650 kg)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://acritica.net/automoveis/fiat-fiorino-campea-revenda-furgoneta-carga-2026/ (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT FIORINO ENDURANCE 1.3-8V M-5"
+  },
+  "veh-030": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-031": {
+   "campos": {
+    "portaMalas": "Caçamba: 937 L"
+   },
+   "fontes": {
+    "portaMalas": "https://carro.blog.br/fiat-toro-endurance-1-3-turbo-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-tem-937-litros-de-cacamba-e-autonomia-de-ate-616-km.html (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-032": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 7,5 / estrada 9,7 km/l · Gasolina: cidade 11,0 / estrada 13,5 km/l (Inmetro PBE)",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET MONTANA LTZ 1.2T - 12V A-6"
+  },
+  "veh-033": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 9,8 / estrada 10,6 km/l · Gasolina: cidade 14,0 / estrada 15,1 km/l (Inmetro PBE)",
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "torque": "10,7 kgfm",
+    "portaMalas": "200 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=14721 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=14721 (imprensa)",
+    "portaMalas": "https://jkcarros.com.br/?p=14721 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT MOBI TREKKING 1.0-6V M-5"
+  },
+  "veh-034": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 7,6 / estrada 9,7 km/l · Gasolina: cidade 11,0 / estrada 13,7 km/l (Inmetro PBE)",
+    "portaMalas": "393 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/tracker/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET TRACKER PREMIER 1.2T - 12V A-6"
+  },
+  "veh-035": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,7 / estrada 9,3 km/l · Gasolina: cidade 11,1 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm",
+    "portaMalas": "498 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "portaMalas": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TAOS HIGHLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 8"
+  },
+  "veh-036": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 8,7 km/l · Gasolina: cidade 11,3 / estrada 12,4 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+    "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)",
+    "torque": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW SAVEIRO CABINE DUPLA ROBUST MF 1.6-16V M - 5"
+  },
+  "veh-038": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "GEELY EX2 MAX Elétrico A"
+  },
+  "veh-039": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "NISSAN Kicks SENSE AT 1.0 12V DCT"
+  },
+  "veh-040": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 9,9 km/l · Gasolina: cidade 12,5 / estrada 13,9 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA HR-V EXL 1.5-16V CVT"
+  },
+  "veh-041": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CHEVROLET MONTANA MT 1.2T - 12V M-6"
+  },
+  "veh-042": {
+   "campos": {
+    "motor": "1.8 · Flex",
+    "consumo": "Etanol: cidade 7,1 / estrada 9,1 km/l · Gasolina: cidade 10,1 / estrada 13,1 km/l (Inmetro PBE)",
+    "potencia": "111 cv (etanol) / 106 cv (gasolina)",
+    "torque": "17,7 kgfm (etanol) / 16,8 kgfm (gasolina)",
+    "portaMalas": "162 L (7 lugares) / 553 L (5 lugares)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)",
+    "torque": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)",
+    "portaMalas": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET SPIN 18L AT PREMIER 1.8L - 8V A-6"
+  },
+  "veh-043": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 10,4 km/l · Gasolina: cidade 12,1 / estrada 14,8 km/l (Inmetro PBE)",
+    "potencia": "115 cv",
+    "torque": "18,9 kgfm (etanol)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.gazetasp.com.br/automotor/novo-sonic-estreia-motor-turbo-do-tracker-e-pacote-avancado-de/ (imprensa)",
+    "torque": "https://www.gazetasp.com.br/automotor/novo-sonic-estreia-motor-turbo-do-tracker-e-pacote-avancado-de/ (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET SONIC 10T AT RS 1.0T - 12V A-6"
+  },
+  "veh-044": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks PLATINUM AT 1.0 12V DCT"
+  },
+  "veh-045": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 10,4 / estrada 10,7 km/l · Gasolina: cidade 14,4 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KWID ZEN 2 1.0-12V M-5"
+  },
+  "veh-046": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 7,5 / estrada 9,7 km/l · Gasolina: cidade 11,0 / estrada 13,5 km/l (Inmetro PBE)",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET MONTANA PREMIER 1.2T - 12V A-6"
+  },
+  "veh-047": {
+   "campos": {
+    "portaMalas": "469 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-048": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,9 km/l · Gasolina: cidade 12,1 / estrada 15,3 km/l (Inmetro PBE)",
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET ONIX PREMIER 1.0T - 12V A-6"
+  },
+  "veh-049": {
+   "campos": {
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-050": {
+   "campos": {
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-051": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "consumo": "Diesel: cidade 9,0 / estrada 10,3 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "GWM HAVAL H9 EXC 2.4- 16V A-9"
+  },
+  "veh-052": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-053": {
+   "campos": {
+    "potencia": "272 cv",
+    "torque": "40,8 kgfm",
+    "portaMalas": "Caçamba: 980 L"
+   },
+   "fontes": {
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "portaMalas": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-054": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,5 / estrada 10,4 km/l · Gasolina: cidade 12,2 / estrada 14,9 km/l (Inmetro PBE)",
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-055": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,7 km/l · Gasolina: cidade 12,5 / estrada 15,2 km/l (Inmetro PBE)",
+    "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+    "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=5965 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=5965 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW POLO HIGHLINE TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-056": {
+   "campos": {
+    "motor": "1.6 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,1 km/l · Gasolina: cidade 11,8 / estrada 13,4 km/l (Inmetro PBE)",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Ultimate 1.6-16V T DCT-7"
+  },
+  "veh-057": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "VW T CROSS COMFORTLINE 200TSI AUTOMATICO 1.0-12V A - 6"
+  },
+  "veh-058": {
+   "campos": {
+    "portaMalas": "Caçamba: 937 L"
+   },
+   "fontes": {
+    "portaMalas": "https://carro.blog.br/fiat-toro-endurance-1-3-turbo-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-tem-937-litros-de-cacamba-e-autonomia-de-ate-616-km.html (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-059": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,1 / estrada 9,9 km/l · Gasolina: cidade 11,5 / estrada 13,8 km/l (Inmetro PBE)",
+    "portaMalas": "393 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/tracker/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET TRACKER LTZ 1.0T - 12V A-6"
+  },
+  "veh-060": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,1 / estrada 9,9 km/l · Gasolina: cidade 11,5 / estrada 13,8 km/l (Inmetro PBE)",
+    "portaMalas": "393 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/tracker/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET TRACKER LT 1.0T - 12V A-6"
+  },
+  "veh-061": {
+   "campos": {
+    "potencia": "272 cv",
+    "torque": "40,8 kgfm",
+    "portaMalas": "Caçamba: 980 L"
+   },
+   "fontes": {
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "portaMalas": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-062": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "BYD DOLPHIN MINI  GS EV Elétrico"
+  },
+  "veh-063": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,5 / estrada 8,7 km/l · Gasolina: cidade 11,0 / estrada 12,5 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait EXCLUSIVE 1.6-16V CVT"
+  },
+  "veh-064": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 10,2 km/l · Gasolina: cidade 12,1 / estrada 14,7 km/l (Inmetro PBE)",
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS COMFORTLINE 200TSI AUT 1.0-12V A - 6"
+  },
+  "veh-065": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-066": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "HYUNDAI I20 Comfort 1.0-12V M-5"
+  },
+  "veh-069": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,6 / estrada 8,1 km/l · Gasolina: cidade 11,0 / estrada 11,7 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KANGOO ADV16 1.6-16V M-5"
+  },
+  "veh-070": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 10,2 km/l · Gasolina: cidade 12,1 / estrada 14,7 km/l (Inmetro PBE)",
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS HIGHLINE 200TSI AUT 1.0-12V A - 6"
+  },
+  "veh-071": {
+   "campos": {
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-072": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait ADVANCE 1.6-16V CVT"
+  },
+  "veh-073": {
+   "campos": {
+    "motor": "1.3 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,2 / estrada 13,6 km/l (Inmetro PBE)",
+    "potencia": "163 cv (etanol) / 156 cv (gasolina)",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=292952 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=292952 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT BOREAL EVO 1.3-16V DCT-6"
+  },
+  "veh-075": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "HYUNDAI I20 Limited 1.0-12V M-5"
+  },
+  "veh-076": {
+   "campos": {
+    "motor": "2.8 16V · Diesel",
+    "consumo": "Diesel: cidade 8,8 / estrada 11,9 km/l (Inmetro PBE)",
+    "potencia": "207 cv",
+    "torque": "52 kgfm",
+    "portaMalas": "Caçamba: 1.061 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/carros/chevrolet/chevrolet-s10-100-anos-2-8-2026-ficha-tecnica-preco-consumo-equipamentos-e-fotos-serie-comemorativa-dos-100-anos-traz-motor-duramax-e-cacamba-de-1-061-litros-para-uso-intenso.html (imprensa)",
+    "torque": "https://carro.blog.br/carros/chevrolet/chevrolet-s10-100-anos-2-8-2026-ficha-tecnica-preco-consumo-equipamentos-e-fotos-serie-comemorativa-dos-100-anos-traz-motor-duramax-e-cacamba-de-1-061-litros-para-uso-intenso.html (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/s10/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET S10 LTZ DD4A 2.8 - 16V A-8"
+  },
+  "veh-077": {
+   "campos": {
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-078": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,4 / estrada 14,8 km/l (Inmetro PBE)",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm",
+    "portaMalas": "415 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=285038 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW NIVUS COMFORTLINE 200TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-080": {
+   "campos": {
+    "portaMalas": "Caçamba: 1.250 L (cabine dupla)"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/ford/ranger/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-081": {
+   "campos": {
+    "motor": "1.3 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,3 / estrada 8,6 km/l · Gasolina: cidade 10,1 / estrada 12,1 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "JEEP COMPASS SERIE S T 1.3T-16V A-6"
+  },
+  "veh-082": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 8,9 km/l · Gasolina: cidade 12,0 / estrada 12,8 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA WR-V EXL 1.5-16V CVT"
+  },
+  "veh-083": {
+   "campos": {
+    "motor": "1.5 16V · Gasolina",
+    "consumo": "Gasolina: cidade 8,8 / estrada 11,2 km/l (Inmetro PBE)",
+    "potencia": "169 cv",
+    "torque": "25,5 kgfm",
+    "portaMalas": "448 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/07/Ford-Territory-2026-FichaTecnica.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/07/Ford-Territory-2026-FichaTecnica.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/07/Ford-Territory-2026-FichaTecnica.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FORD TERRITORY Titanium 1.5 - 16V A-7"
+  },
+  "veh-084": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,7 / estrada 9,3 km/l · Gasolina: cidade 11,1 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm",
+    "portaMalas": "498 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "portaMalas": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TAOS COMFORTLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 8"
+  },
+  "veh-087": {
+   "campos": {
+    "motor": "1.3 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,2 / estrada 13,6 km/l (Inmetro PBE)",
+    "potencia": "163 cv (etanol) / 156 cv (gasolina)",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=292952 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=292952 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT BOREAL EVO 1.3-16V DCT-6"
+  },
+  "veh-089": {
+   "campos": {
+    "motor": "1.6 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 9,4 km/l · Gasolina: cidade 11,7 / estrada 13,8 km/l (Inmetro PBE)",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA N-line 1.6-16V T DCT-7"
+  },
+  "veh-090": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 8,7 km/l · Gasolina: cidade 11,3 / estrada 12,4 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+    "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)",
+    "torque": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW SAVEIRO CABINE DUPLA ROBUST MF 1.6-16V M - 5"
+  },
+  "veh-091": {
+   "campos": {
+    "motor": "1.5 Turbo 16V · Flex"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "HONDA HR-V TOURING 1.5T-16V CVT"
+  },
+  "veh-092": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA VOLCANO CD13 1.3-8V M-5"
+  },
+  "veh-094": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,2 / estrada 13,2 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i M Sport 2.0 - 16V A-7"
+  },
+  "veh-095": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,3 / estrada 13,5 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i GP 2.0 - 16V A-7"
+  },
+  "veh-096": {
+   "campos": {
+    "motor": "2.8 16V · Diesel",
+    "consumo": "Diesel: cidade 8,8 / estrada 11,9 km/l (Inmetro PBE)",
+    "potencia": "207 cv",
+    "torque": "52 kgfm",
+    "portaMalas": "Caçamba: 1.061 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/carros/chevrolet/chevrolet-s10-100-anos-2-8-2026-ficha-tecnica-preco-consumo-equipamentos-e-fotos-serie-comemorativa-dos-100-anos-traz-motor-duramax-e-cacamba-de-1-061-litros-para-uso-intenso.html (imprensa)",
+    "torque": "https://carro.blog.br/carros/chevrolet/chevrolet-s10-100-anos-2-8-2026-ficha-tecnica-preco-consumo-equipamentos-e-fotos-serie-comemorativa-dos-100-anos-traz-motor-duramax-e-cacamba-de-1-061-litros-para-uso-intenso.html (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/s10/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET S10 HIGH COUNTRY Cabine Dupla 2.8 - 16V A-8"
+  },
+  "veh-098": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,1 km/l · Gasolina: cidade 12,6 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "115 cv (gasolina ou etanol)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "torque": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI I20 Limited 1.0-12V T A-6"
+  },
+  "veh-100": {
+   "campos": {
+    "motor": "2.2 Turbo 16V · Diesel",
+    "consumo": "Diesel: cidade 12,4 / estrada 13,7 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CITROEN JUMPY CARGO 2.2T-16V M-6"
+  },
+  "veh-101": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,7 / estrada 8,8 km/l · Gasolina: cidade 11,2 / estrada 12,9 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+    "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)",
+    "torque": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW SAVEIRO CABINE SIMPLES TRENDLINE MF 1.6-16V M - 5"
+  },
+  "veh-102": {
+   "campos": {
+    "motor": "2.0 16V · Flex"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "BMW 320i M Sport Flex 2.0 - 16V A-8"
+  },
+  "veh-103": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 12,8 / estrada 15,5 km/l (Inmetro PBE)",
+    "potencia": "126 cv",
+    "torque": "15,8 kgfm (etanol) / 15,5 kgfm (gasolina)",
+    "portaMalas": "519 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "portaMalas": "https://jkcarros.com.br/?p=37448 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA CITY EX 1.5-16V CVT"
+  },
+  "veh-104": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 12,8 / estrada 15,5 km/l (Inmetro PBE)",
+    "potencia": "126 cv",
+    "torque": "15,8 kgfm (etanol) / 15,5 kgfm (gasolina)",
+    "portaMalas": "519 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "portaMalas": "https://jkcarros.com.br/?p=37448 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA CITY EXL 1.5-16V CVT"
+  },
+  "veh-105": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 9,7 / estrada 11,2 km/l · Gasolina: cidade 13,4 / estrada 15,9 km/l (Inmetro PBE)",
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "portaMalas": "525 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://revistacarro.com.br/fiat-cronos-chega-a-250-mil-unidades-comercializadas-no-brasil/ (imprensa)",
+    "portaMalas": "https://aceleratudo.com.br/blog/fiat-cronos-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT CRONOS DRIVE 1.0 1.0-6V M-5"
+  },
+  "veh-108": {
+   "campos": {
+    "portaMalas": "Caçamba: 1.250 L (cabine dupla)"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/ford/ranger/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-109": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "Geely EX5  MAX Elétrico"
+  },
+  "veh-110": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 12,8 / estrada 15,5 km/l (Inmetro PBE)",
+    "potencia": "126 cv",
+    "torque": "15,8 kgfm (etanol) / 15,5 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA CITY EX 1.5-16V CVT"
+  },
+  "veh-111": {
+   "campos": {
+    "motor": "1.3 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,2 / estrada 13,6 km/l (Inmetro PBE)",
+    "potencia": "163 cv (etanol) / 156 cv (gasolina)",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=292952 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=292952 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT BOREAL EVO 1.3-16V DCT-6"
+  },
+  "veh-112": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 8,7 km/l · Gasolina: cidade 11,3 / estrada 12,4 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+    "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)",
+    "torque": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW SAVEIRO CABINE DUPLA EXTREME MF 1.6-16V M - 5"
+  },
+  "veh-113": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA FREEDOM CS13 1.3-8V M-5"
+  },
+  "veh-116": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 8,9 km/l · Gasolina: cidade 12,0 / estrada 12,8 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA WR-V EX 1.5-16V CVT"
+  },
+  "veh-118": {
+   "campos": {
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-119": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "Geely EX5 PRO Elétrico A"
+  },
+  "veh-120": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 12,8 / estrada 15,5 km/l (Inmetro PBE)",
+    "potencia": "126 cv",
+    "torque": "15,8 kgfm (etanol) / 15,5 kgfm (gasolina)",
+    "portaMalas": "519 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/honda/city-hatch-touring-sport-1-5-2026 (catalogo)",
+    "portaMalas": "https://jkcarros.com.br/?p=37448 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HONDA CITY TOURING 1.5-16V CVT"
+  },
+  "veh-121": {
+   "campos": {
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-123": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,1 km/l · Gasolina: cidade 12,6 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "115 cv (gasolina ou etanol)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "torque": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI I20 Platinum 1.0-12V T A-6"
+  },
+  "veh-125": {
+   "campos": {
+    "portaMalas": "Caçamba: 937 L"
+   },
+   "fontes": {
+    "portaMalas": "https://carro.blog.br/fiat-toro-endurance-1-3-turbo-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-tem-937-litros-de-cacamba-e-autonomia-de-ate-616-km.html (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-127": {
+   "campos": {
+    "motor": "2.8 16V · Diesel",
+    "consumo": "Diesel: cidade 9,3 / estrada 10,0 km/l (Inmetro PBE)",
+    "potencia": "204 cv"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/toyota/hilux-srx-2-8-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "TOYOTA HILUX DIESEL 4X4 AT SR AT 2.8-16V A-6"
+  },
+  "veh-128": {
+   "campos": {
+    "motor": "1.8 16V híbrido · Flex",
+    "consumo": "Etanol: cidade 11,6 / estrada 9,9 km/l · Gasolina: cidade 16,6 / estrada 14,0 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "TOYOTA COROLLA CROSS XRX HYBRID 1.8-16V CVT"
+  },
+  "veh-129": {
+   "campos": {
+    "motor": "2.0 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 9,2 km/l · Gasolina: cidade 11,5 / estrada 13,1 km/l (Inmetro PBE)",
+    "portaMalas": "440 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/toyota/corolla-cross/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "TOYOTA COROLLA CROSS XRE 20 2.0-16V CVT"
+  },
+  "veh-130": {
+   "campos": {
+    "motor": "1.5 16V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,2 km/l · Gasolina: cidade 12,6 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "110 cv (etanol) / 105 cv (gasolina)",
+    "torque": "14,9 kgfm (etanol) / 14,3 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "TOYOTA YARIS CROSS FLEX XR FLEX 1.5-16V CVT"
+  },
+  "veh-131": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,1 km/l · Gasolina: cidade 12,6 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "115 cv (gasolina ou etanol)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "torque": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI I20 Ultimate 1.0-12V T A-6"
+  },
+  "veh-132": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,1 km/l · Gasolina: cidade 12,6 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "115 cv (gasolina ou etanol)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "torque": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "HYUNDAI I20 Action 1.0-12V T A-6"
+  },
+  "veh-133": {
+   "campos": {
+    "motor": "3.0 24V híbrido · Gasolina",
+    "consumo": "Gasolina: cidade 9,0 / estrada 10,1 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X6 40I MSP DARK ED 3.0 - 24V A-8"
+  },
+  "veh-136": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "potencia": "205 cv",
+    "torque": "47,9 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/mitsubishi/triton/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/mitsubishi/triton/2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "MITSUBISHI Triton GL AT2 2.4-16V AT"
+  },
+  "veh-137": {
+   "campos": {
+    "motor": "3.0 24V · Gasolina"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "AUDI SQ5 SUV - 3.0 - 24V DCT-7"
+  },
+  "veh-139": {
+   "campos": {
+    "potencia": "110 cv (etanol) / 105 cv (gasolina)",
+    "torque": "14,9 kgfm (etanol) / 14,3 kgfm (gasolina)"
+   },
+   "fontes": {
+    "potencia": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-140": {
+   "campos": {
+    "motor": "1.5 Turbo 16V · Gasolina",
+    "consumo": "Gasolina: cidade 9,0 / estrada 10,7 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET EQUINOX RS 1.5T -16V A-8"
+  },
+  "veh-141": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "consumo": "Diesel: cidade 9,4 / estrada 10,4 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "GWM POER P30 EXC 2.4 - 16V A-9"
+  },
+  "veh-142": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "consumo": "Diesel: cidade 9,4 / estrada 10,4 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "GWM POER P30 EXC 2.4 - 16V A-9"
+  },
+  "veh-143": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VOLVO EC40  6 CORE Elétrico"
+  },
+  "veh-144": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VOLVO EX40  6 CORE Elétrico"
+  },
+  "veh-145": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VOLVO EX40 6 ULTRA Elétrico A-1"
+  },
+  "veh-146": {
+   "campos": {
+    "motor": "1.5 Turbo 16V · Gasolina",
+    "portaMalas": "473 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/mitsubishi/eclipse-cross/2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "MITSUBISHI Eclipse Cross HPE 1.5T-16V CVT"
+  },
+  "veh-149": {
+   "campos": {
+    "motor": "2.0 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 9,2 km/l · Gasolina: cidade 11,5 / estrada 13,1 km/l (Inmetro PBE)",
+    "portaMalas": "440 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/toyota/corolla-cross/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "TOYOTA COROLLA CROSS XRX 20 2.0-16V CVT"
+  },
+  "veh-150": {
+   "campos": {
+    "motor": "3.0 24V · Gasolina"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "AUDI SQ5 SUV - 3.0 - 24V DCT-7"
+  },
+  "veh-152": {
+   "campos": {
+    "potencia": "110 cv (etanol) / 105 cv (gasolina)",
+    "torque": "14,9 kgfm (etanol) / 14,3 kgfm (gasolina)"
+   },
+   "fontes": {
+    "potencia": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/comparativo/yaris-cross-xs-1-5-2026-vs-yaris-sedan-xs-1-5-at-2025 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-153": {
+   "campos": {
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-154": {
+   "campos": {
+    "potencia": "200 cv",
+    "torque": "40,9 kgfm (400 Nm) manual / 45,9 kgfm (450 Nm) automático",
+    "portaMalas": "Caçamba: 1.220 L"
+   },
+   "fontes": {
+    "potencia": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf",
+    "torque": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf",
+    "portaMalas": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-155": {
+   "campos": {
+    "motor": "2.8 16V · Diesel"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CHEVROLET TRAILBLAZER HC D4A 2.8 - 16V A-8"
+  },
+  "veh-156": {
+   "campos": {
+    "motor": "1.5 Turbo 16V · Gasolina",
+    "consumo": "Gasolina: cidade 9,0 / estrada 10,7 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET EQUINOX ACTIV 1.5T -16V A-8"
+  },
+  "veh-157": {
+   "campos": {
+    "potencia": "200 cv",
+    "torque": "40,9 kgfm (400 Nm) manual / 45,9 kgfm (450 Nm) automático",
+    "portaMalas": "Caçamba: 1.220 L"
+   },
+   "fontes": {
+    "potencia": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf",
+    "torque": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf",
+    "portaMalas": "https://titano.fiat.com.br/noprecache/ficha-tecnica.pdf"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-158": {
+   "campos": {
+    "motor": "2.8 16V · Diesel",
+    "potencia": "204 cv"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/toyota/hilux-srx-2-8-2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "TOYOTA HILUX DIESEL 4X4 MT CHASSI MT 2.8-16V M-6"
+  },
+  "veh-160": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "potencia": "205 cv",
+    "torque": "47,9 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/mitsubishi/triton/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/mitsubishi/triton/2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "MITSUBISHI Triton GLS AT2 2.4-16V AT"
+  },
+  "veh-166": {
+   "campos": {
+    "motor": "Elétrico"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VOLVO EC40 6 ULTRA Elétrico A-1"
+  },
+  "veh-168": {
+   "campos": {
+    "motor": "3.0 24V híbrido · Gasolina",
+    "consumo": "Gasolina: cidade 6,8 / estrada 7,7 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "AUDI Q8 Sportback Performance Black 3.0 - 24V A-8"
+  },
+  "veh-170": {
+   "campos": {
+    "portaMalas": "469 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-171": {
+   "campos": {
+    "motor": "2.4 16V · Diesel",
+    "consumo": "Diesel: cidade 9,0 / estrada 10,3 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "GWM HAVAL H9 SELECTION 2.4-16V A-9"
+  },
+  "veh-172": {
+   "campos": {
+    "motor": "1.6 16V híbrido · Gasolina",
+    "consumo": "Gasolina: cidade 18,4 / estrada 16,0 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI KONA Signature 1.6-16V HEV DCT-6"
+  },
+  "veh-173": {
+   "campos": {
+    "potencia": "235 cv (combinada)"
+   },
+   "fontes": {
+    "potencia": "https://www.band.com.br/bandmotor/noticias/byd-song-plus-hibrido-sera-produzido-no-brasil-a-partir-de-2026-veja-fotos-202601100045 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-175": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 10,7 km/l · Gasolina: cidade 12,5 / estrada 15,2 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW POLO HIGHLINE TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-176": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,9 km/l · Gasolina: cidade 13,5 / estrada 15,7 km/l (Inmetro PBE)",
+    "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+    "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=5965 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=5965 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VW POLO MPI 1.0-12V M - 5"
+  },
+  "veh-177": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 1.354 L (cabine simples)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA ENDURAN CS13 1.3-8V M-5"
+  },
+  "veh-178": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA FREEDOM CS13 1.3-8V M-5"
+  },
+  "veh-179": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,4 / estrada 14,8 km/l (Inmetro PBE)",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm",
+    "portaMalas": "415 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=285038 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW NIVUS COMFORTLINE 200TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-180": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,4 / estrada 14,8 km/l (Inmetro PBE)",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm",
+    "portaMalas": "415 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=285038 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=285038 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW NIVUS HIGHLINE 200TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-181": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=17851 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=17851 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "VW T CROSS COMFORTLINE 200TSI AUTOMATICO 1.0-12V A - 6"
+  },
+  "veh-182": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,5 / estrada 10,4 km/l · Gasolina: cidade 12,2 / estrada 14,9 km/l (Inmetro PBE)",
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-183": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,5 / estrada 10,4 km/l · Gasolina: cidade 12,2 / estrada 14,9 km/l (Inmetro PBE)",
+    "portaMalas": "521 L",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)",
+    "potencia": "https://www.motoragora.com.br/?p=185100 (imprensa)",
+    "torque": "https://www.motoragora.com.br/?p=185100 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-184": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "portaMalas": "521 L",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)",
+    "potencia": "https://www.motoragora.com.br/?p=185100 (imprensa)",
+    "torque": "https://www.motoragora.com.br/?p=185100 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "VW VIRTUS HIGHLINE 200TSI AUT 1.0-12V A - 6"
+  },
+  "veh-185": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,1 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,0 km/l (Inmetro PBE)",
+    "portaMalas": "521 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/virtus/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW VIRTUS EXCLUSIVE 250TSI AUT 1.4 -16V A - 6"
+  },
+  "veh-186": {
+   "campos": {
+    "potencia": "176 cv",
+    "torque": "27,5 kgfm",
+    "portaMalas": "Caçamba: 937 L"
+   },
+   "fontes": {
+    "potencia": "https://jkcarros.com.br/?p=34476 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=34476 (imprensa)",
+    "portaMalas": "https://carro.blog.br/fiat-toro-endurance-1-3-turbo-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-tem-937-litros-de-cacamba-e-autonomia-de-ate-616-km.html (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-187": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,1 / estrada 9,9 km/l · Gasolina: cidade 11,5 / estrada 13,8 km/l (Inmetro PBE)",
+    "portaMalas": "393 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/tracker/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET TRACKER LT 1.0T - 12V A-6"
+  },
+  "veh-188": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 7,6 / estrada 9,7 km/l · Gasolina: cidade 11,0 / estrada 13,7 km/l (Inmetro PBE)",
+    "portaMalas": "393 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/tracker/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET TRACKER PREMIER 1.2T - 12V A-6"
+  },
+  "veh-189": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 10,1 / estrada 11,1 km/l · Gasolina: cidade 14,5 / estrada 15,8 km/l (Inmetro PBE)",
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "torque": "10,7 kgfm",
+    "portaMalas": "200 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=14721 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=14721 (imprensa)",
+    "portaMalas": "https://jkcarros.com.br/?p=14721 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT MOBI LIKE 1.0-6V M-5"
+  },
+  "veh-190": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "consumo": "Etanol: cidade 8,9 / estrada 9,7 km/l · Gasolina: cidade 12,6 / estrada 13,5 km/l (Inmetro PBE)",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT STRADA VOLCANO 13AT 1.3-8V CVT-7"
+  },
+  "veh-191": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "potencia": "98 cv (gasolina) / 107 cv (etanol)",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=294353 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FIAT STRADA VOLCANO CD13 1.3-8V M-5"
+  },
+  "veh-194": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Comfort 1.0-12V T A-6"
+  },
+  "veh-195": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,6 km/l · Gasolina: cidade 12,1 / estrada 13,7 km/l (Inmetro PBE)",
+    "portaMalas": "490 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://aceleratudo.com.br/blog/citroen-basalt-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "CITROEN BASALT SHINE T200 1.0T-12V CVT-7"
+  },
+  "veh-196": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "consumo": "Etanol: cidade 8,9 / estrada 10,5 km/l · Gasolina: cidade 13,0 / estrada 14,7 km/l (Inmetro PBE)",
+    "potencia": "107 cv (etanol) / 98 cv (gasolina)",
+    "torque": "13,7 kgfm (etanol) / 13,2 kgfm (gasolina)",
+    "portaMalas": "370 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT PULSE DRIVE AT 1.3-8V CVT-7"
+  },
+  "veh-197": {
+   "campos": {
+    "motor": "1.3 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,3 / estrada 9,1 km/l · Gasolina: cidade 10,8 / estrada 12,9 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT FASTBACK ABARTH 270 1.3T-16V A-6"
+  },
+  "veh-198": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,9 / estrada 10,7 km/l · Gasolina: cidade 13,3 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "80 cv (etanol)",
+    "torque": "10,2 kgfm",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "torque": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "portaMalas": "https://aceleratudo.com.br/blog/hyundai-hb20-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "Hyundai HB20 Comfort 1.0-12V M-5"
+  },
+  "veh-199": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Limited 1.0-12V T A-6"
+  },
+  "veh-200": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,7 / estrada 9,3 km/l · Gasolina: cidade 11,1 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm",
+    "portaMalas": "498 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "portaMalas": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TAOS COMFORTLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 8"
+  },
+  "veh-201": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 9,0 / estrada 10,3 km/l · Gasolina: cidade 12,9 / estrada 15,0 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+    "torque": "16,8 kgfm",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "torque": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TERA TSI 1.0-12V M - 5"
+  },
+  "veh-202": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,2 / estrada 14,5 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+    "torque": "16,8 kgfm",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "torque": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TERA HIGH TSI 1.0-12V A - 6"
+  },
+  "veh-203": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 9,0 / estrada 11,1 km/l · Gasolina: cidade 13,1 / estrada 16,1 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW POLO SENSE TSI AUTOMÁTICO 1.0-12V A - 6"
+  },
+  "veh-204": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 9,2 / estrada 10,7 km/l · Gasolina: cidade 13,0 / estrada 15,2 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "475 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/hyundai/hb20s/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/hyundai/hb20s/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/hb20s/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI HB20S Limited 1.0-12V T A-6"
+  },
+  "veh-205": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks SENSE AT 1.0 12V DCT"
+  },
+  "veh-206": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks ADVANCE AT 1.0 12V DCT"
+  },
+  "veh-207": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "NISSAN Kicks SENSE AT 1.0 12V DCT"
+  },
+  "veh-208": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,9 km/l · Gasolina: cidade 11,7 / estrada 14,3 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)",
+    "portaMalas": "470 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "torque": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)",
+    "portaMalas": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/06/Ficha_Tecnica_Novo_Nissan_Kicks_2026-DADOS-TECNICOS.pdf (concessionaria)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kicks PLATINUM AT 1.0 12V DCT"
+  },
+  "veh-209": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,3 / estrada 9,2 km/l · Gasolina: cidade 11,9 / estrada 13,1 km/l (Inmetro PBE)",
+    "potencia": "130 cv",
+    "torque": "20,4 kgfm",
+    "portaMalas": "Caçamba: 844 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=37616 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=37616 (imprensa)",
+    "portaMalas": "https://garagem360.com.br/?p=294353 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT STRADA ULTRA T200AT 1.0T-12V CVT-7"
+  },
+  "veh-210": {
+   "campos": {
+    "motor": "1.3 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,3 / estrada 8,6 km/l · Gasolina: cidade 10,1 / estrada 12,1 km/l (Inmetro PBE)",
+    "potencia": "176 cv",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=34476 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=34476 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "JEEP COMPASS LIMITED T 1.3T-16V A-6"
+  },
+  "veh-211": {
+   "campos": {
+    "motor": "1.3 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,3 / estrada 8,6 km/l · Gasolina: cidade 10,1 / estrada 12,1 km/l (Inmetro PBE)",
+    "potencia": "176 cv",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=34476 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=34476 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "JEEP COMPASS LIMITED T 1.3T-16V A-6"
+  },
+  "veh-212": {
+   "campos": {
+    "portaMalas": "469 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-213": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 9,9 km/l · Gasolina: cidade 11,8 / estrada 14,2 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.car.blog.br/2025/07/novo-t-cross-extreme-2026-preco-consumo.html (imprensa)",
+    "torque": "https://www.car.blog.br/2025/07/novo-t-cross-extreme-2026-preco-consumo.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW T CROSS HIGHLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 6"
+  },
+  "veh-214": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 9,8 km/l · Gasolina: cidade 12,2 / estrada 13,8 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/junho/RMA-001825H-AJ-CATALOGO-KARDIAN.pdf.asset.pdf/c6545f3254.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/junho/RMA-001825H-AJ-CATALOGO-KARDIAN.pdf.asset.pdf/c6545f3254.pdf"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KARDIAN 10T AT 1.0 12V DCT-6"
+  },
+  "veh-215": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,8 / estrada 9,8 km/l · Gasolina: cidade 12,2 / estrada 13,8 km/l (Inmetro PBE)",
+    "potencia": "125 cv (etanol) / 120 cv (gasolina)",
+    "torque": "22,4 kgfm (etanol) / 20,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/junho/RMA-001825H-AJ-CATALOGO-KARDIAN.pdf.asset.pdf/c6545f3254.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/junho/RMA-001825H-AJ-CATALOGO-KARDIAN.pdf.asset.pdf/c6545f3254.pdf"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KARDIAN 10T AT 1.0 12V DCT-6"
+  },
+  "veh-216": {
+   "campos": {
+    "motor": "2.2 Turbo 16V · Diesel",
+    "consumo": "Diesel: cidade 10,6 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "200 cv",
+    "torque": "45,9 kgfm",
+    "portaMalas": "Caçamba: 980 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "portaMalas": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "RAM RAMPAGE REBEL DS 2.2T-16V A-9"
+  },
+  "veh-217": {
+   "campos": {
+    "potencia": "243 cv (combinada)",
+    "torque": "54 kgfm (530 Nm, combinado)",
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "potencia": "https://verificarauto.com.br/carros-eletricos/gwm-haval-h6-hev2/ (imprensa)",
+    "torque": "https://verificarauto.com.br/carros-eletricos/gwm-haval-h6-hev2/ (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-218": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-219": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-220": {
+   "campos": {
+    "portaMalas": "560 L"
+   },
+   "fontes": {
+    "portaMalas": "https://www.webmotors.com.br/gwm/haval-h6/2026 (catalogo)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-221": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 7,7 / estrada 9,3 km/l · Gasolina: cidade 11,1 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm",
+    "portaMalas": "498 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)",
+    "portaMalas": "https://www.fichacompleta.com.br/en/carros/volkswagen/taos-highline-1-4-tsi-2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TAOS HIGHLINE 250TSI AUTOMÁTICO 1.4 - 16V A - 8"
+  },
+  "veh-222": {
+   "campos": {
+    "motor": "1.8 · Flex",
+    "consumo": "Etanol: cidade 7,1 / estrada 9,1 km/l · Gasolina: cidade 10,1 / estrada 13,1 km/l (Inmetro PBE)",
+    "potencia": "111 cv (etanol) / 106 cv (gasolina)",
+    "torque": "17,7 kgfm (etanol) / 16,8 kgfm (gasolina)",
+    "portaMalas": "162 L (7 lugares) / 553 L (5 lugares)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)",
+    "torque": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)",
+    "portaMalas": "https://carro.blog.br/carros/chevrolet/chevrolet-spin-premier-1-8-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-minivan-de-7-lugares-alia-conforto-e-espaco-para-familias-grandes.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET SPIN 18L AT PREMIER 1.8L - 8V A-6"
+  },
+  "veh-223": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Platinum 1.0-12V T A-6"
+  },
+  "veh-224": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,3 / estrada 10,4 km/l · Gasolina: cidade 13,4 / estrada 15,0 km/l (Inmetro PBE)",
+    "potencia": "84 cv (etanol) / 77 cv (gasolina)",
+    "torque": "10,3 kgfm (etanol) / 9,6 kgfm (gasolina)",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=33979 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=33979 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "VW TERA MPI 1.0-12V M - 5"
+  },
+  "veh-226": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait SENSE 1.6-16V CVT"
+  },
+  "veh-227": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait ADVANCE 1.6-16V CVT"
+  },
+  "veh-228": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,5 / estrada 8,7 km/l · Gasolina: cidade 11,0 / estrada 12,5 km/l (Inmetro PBE)",
+    "potencia": "113 cv (etanol) / 110 cv (gasolina)",
+    "torque": "15,2 kgfm (etanol) / 14,9 kgfm (gasolina)",
+    "portaMalas": "432 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "torque": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/nissan/kait/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "NISSAN Kait EXCLUSIVE 1.6-16V CVT"
+  },
+  "veh-229": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 9,7 / estrada 11,2 km/l · Gasolina: cidade 13,4 / estrada 15,9 km/l (Inmetro PBE)",
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "portaMalas": "525 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://revistacarro.com.br/fiat-cronos-chega-a-250-mil-unidades-comercializadas-no-brasil/ (imprensa)",
+    "portaMalas": "https://aceleratudo.com.br/blog/fiat-cronos-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT CRONOS DRIVE 1.0 1.0-6V M-5"
+  },
+  "veh-230": {
+   "campos": {
+    "motor": "1.6 Turbo 16V · Gasolina",
+    "potencia": "187 cv",
+    "torque": "28 kgfm (275 Nm)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=1287 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=1287 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CAOA CHERY TIGGO 7 PRO 16TA 1.6T - 16V DCT-7"
+  },
+  "veh-233": {
+   "campos": {
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "torque": "10,7 kgfm (105 Nm, etanol) / 10 kgfm (98 Nm, gasolina)"
+   },
+   "fontes": {
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/506",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/506"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-234": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CHEVROLET ONIX MT 1.0 - 12 V M-6"
+  },
+  "veh-236": {
+   "campos": {
+    "potencia": "176 cv"
+   },
+   "fontes": {
+    "potencia": "https://www.clubalfa.it/en/2026-jeep-commander-debuts-with-updated-styling-advanced-tech-and-off-road-upgrades-23823 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-237": {
+   "campos": {
+    "potencia": "75 cv (etanol) / 71 cv (gasolina)",
+    "torque": "10,7 kgfm (105 Nm, etanol) / 10 kgfm (98 Nm, gasolina)"
+   },
+   "fontes": {
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/506",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/506"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-238": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,6 / estrada 10,3 km/l · Gasolina: cidade 12,2 / estrada 14,5 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 109 cv (gasolina)",
+    "torque": "16,8 kgfm",
+    "portaMalas": "350 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "torque": "https://www.fichacompleta.com.br/carros/volkswagen/tera-1-0-tsi-2026 (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/volkswagen/tera/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW TERA COMFORT TSI 1.0-12V A - 6"
+  },
+  "veh-240": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 7,5 / estrada 9,7 km/l · Gasolina: cidade 11,0 / estrada 13,5 km/l (Inmetro PBE)",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET MONTANA LTZ 1.2T - 12V A-6"
+  },
+  "veh-242": {
+   "campos": {
+    "motor": "1.4 Turbo 16V · Flex",
+    "consumo": "Etanol: cidade 8,2 / estrada 9,9 km/l · Gasolina: cidade 11,8 / estrada 14,2 km/l (Inmetro PBE)",
+    "potencia": "150 cv",
+    "torque": "25,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.car.blog.br/2025/07/novo-t-cross-extreme-2026-preco-consumo.html (imprensa)",
+    "torque": "https://www.car.blog.br/2025/07/novo-t-cross-extreme-2026-preco-consumo.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW T CROSS EXTREME 250TSI AUTOMÁTICO 1.4 - 16V A - 6"
+  },
+  "veh-243": {
+   "campos": {
+    "motor": "1.3 8V · Flex",
+    "consumo": "Etanol: cidade 8,9 / estrada 10,7 km/l · Gasolina: cidade 12,6 / estrada 14,6 km/l (Inmetro PBE)",
+    "potencia": "107 cv (etanol) / 98 cv (gasolina)",
+    "torque": "13,7 kgfm (etanol) / 13,2 kgfm (gasolina)",
+    "portaMalas": "525 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/fiat-cronos-2026-1-3-firefly-flex-drive-cvt-387240 (catalogo)",
+    "torque": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/fiat-cronos-2026-1-3-firefly-flex-drive-cvt-387240 (catalogo)",
+    "portaMalas": "https://aceleratudo.com.br/blog/fiat-cronos-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "FIAT CRONOS DRIVE1.3AT 1.3-8V CVT-7"
+  },
+  "veh-244": {
+   "campos": {
+    "motor": "2.2 Turbo 16V · Diesel",
+    "consumo": "Diesel: cidade 10,6 / estrada 13,3 km/l (Inmetro PBE)",
+    "potencia": "200 cv",
+    "torque": "45,9 kgfm",
+    "portaMalas": "Caçamba: 980 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "torque": "https://www.media.stellantis.com/br-pt/download-model-document/416",
+    "portaMalas": "https://www.media.stellantis.com/br-pt/download-model-document/416"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RAM RAMPAGE LARAMIE DS 2.2T-16V A-9"
+  },
+  "veh-245": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,3 / estrada 13,5 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i GP 2.0 - 16V A-7"
+  },
+  "veh-246": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,3 / estrada 13,5 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i GP 2.0 - 16V A-7"
+  },
+  "veh-247": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,2 / estrada 13,2 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i M Sport 2.0 - 16V A-7"
+  },
+  "veh-248": {
+   "campos": {
+    "motor": "2.0 16V · Gasolina",
+    "consumo": "Gasolina: cidade 10,2 / estrada 13,2 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "BMW X1 S20i M Sport 2.0 - 16V A-7"
+  },
+  "veh-255": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,0 km/l · Gasolina: cidade 12,0 / estrada 12,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "422 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=312327 (imprensa)",
+    "portaMalas": "https://carro.blog.br/hyundai-creta-n-line-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-compacto-com-ampla-lista-de-tecnologia-e-porta-malas-de-422-litros.html (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "HYUNDAI CRETA Comfort Safety 1.0-12V T A-6"
+  },
+  "veh-257": {
+   "campos": {
+    "motor": "2.5 16V híbrido · Gasolina",
+    "consumo": "Gasolina: cidade 15,7 / estrada 13,8 km/l (Inmetro PBE)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "LEXUS NX350H DYNAMIC 2.5 - 16V CVT"
+  },
+  "veh-259": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "275 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "CHEVROLET ONIX MT 1.0 - 12 V M-6"
+  },
+  "veh-261": {
+   "campos": {
+    "potencia": "235 cv (combinada)"
+   },
+   "fontes": {
+    "potencia": "https://www.band.com.br/bandmotor/noticias/byd-song-plus-hibrido-sera-produzido-no-brasil-a-partir-de-2026-veja-fotos-202601100045 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-262": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,6 km/l · Gasolina: cidade 12,1 / estrada 13,7 km/l (Inmetro PBE)",
+    "portaMalas": "490 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://aceleratudo.com.br/blog/citroen-basalt-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CITROEN BASALT SHINE T200 1.0T-12V CVT-7"
+  },
+  "veh-263": {
+   "campos": {
+    "portaMalas": "469 L"
+   },
+   "fontes": {
+    "portaMalas": "https://garagem360.com.br/?p=293249 (imprensa)"
+   },
+   "confiancaPBE": null,
+   "linhaPBE": null
+  },
+  "veh-264": {
+   "campos": {
+    "motor": "1.6 16V · Flex",
+    "consumo": "Etanol: cidade 7,9 / estrada 8,7 km/l · Gasolina: cidade 11,3 / estrada 12,4 km/l (Inmetro PBE)",
+    "potencia": "116 cv (etanol) / 106 cv (gasolina)",
+    "torque": "16,1 kgfm (etanol) / 15,4 kgfm (gasolina)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)",
+    "torque": "https://blog.autosdr.com.br/blog/volkswagen-saveiro-2026-versoes-precos-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "VW SAVEIRO CABINE DUPLA ROBUST MF 1.6-16V M - 5"
+  },
+  "veh-265": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "potencia": "128 cv (etanol) / 116 cv (gasolina)",
+    "torque": "20,4 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://jkcarros.com.br/?p=17851 (imprensa)",
+    "torque": "https://jkcarros.com.br/?p=17851 (imprensa)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "VW T CROSS COMFORTLINE 200TSI AUTOMATICO 1.0-12V A - 6"
+  },
+  "veh-266": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 10,4 / estrada 10,7 km/l · Gasolina: cidade 14,4 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "RENAULT KWID INTENSE 2 1.0-12V M-5"
+  },
+  "veh-267": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 10,4 / estrada 10,7 km/l · Gasolina: cidade 14,4 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KWID ZEN 2 1.0-12V M-5"
+  },
+  "veh-268": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 10,4 / estrada 10,7 km/l · Gasolina: cidade 14,4 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "71 cv (etanol) / 68 cv (gasolina)",
+    "torque": "10 kgfm (etanol) / 9,4 kgfm (gasolina)",
+    "portaMalas": "290 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "torque": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf",
+    "portaMalas": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/abril/AF_RMA002525_Catalogo_Kwid.pdf.asset.pdf/3d3853313e.pdf"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT KWID ZEN 2 1.0-12V M-5"
+  },
+  "veh-269": {
+   "campos": {
+    "motor": "1.3 16V · Flex",
+    "consumo": "Etanol: cidade 7,8 / estrada 9,4 km/l · Gasolina: cidade 11,2 / estrada 13,6 km/l (Inmetro PBE)",
+    "potencia": "163 cv (etanol) / 156 cv (gasolina)",
+    "torque": "27,5 kgfm"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://garagem360.com.br/?p=292952 (imprensa)",
+    "torque": "https://garagem360.com.br/?p=292952 (imprensa)"
+   },
+   "confiancaPBE": "media",
+   "linhaPBE": "RENAULT BOREAL EVO 1.3-16V DCT-6"
+  },
+  "veh-270": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "portaMalas": "346 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://www.webmotors.com.br/hyundai/i20/2027 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "HYUNDAI I20 Comfort 1.0-12V M-5"
+  },
+  "veh-271": {
+   "campos": {
+    "motor": "3.0 · Diesel",
+    "potencia": "250 cv",
+    "torque": "61,2 kgfm",
+    "portaMalas": "Caçamba: 1.250 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/ford-ranger-limited-3-0-v6-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-entrega-forca-conforto-e-tecnologia-para-trabalho-e-lazer.html (imprensa)",
+    "torque": "https://carro.blog.br/ford-ranger-limited-3-0-v6-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-entrega-forca-conforto-e-tecnologia-para-trabalho-e-lazer.html (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/ford/ranger/2026 (catalogo)"
+   },
+   "confiancaPBE": "so-motor",
+   "linhaPBE": "FORD Nova Ranger 4x4 LTD 3.0 V6 - 24V A-10"
+  },
+  "veh-272": {
+   "campos": {
+    "motor": "1.0 12V · Flex",
+    "consumo": "Etanol: cidade 9,9 / estrada 10,7 km/l · Gasolina: cidade 13,3 / estrada 15,4 km/l (Inmetro PBE)",
+    "potencia": "80 cv (etanol)",
+    "torque": "10,2 kgfm",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "torque": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/hyundai-hb20-2026-1-0-12v-flex-comfort-manual-387250 (catalogo)",
+    "portaMalas": "https://aceleratudo.com.br/blog/hyundai-hb20-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "Hyundai HB20 Limited 1.0-12V M-5"
+  },
+  "veh-273": {
+   "campos": {
+    "motor": "3.0 · Diesel",
+    "consumo": "Diesel: cidade 8,6 / estrada 10,1 km/l (Inmetro PBE)",
+    "potencia": "250 cv",
+    "torque": "61,2 kgfm",
+    "portaMalas": "Caçamba: 1.250 L (cabine dupla)"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://carro.blog.br/ford-ranger-limited-3-0-v6-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-entrega-forca-conforto-e-tecnologia-para-trabalho-e-lazer.html (imprensa)",
+    "torque": "https://carro.blog.br/ford-ranger-limited-3-0-v6-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-entrega-forca-conforto-e-tecnologia-para-trabalho-e-lazer.html (imprensa)",
+    "portaMalas": "https://www.webmotors.com.br/ford/ranger/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FORD Nova Ranger 4x4 XLT 3.0 V6 - 24V A-10"
+  },
+  "veh-274": {
+   "campos": {
+    "motor": "1.2 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 8,4 / estrada 9,7 km/l · Gasolina: cidade 12,3 / estrada 13,7 km/l (Inmetro PBE)",
+    "potencia": "141 cv (etanol) / 139 cv (gasolina)",
+    "portaMalas": "Caçamba: 874 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)",
+    "portaMalas": "https://www.webmotors.com.br/chevrolet/montana/2026 (catalogo)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "CHEVROLET MONTANA LT 1.2T - 12V M-6"
+  },
+  "veh-276": {
+   "campos": {
+    "motor": "1.0 6V · Flex",
+    "consumo": "Etanol: cidade 9,4 / estrada 10,4 km/l · Gasolina: cidade 13,6 / estrada 14,5 km/l (Inmetro PBE)",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "portaMalas": "https://jkcarros.com.br/?p=33700 (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "FIAT ARGO DRIVE 1.0 1.0-6V M-5"
+  },
+  "veh-277": {
+   "campos": {
+    "motor": "1.0 Turbo 12V · Flex",
+    "consumo": "Etanol: cidade 9,2 / estrada 10,2 km/l · Gasolina: cidade 13,2 / estrada 14,7 km/l (Inmetro PBE)",
+    "potencia": "120 cv (etanol) / 115 cv (gasolina)",
+    "torque": "17,5 kgfm",
+    "portaMalas": "300 L"
+   },
+   "fontes": {
+    "motor": "Inmetro PBE Veicular 2026",
+    "consumo": "Inmetro PBE Veicular 2026",
+    "potencia": "https://www.fichacompleta.com.br/carros/hyundai/hb20-limited-1-0-turbo-at-2026 (catalogo)",
+    "torque": "https://www.fichacompleta.com.br/carros/hyundai/hb20-limited-1-0-turbo-at-2026 (catalogo)",
+    "portaMalas": "https://aceleratudo.com.br/blog/hyundai-hb20-2026-preco-versoes-ficha-tecnica (imprensa)"
+   },
+   "confiancaPBE": "alta",
+   "linhaPBE": "Hyundai HB20 Limited 1.0-12V T A-6"
+  }
+ }
+}

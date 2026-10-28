@@ -1,0 +1,34 @@
+name: Atualizar catalogos Movida e Localiza
+
+on:
+  schedule:
+    - cron: "0 9 * * *"      # todo dia 06:00 (Brasilia)
+  workflow_dispatch: {}      # botao "Run workflow" na aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-catalogos
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx playwright-core install --with-deps chromium
+      # Se a coleta vier com menos de 70% do que ja existia, o script falha e NADA e gravado.
+      - run: node tools/coletar_catalogos.mjs
+      - name: Commit se houve mudanca
+        run: |
+          git config user.name "dryve-bot"
+          git config user.email "dryve-bot@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet; then echo "Sem mudancas nos catalogos."; else git commit -m "dados: atualiza catalogos Movida/Localiza" && git pull --rebase && git push; fi
