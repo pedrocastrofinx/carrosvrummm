@@ -195,7 +195,7 @@ function viewVeiculo(id, tab) {
   const loc = locadora(v.locadoraId), planos = v.planos, pl = planos[planoSel] || planoPrincipal(v);
   const fotos = midiasDe(id).filter(m => m.tipo === 'foto'), g = k => grupoVideos(id, k);
   const n3d = midiasDe(id).filter(m => m.tipo === 'giro' || m.tipo === 'modelo3d').length;
-  const abas = [['fotos', 'Fotos', fotos.length], ['giro', 'Visão 360° / 3D', n3d], ['externos', 'Vídeos externos', g('externos').length], ['internos', 'Vídeos internos', g('internos').length], ['clientes', 'Vídeos de clientes', g('clientes').length]];
+  const abas = [['fotos', 'Fotos', fotos.length], ['giro', 'Visão 360° / 3D', n3d], ['curtos', 'Vídeos curtos', curtosDe(v).length], ['externos', 'Vídeos externos', g('externos').length], ['internos', 'Vídeos internos', g('internos').length], ['clientes', 'Vídeos de clientes', g('clientes').length]];
   const falt = camposFaltando(v);
   return `<div class="crumb"><a href="#/catalogo">Catálogo</a>${ico('chevron', 'sm')}<span>${esc(nomeVeiculo(v))}</span></div>
   <section class="card ficha-hero"><div class="vimg">${imgDe(fotoPrincipal(v), nomeVeiculo(v))}</div>
@@ -229,7 +229,40 @@ function viewVeiculo(id, tab) {
 const specRows = rows => rows.map(([k, v]) => `<div class="spec-row"><span>${k}</span><span>${val(v) != null ? esc(v) : `<span class="ni" style="font-weight:400">${NI}</span>`}</span></div>`).join('');
 const listaChips = (t, l) => (l && l.length) ? `<h3 style="margin-top:14px">${t}</h3><div class="lista-eq" style="margin-top:6px">${l.map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div>` : '';
 
+let curtoClasse = 'todos';
+const curtosFiltrados = v => curtoClasse === 'todos' ? curtosDe(v) : curtosDe(v).filter(x => x.classe === curtoClasse);
+const nomeClasseCurto = k => (CLASSES_CURTO.find(c => c[0] === k) || [])[1] || k;
+const nomeArquivoCurto = (v, x) => `${v.marca} ${v.modelo} ${(CLASSES_CURTO.find(c => c[0] === x.classe) || [])[2] || 'video'}.mp4`;
+function cardCurto(v, x) {
+  return `<article class="card curto"><button class="curto-thumb" data-act="curtoPlay" data-vid="${v.id}" data-id="${x.id}" aria-label="Assistir: ${esc(x.titulo)}"><img loading="lazy" src="https://i.ytimg.com/vi/${x.id}/hqdefault.jpg" alt=""><span class="dur">${x.dur} s</span><span class="play">${ico('play')}</span></button>
+    <div class="curto-b"><span class="tag blue">${esc(nomeClasseCurto(x.classe))}</span><h4>${esc(x.titulo)}</h4><div class="xs muted">${esc(x.canal)} · ${dataBR(x.data)}</div>
+    <div class="row"><button class="btn sm primary" data-act="curtoPlay" data-vid="${v.id}" data-id="${x.id}">${ico('play', 'sm')} Assistir</button><a class="btn sm" target="_blank" rel="noopener" href="https://www.youtube.com/shorts/${x.id}">${ico('external', 'sm')} YouTube</a><button class="btn sm" data-act="copiarTexto" data-t="https://www.youtube.com/shorts/${x.id}">${ico('link', 'sm')} Copiar link</button></div></div></article>`;
+}
+function viewCurtos(v) {
+  const todos = curtosDe(v);
+  if (!todos.length) return vazio('video', 'Nenhum vídeo curto encontrado', 'Ainda não achamos Shorts deste modelo. Use as outras abas ou envie um arquivo pela Administração.', isAdmin() ? `<button class="btn primary" data-act="novaMidia" data-vid="${v.id}">Adicionar vídeo</button>` : '');
+  const chips = [['todos', 'Todos', todos.length], ...CLASSES_CURTO.map(([k, n]) => [k, n, todos.filter(x => x.classe === k).length])].filter(([k, , n]) => k === 'todos' || n)
+    .map(([k, n, c]) => `<button class="cchip ${curtoClasse === k ? 'on' : ''}" data-act="curtoClasse" data-k="${k}">${n}<span class="n">${c}</span></button>`).join('');
+  const l = curtosFiltrados(v);
+  return `<div class="infobox">${ico('info', 'sm')} Vídeos curtos (até 90 s) do YouTube, separados pelo título. São de terceiros e servem de <b>referência</b>: assista aqui; para mandar ao cliente, use o arquivo que você tiver autorização de usar (envie em Administração → Mídias e o Hub vincula pelo nome).</div>
+    <div class="row cchips">${chips}</div><div class="grid g-curtos">${l.map(x => cardCurto(v, x)).join('')}</div>`;
+}
+function abrirPlayerCurto(vid, id) {
+  const v = veiculo(vid), lista = v ? curtosFiltrados(v) : [], i = lista.findIndex(x => x.id === id), x = lista[i]; if (!x) return;
+  const ant = lista[i - 1], prox = lista[i + 1];
+  abrirModal(`<div class="viewer curto-view"><div class="stage"><iframe src="https://www.youtube-nocookie.com/embed/${x.id}?autoplay=1&rel=0&playsinline=1" title="${esc(x.titulo)}" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe></div><div class="side-i">
+    <div class="row"><h2 style="flex:1">${esc(x.titulo)}</h2><button class="icon-btn" data-act="fecharModal" aria-label="Fechar">${ico('x', 'sm')}</button></div>
+    <div class="row"><span class="tag blue">${esc(nomeClasseCurto(x.classe))}</span><span class="tag">${x.dur} s</span></div>
+    <div class="small muted">${esc(x.canal)} · ${dataBR(x.data)}<br>${esc(nomeVeiculo(v))}</div>
+    <div class="acts"><div class="row"><button class="btn" ${ant ? `data-act="curtoPlay" data-vid="${vid}" data-id="${ant.id}"` : 'disabled'}>← Anterior</button><button class="btn" ${prox ? `data-act="curtoPlay" data-vid="${vid}" data-id="${prox.id}"` : 'disabled'}>Próximo →</button><span class="xs muted">${i + 1} de ${lista.length}</span></div>
+      <a class="btn primary" target="_blank" rel="noopener" href="https://www.youtube.com/shorts/${x.id}">${ico('external', 'sm')} Abrir no YouTube</a>
+      <button class="btn" data-act="copiarTexto" data-t="https://www.youtube.com/shorts/${x.id}">${ico('link', 'sm')} Copiar link</button>
+      <button class="btn" data-act="copiarTexto" data-t="${esc(nomeArquivoCurto(v, x))}">${ico('copy', 'sm')} Copiar nome de arquivo sugerido</button>
+      <div class="xs muted">Se o vídeo não tocar aqui, o canal bloqueou o player externo: use “Abrir no YouTube”. O nome sugerido faz o Hub vincular o arquivo ao carro certo quando você enviar.</div></div></div></div>`, { tam: 'wide' });
+}
+
 function fichaMidia(v) {
+  if (fichaTab === 'curtos') return viewCurtos(v);
   if (fichaTab === 'fotos') {
     const fotos = midiasDe(v.id).filter(m => m.tipo === 'foto');
     if (!fotos.length) return vazio('image', 'Sem fotos deste veículo', 'Envie fotos pela Administração ou importe o ZIP de Cores.', isAdmin() ? `<button class="btn primary" data-act="novaMidia" data-vid="${v.id}">Adicionar mídia</button>` : '');

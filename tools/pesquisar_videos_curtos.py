@@ -93,3 +93,8 @@ feito["modelos"] = {k: {"marca": modelos[k]["marca"], "modelo": modelos[k]["mode
 feito["geradoEm"] = time.strftime("%Y-%m-%d"); salvar(feito)
 com = sum(1 for m in feito["modelos"].values() if m["videos"])
 print(f"FIM: {com} de {len(modelos)} modelos com ao menos 1 video curto | {sum(len(m['videos']) for m in feito['modelos'].values())} links")
+
+# ---- 4) arquivo carregado pelo Hub (aba "Videos curtos" da ficha) ----
+js = {"geradoEm": feito["geradoEm"], "modelos": [{"marca": m["marca"], "modelo": m["modelo"], "v": [[x["videoId"], x["titulo"], x["canal"], x["duracao"], x["publicadoEm"]] for x in m["videos"]]} for m in feito["modelos"].values() if m["videos"]]}
+(D / "videos-curtos.js").write_text("/* Videos curtos (Shorts, ate 90 s) por modelo: so links de referencia, gerado por tools/pesquisar_videos_curtos.py */\nwindow.VIDEOS_CURTOS = " + json.dumps(js, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+print("data/videos-curtos.js gravado")

@@ -31,7 +31,7 @@ function rotear() {
       case undefined: html = viewHome(); break;
       case 'catalogo': html = viewCatalogo(qs ? params : null); pos = pintarCatalogo; break;
       case 'veiculo':
-        if (ultimoVeic !== b) { ultimoVeic = b; fichaTab = 'fotos'; planoSel = 0; registrarVeiculo(b); }
+        if (ultimoVeic !== b) { ultimoVeic = b; fichaTab = 'fotos'; curtoClasse = 'todos'; planoSel = 0; registrarVeiculo(b); }
         html = viewVeiculo(b); break;
       case 'locadoras': html = viewLocadoras(); break;
       case 'locadora': html = viewLocadora(b); break;
@@ -175,6 +175,7 @@ const ACOES = {
   /* catálogo */
   limparFiltros: () => { F = F0(); rotear(); },
   novoVeiculo: () => abrirFormVeiculo(), editarVeiculo: d => abrirFormVeiculo(d.id),
+  curtoClasse: d => { curtoClasse = d.k; rotear(); }, curtoPlay: d => abrirPlayerCurto(d.vid, d.id),
   fichaTab: d => { fichaTab = d.tab; rotear(); }, plano: d => { planoSel = Number(d.i); rotear(); },
   copiarLinkVeiculo: d => copiar(linkVeiculo(veiculo(d.id)), (S.config.baseUrl || window.DRYVE) ? 'Link copiado!' : 'Link interno copiado (abre só neste navegador até hospedar).'),
   msgVeiculo: d => { const t = S.templates.find(x => x.tipo === 'veiculo' && !x.arquivado); M = { tpl: t?.id || '', vid: d.id, plano: planoSel, mid: '', texto: null }; location.hash = '#/mensagens'; },

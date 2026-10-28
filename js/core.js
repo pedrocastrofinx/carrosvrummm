@@ -147,6 +147,20 @@ const midiaVeics = m => [m.veiculoId, ...(m.veiculoIds || [])].filter(Boolean); 
 const midiaTemVeic = (m, vid) => m.veiculoId === vid || (m.veiculoIds || []).includes(vid);
 const midiasDe = vid => { const k = modeloChaveDe(veiculo(vid)); return S.midias.filter(m => !m.arquivado && (midiaTemVeic(m, vid) || (k && (m.modeloChave === k || (m.modeloChaves || []).includes(k))))); };
 /* referencias do YouTube (tag sugerido-auto) ficam ocultas por padrao: sao so consulta, nao baixaveis */
+/* ===== videos curtos (Shorts) por modelo: so referencias; as classes saem do titulo ===== */
+const CLASSES_CURTO = [['interno', 'Interno', 'interior'], ['visual', 'Visual', 'exterior'], ['performance', 'Performance', 'performance'], ['curiosidades', 'Curiosidades', 'curiosidades']];
+function classeCurto(titulo) {
+  const n = norm(titulo);
+  if (/\b(interno|interna|interior|por dentro|painel|cabine|bancos?|porta.?malas|multimidia|acabamento|central)\b/.test(n)) return 'interno';
+  if (/(0 a 100|aceleracao|desempenho|potencia|\bcv\b|turbo|motor|arrancada|velocidade|\bteste|metros|off.?road|consumo|autonomia|km\/h)/.test(n)) return 'performance';
+  if (/(curiosidade|voce sabia|\bsabia\b|segredo|detalhe|vale a pena|preco|custa|r\$|quanto|novidade|versoes|diferenca|lancamento|chegou|review|opiniao|\bfato)/.test(n)) return 'curiosidades';
+  return 'visual';
+}
+let _curMapa = null;
+function curtosDe(v) {
+  if (!_curMapa) { _curMapa = new Map(); for (const m of (window.VIDEOS_CURTOS?.modelos || [])) _curMapa.set(norm(m.marca + '|' + m.modelo), m.v.map(([id, titulo, canal, dur, data]) => ({ id, titulo, canal, dur, data, classe: classeCurto(titulo) }))); }
+  return v ? (_curMapa.get(modeloChaveDe(v)) || []) : [];
+}
 const ehSugerida = m => (m.tags || []).includes('sugerido-auto');
 function aplicarSugeridas() { for (const m of S.midias) if (ehSugerida(m)) m.arquivado = !S.config.mostrarSugeridos; }
 const nomeVeiculo = v => v ? [v.marca, v.modelo, v.versao].filter(Boolean).join(' ') : '';
