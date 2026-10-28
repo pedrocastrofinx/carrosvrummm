@@ -34,6 +34,39 @@ const csv = s => s.split(/[,\n;]/).map(x => x.trim()).filter(Boolean);
 const urlOk = s => { try { const u = new URL(s); return /^https?:$/.test(u.protocol); } catch (e) { return false; } };
 function barra(p, txt) { const b = $('#mprogBar'); if (b) { $('#mprog').hidden = false; b.style.width = Math.round(p * 100) + '%'; $('#mprogTxt').textContent = txt; } }
 const opLoc = (vazio = 'Nenhuma') => [['', vazio], ...S.locadoras.map(l => [l.id, l.nome])];
+/* ===== seletor de veiculo com busca (digite marca, modelo, versao, ano ou locadora) ===== */
+function campoVeiculo(name, label, val = '', vazio = 'Nenhum (material geral)') {
+  const v = val ? veiculo(val) : null;
+  return `<div class="f full"><span class="lbl">${label}</span><div class="vsel" data-vsel data-vazio="${esc(vazio)}"><input type="hidden" name="${name}" value="${esc(val || '')}"><input type="search" class="vsel-in" autocomplete="off" placeholder="Digite: creta platinum, onix 1.0, hb20 2026, localiza…" value="${esc(v ? nomeVeiculo(v) : '')}" aria-label="${esc(label)}"><button type="button" class="vsel-x" title="Limpar (material geral)" aria-label="Limpar">×</button><div class="vsel-list" hidden></div></div><span class="xs muted vsel-info">${v ? esc([v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · ')) : esc(vazio)}</span><span class="err" data-err="${name}"></span></div>`;
+}
+function vselFiltrar(w) {
+  const q = avToks(w.querySelector('.vsel-in').value || ''), lista = w.querySelector('.vsel-list');
+  const itens = veiculosAtivos().map(v => ({ v, t: norm([nomeVeiculo(v), v.ano, locadora(v.locadoraId)?.nome, nomeCatVeic(v.categoria), v.id].join(' ')) }))
+    .filter(x => q.every(t => x.t.includes(t))).sort((x, y) => (x.t.indexOf(q[0] || '') - y.t.indexOf(q[0] || '')) || nomeVeiculo(x.v).localeCompare(nomeVeiculo(y.v), 'pt-BR')).slice(0, 40);
+  lista.innerHTML = `<div class="vsel-it" data-id="">${esc(w.dataset.vazio)}</div>` + (itens.length ? itens.map(({ v }) => `<div class="vsel-it" data-id="${v.id}">${esc(nomeVeiculo(v))}<small>${esc([v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · '))}</small></div>`).join('') : '<div class="pop-empty">Nenhum veículo com esses termos.</div>');
+  lista.hidden = false; lista._i = -1;
+}
+function vselEscolher(w, id) {
+  const v = id ? veiculo(id) : null;
+  w.querySelector('input[type=hidden]').value = id || ''; w.querySelector('.vsel-in').value = v ? nomeVeiculo(v) : '';
+  w.querySelector('.vsel-list').hidden = true;
+  const info = w.parentElement.querySelector('.vsel-info'); if (info) info.textContent = v ? [v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · ') : w.dataset.vazio;
+}
+document.addEventListener('input', e => { const i = e.target.closest('.vsel-in'); if (i) vselFiltrar(i.closest('[data-vsel]')); });
+document.addEventListener('focusin', e => { const i = e.target.closest('.vsel-in'); if (i) { i.select(); vselFiltrar(i.closest('[data-vsel]')); } });
+document.addEventListener('mousedown', e => {
+  const it = e.target.closest('.vsel-it'); if (it) { e.preventDefault(); return vselEscolher(it.closest('[data-vsel]'), it.dataset.id); }
+  const x = e.target.closest('.vsel-x'); if (x) { e.preventDefault(); return vselEscolher(x.closest('[data-vsel]'), ''); }
+  if (!e.target.closest('[data-vsel]')) document.querySelectorAll('.vsel-list').forEach(l => { l.hidden = true; });
+});
+document.addEventListener('keydown', e => {
+  const i = e.target.closest && e.target.closest('.vsel-in'); if (!i) return;
+  const w = i.closest('[data-vsel]'), l = w.querySelector('.vsel-list'), its = [...l.querySelectorAll('.vsel-it')];
+  if (e.key === 'Escape') { l.hidden = true; return; }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); if (l.hidden) vselFiltrar(w); l._i = Math.max(0, Math.min(its.length - 1, (l._i ?? -1) + (e.key === 'ArrowDown' ? 1 : -1))); its.forEach((x, k) => x.classList.toggle('on', k === l._i)); its[l._i]?.scrollIntoView({ block: 'nearest' }); }
+  if (e.key === 'Enter' && !l.hidden) { e.preventDefault(); const pick = its[l._i >= 0 ? l._i : (its.length > 1 ? 1 : 0)]; if (pick) vselEscolher(w, pick.dataset.id); }
+});
+
 const opVeic = (vazio = 'Nenhum') => [['', vazio], ...veiculosAtivos().map(v => [v.id, nomeVeiculo(v)])];
 
 /* ===== veículo ===== */
@@ -136,7 +169,7 @@ function abrirFormMidia(id, pre = {}) {
       <div id="origLink" hidden><input type="url" name="url" placeholder="https://..." ><span class="err" data-err="url" style="color:var(--bad);font-size:12px"></span><label class="chk" style="margin-top:8px"><input type="radio" name="tipoLink" value="video" checked> Vídeo</label> <label class="chk"><input type="radio" name="tipoLink" value="foto"> Foto</label></div></div>`}
       ${ed && ed.origem === 'link' ? campo('url', 'Link', { type: 'url', val: ed.url, full: 1 }) : ''}
       ${campo('titulo', 'Título', { val: ed?.titulo || '', hint: ed ? '' : 'Em envio múltiplo, deixe vazio para usar o nome dos arquivos', full: 1 })}${campo('descricao', 'Descrição curta', { type: 'textarea', rows: 2, val: ed?.descricao || '', full: 1 })}
-      ${campo('categoria', 'Categoria', { type: 'select', val: m.categoria, opts: categoriasMidia() })}${campo('veiculoId', 'Veículo relacionado', { type: 'select', val: m.veiculoId, opts: opVeic('Nenhum (material geral)') })}${campo('todasVersoes', 'Vale para todas as versões deste modelo', { type: 'checkbox', val: !!m.modeloChave, full: 1 })}
+      ${campo('categoria', 'Categoria', { type: 'select', val: m.categoria, opts: categoriasMidia() })}${campoVeiculo('veiculoId', 'Veículo relacionado (digite para buscar)', m.veiculoId)}${campo('todasVersoes', 'Vale para todas as versões deste modelo', { type: 'checkbox', val: !!m.modeloChave, full: 1 })}
       ${campo('locadoraId', 'Locadora (origem)', { type: 'select', val: m.locadoraId, opts: opLoc('Nenhuma') })}${campo('tags', 'Tags', { val: (m.tags || []).join(', '), hint: 'Separe por vírgula' })}
       ${cli ? `<div class="form-sec">Cliente e autorização</div>${campo('clienteNome', 'Nome ou identificação autorizada', { val: m.cliente?.nome || '' })}${campo('clienteData', 'Data da retirada', { type: 'date', val: m.cliente?.data || '' })}${campo('autorizacao', 'Autorização de uso comercial', { type: 'select', val: m.autorizacao, opts: [['pendente', 'Pendente (restrito)'], ['autorizado', 'Autorizado'], ['nao_autorizado', 'Não autorizado (restrito)']] })}` : ''}
       ${campo('permiteDownload', 'Permitir download do arquivo original', { type: 'checkbox', val: m.permiteDownload !== false, full: 1 })}`,
