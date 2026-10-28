@@ -5,7 +5,7 @@
    - Local (duplo clique no index.html, sem /api/config): abre direto, como antes.
    Os dados publicos (catalogos Movida/Localiza e videos sugeridos) continuam vindo dos arquivos em data/. */
 (function () {
-  const BASE = ['data/catalogo-localiza.js', 'data/catalogo-movida.js', 'data/fichas-tecnicas.js', 'data/videos-sugeridos.js'];
+  const BASE = ['data/catalogo-localiza.js', 'data/catalogo-movida.js', 'data/fichas-tecnicas.js', 'data/reels.js', 'data/videos-sugeridos.js'];
   const APP = ['js/core.js', 'js/nuvem.js', 'js/clove.js', 'js/views.js', 'js/admin.js', 'js/main.js'];
   const SUPABASE_JS = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js';
 

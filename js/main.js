@@ -126,6 +126,10 @@ async function baixar(m) {
     const a = document.createElement('a'); a.href = u; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove();
     return toast('Download iniciado.');
   }
+  if (podeBaixar(m) && m.origem === 'link') {   // arquivo hospedado no proprio site (ex.: reels da Dryve)
+    try { const r = await fetch(m.url); if (!r.ok) throw new Error('HTTP ' + r.status); const b = await r.blob(); const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = (m.nomeOriginal || 'video.mp4').split('/').pop(); document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); return toast('Download iniciado.'); }
+    catch (e) { return toast('Não foi possível baixar: ' + e.message, 'err'); }
+  }
   if (podeBaixar(m)) {
     const rec = await DB.get(m.fileId).catch(() => null);
     if (!rec) return toast('Arquivo não encontrado neste navegador.', 'err');

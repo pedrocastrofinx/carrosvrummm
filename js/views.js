@@ -59,7 +59,8 @@ function cardMidia(m, modo = 'grade') {
   if (modo === 'lista') return `<div class="card lrow">${thumb}<div><h3>${esc(m.titulo)}</h3><div class="small muted">${meta} · ${dataBR(m.criadoEm)}</div></div><div class="mact">${acts}</div></div>`;
   return `<div class="card mcard">${thumb}<div class="mbody"><h3>${esc(m.titulo)}</h3><div class="xs muted">${meta}</div>${m.descricao ? `<p>${esc(m.descricao)}</p>` : ''}<div class="mact">${acts}</div></div></div>`;
 }
-const podeBaixar = m => m.origem !== 'link' && m.permiteDownload !== false && !bloqueada(m);
+const mesmaOrigem = u => { try { return new URL(u).origin === location.origin; } catch (e) { return false; } };
+const podeBaixar = m => (m.origem !== 'link' || mesmaOrigem(m.url)) && m.permiteDownload !== false && !bloqueada(m);
 
 function cardLocadora(l) {
   const n = veiculosAtivos().filter(v => v.locadoraId === l.id).length;
