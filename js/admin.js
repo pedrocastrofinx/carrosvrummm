@@ -34,37 +34,57 @@ const csv = s => s.split(/[,\n;]/).map(x => x.trim()).filter(Boolean);
 const urlOk = s => { try { const u = new URL(s); return /^https?:$/.test(u.protocol); } catch (e) { return false; } };
 function barra(p, txt) { const b = $('#mprogBar'); if (b) { $('#mprog').hidden = false; b.style.width = Math.round(p * 100) + '%'; $('#mprogTxt').textContent = txt; } }
 const opLoc = (vazio = 'Nenhuma') => [['', vazio], ...S.locadoras.map(l => [l.id, l.nome])];
-/* ===== seletor de veiculo com busca (digite marca, modelo, versao, ano ou locadora) ===== */
-function campoVeiculo(name, label, val = '', vazio = 'Nenhum (material geral)') {
-  const v = val ? veiculo(val) : null;
-  return `<div class="f full"><span class="lbl">${label}</span><div class="vsel" data-vsel data-vazio="${esc(vazio)}"><input type="hidden" name="${name}" value="${esc(val || '')}"><input type="search" class="vsel-in" autocomplete="off" placeholder="Digite: creta platinum, onix 1.0, hb20 2026, localiza…" value="${esc(v ? nomeVeiculo(v) : '')}" aria-label="${esc(label)}"><button type="button" class="vsel-x" title="Limpar (material geral)" aria-label="Limpar">×</button><div class="vsel-list" hidden></div></div><span class="xs muted vsel-info">${v ? esc([v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · ')) : esc(vazio)}</span><span class="err" data-err="${name}"></span></div>`;
+/* ===== seletor de veiculos com busca: varios carros e locadoras na mesma midia (a lista so existe na memoria, montada ao digitar) ===== */
+const vselIds = w => w.querySelector('input[type=hidden]').value.split(',').filter(Boolean);
+const vselRot = v => [v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · ');
+const vselInfoTxt = ids => ids.length ? `${ids.length} veículo${ids.length > 1 ? 's' : ''} · a mídia aparece na ficha de cada um` : 'Nenhum: material geral (só na biblioteca)';
+const vselChip = id => { const v = veiculo(id); return v ? `<span class="vsel-chip" data-id="${id}"><span>${esc(nomeVeiculo(v))}<small>${esc(vselRot(v))}</small></span><button type="button" class="vsel-rm" data-id="${id}" title="Remover" aria-label="Remover">×</button></span>` : ''; };
+function campoVeiculo(name, label, ids = []) {
+  ids = [].concat(ids).filter(i => i && veiculo(i));
+  return `<div class="f full"><span class="lbl">${label}</span><div class="vsel" data-vsel><input type="hidden" name="${name}" value="${esc(ids.join(','))}"><div class="vsel-box">${ids.map(vselChip).join('')}<input type="search" class="vsel-in" autocomplete="off" placeholder="${ids.length ? 'Adicionar outro…' : 'Digite: toro, creta platinum, onix 1.0, movida…'}" aria-label="${esc(label)}"></div><div class="vsel-list" hidden></div></div><span class="xs muted vsel-info">${esc(vselInfoTxt(ids))}</span><span class="err" data-err="${name}"></span></div>`;
+}
+function vselRender(w, ids) {
+  w.querySelector('input[type=hidden]').value = ids.join(',');
+  const box = w.querySelector('.vsel-box'), inp = w.querySelector('.vsel-in');
+  box.querySelectorAll('.vsel-chip').forEach(c => c.remove()); inp.insertAdjacentHTML('beforebegin', ids.map(vselChip).join(''));
+  inp.placeholder = ids.length ? 'Adicionar outro…' : 'Digite: toro, creta platinum, onix 1.0, movida…';
+  const info = w.parentElement.querySelector('.vsel-info'); if (info) info.textContent = vselInfoTxt(ids);
 }
 function vselFiltrar(w) {
-  const q = avToks(w.querySelector('.vsel-in').value || ''), lista = w.querySelector('.vsel-list');
-  const itens = veiculosAtivos().map(v => ({ v, t: norm([nomeVeiculo(v), v.ano, locadora(v.locadoraId)?.nome, nomeCatVeic(v.categoria), v.id].join(' ')) }))
-    .filter(x => q.every(t => x.t.includes(t))).sort((x, y) => (x.t.indexOf(q[0] || '') - y.t.indexOf(q[0] || '')) || nomeVeiculo(x.v).localeCompare(nomeVeiculo(y.v), 'pt-BR')).slice(0, 40);
-  lista.innerHTML = `<div class="vsel-it" data-id="">${esc(w.dataset.vazio)}</div>` + (itens.length ? itens.map(({ v }) => `<div class="vsel-it" data-id="${v.id}">${esc(nomeVeiculo(v))}<small>${esc([v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · '))}</small></div>`).join('') : '<div class="pop-empty">Nenhum veículo com esses termos.</div>');
+  const q = avToks(w.querySelector('.vsel-in').value || ''), lista = w.querySelector('.vsel-list'), ja = new Set(vselIds(w));
+  const todos = veiculosAtivos().filter(v => !ja.has(v.id)).map(v => ({ v, t: norm([nomeVeiculo(v), v.ano, locadora(v.locadoraId)?.nome, nomeCatVeic(v.categoria)].join(' ')) }))
+    .filter(x => q.every(t => x.t.includes(t))).sort((x, y) => (x.t.indexOf(q[0] || '') - y.t.indexOf(q[0] || '')) || nomeVeiculo(x.v).localeCompare(nomeVeiculo(y.v), 'pt-BR'));
+  const mostra = todos.slice(0, 40);
+  lista.innerHTML = (q.length && todos.length > 1 && todos.length <= 80 ? `<div class="vsel-all" data-ids="${todos.map(x => x.v.id).join(',')}">＋ Adicionar os ${todos.length} resultados</div>` : '')
+    + (mostra.length ? mostra.map(({ v }) => `<div class="vsel-it" data-id="${v.id}">${esc(nomeVeiculo(v))}<small>${esc(vselRot(v))}</small></div>`).join('') : '<div class="pop-empty">Nenhum veículo com esses termos.</div>')
+    + (todos.length > 40 ? `<div class="pop-empty">+${todos.length - 40} resultados: continue digitando para filtrar.</div>` : '');
   lista.hidden = false; lista._i = -1;
 }
-function vselEscolher(w, id) {
-  const v = id ? veiculo(id) : null;
-  w.querySelector('input[type=hidden]').value = id || ''; w.querySelector('.vsel-in').value = v ? nomeVeiculo(v) : '';
-  w.querySelector('.vsel-list').hidden = true;
-  const info = w.parentElement.querySelector('.vsel-info'); if (info) info.textContent = v ? [v.ano, locadora(v.locadoraId)?.nome].filter(Boolean).join(' · ') : w.dataset.vazio;
+function vselAdd(w, novos) {
+  const ids = vselIds(w); for (const n of novos) if (n && !ids.includes(n)) ids.push(n);
+  vselRender(w, ids); const inp = w.querySelector('.vsel-in'); inp.value = ''; inp.focus(); vselFiltrar(w);
+}
+function vinculosDoForm(fd) {
+  const ids = String(fd.get('veiculoId') || '').split(',').filter(i => veiculo(i)), todas = !!fd.get('todasVersoes'), k = i => modeloChaveDe(veiculo(i));
+  return { veiculoId: ids[0] || '', veiculoIds: ids.slice(1), modeloChave: todas && ids[0] ? k(ids[0]) : '', modeloChaves: todas ? [...new Set(ids.slice(1).map(k))].filter(x => x !== k(ids[0])) : [] };
 }
 document.addEventListener('input', e => { const i = e.target.closest('.vsel-in'); if (i) vselFiltrar(i.closest('[data-vsel]')); });
-document.addEventListener('focusin', e => { const i = e.target.closest('.vsel-in'); if (i) { i.select(); vselFiltrar(i.closest('[data-vsel]')); } });
+document.addEventListener('focusin', e => { const i = e.target.closest('.vsel-in'); if (i) vselFiltrar(i.closest('[data-vsel]')); });
 document.addEventListener('mousedown', e => {
-  const it = e.target.closest('.vsel-it'); if (it) { e.preventDefault(); return vselEscolher(it.closest('[data-vsel]'), it.dataset.id); }
-  const x = e.target.closest('.vsel-x'); if (x) { e.preventDefault(); return vselEscolher(x.closest('[data-vsel]'), ''); }
-  if (!e.target.closest('[data-vsel]')) document.querySelectorAll('.vsel-list').forEach(l => { l.hidden = true; });
+  const t = e.target, it = t.closest('.vsel-it'), all = t.closest('.vsel-all'), rm = t.closest('.vsel-rm'), box = t.closest('.vsel-box');
+  if (it) { e.preventDefault(); return vselAdd(it.closest('[data-vsel]'), [it.dataset.id]); }
+  if (all) { e.preventDefault(); const w = all.closest('[data-vsel]'); vselAdd(w, all.dataset.ids.split(',')); w.querySelector('.vsel-list').hidden = true; return; }
+  if (rm) { e.preventDefault(); const w = rm.closest('[data-vsel]'); vselRender(w, vselIds(w).filter(i => i !== rm.dataset.id)); return; }
+  if (box && !t.closest('.vsel-in')) { e.preventDefault(); box.querySelector('.vsel-in').focus(); return; }
+  if (!t.closest('[data-vsel]')) document.querySelectorAll('.vsel-list').forEach(l => { l.hidden = true; });
 });
 document.addEventListener('keydown', e => {
   const i = e.target.closest && e.target.closest('.vsel-in'); if (!i) return;
-  const w = i.closest('[data-vsel]'), l = w.querySelector('.vsel-list'), its = [...l.querySelectorAll('.vsel-it')];
+  const w = i.closest('[data-vsel]'), l = w.querySelector('.vsel-list'), its = [...l.querySelectorAll('.vsel-it,.vsel-all')];
   if (e.key === 'Escape') { l.hidden = true; return; }
+  if (e.key === 'Backspace' && !i.value) { const ids = vselIds(w); if (ids.length) vselRender(w, ids.slice(0, -1)); return; }
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); if (l.hidden) vselFiltrar(w); l._i = Math.max(0, Math.min(its.length - 1, (l._i ?? -1) + (e.key === 'ArrowDown' ? 1 : -1))); its.forEach((x, k) => x.classList.toggle('on', k === l._i)); its[l._i]?.scrollIntoView({ block: 'nearest' }); }
-  if (e.key === 'Enter' && !l.hidden) { e.preventDefault(); const pick = its[l._i >= 0 ? l._i : (its.length > 1 ? 1 : 0)]; if (pick) vselEscolher(w, pick.dataset.id); }
+  if (e.key === 'Enter' && !l.hidden) { e.preventDefault(); const p = its[l._i] || l.querySelector('.vsel-it'); if (p) { if (p.classList.contains('vsel-all')) { vselAdd(w, p.dataset.ids.split(',')); l.hidden = true; } else vselAdd(w, [p.dataset.id]); } }
 });
 
 const opVeic = (vazio = 'Nenhum') => [['', vazio], ...veiculosAtivos().map(v => [v.id, nomeVeiculo(v)])];
@@ -169,7 +189,7 @@ function abrirFormMidia(id, pre = {}) {
       <div id="origLink" hidden><input type="url" name="url" placeholder="https://..." ><span class="err" data-err="url" style="color:var(--bad);font-size:12px"></span><label class="chk" style="margin-top:8px"><input type="radio" name="tipoLink" value="video" checked> Vídeo</label> <label class="chk"><input type="radio" name="tipoLink" value="foto"> Foto</label></div></div>`}
       ${ed && ed.origem === 'link' ? campo('url', 'Link', { type: 'url', val: ed.url, full: 1 }) : ''}
       ${campo('titulo', 'Título', { val: ed?.titulo || '', hint: ed ? '' : 'Em envio múltiplo, deixe vazio para usar o nome dos arquivos', full: 1 })}${campo('descricao', 'Descrição curta', { type: 'textarea', rows: 2, val: ed?.descricao || '', full: 1 })}
-      ${campo('categoria', 'Categoria', { type: 'select', val: m.categoria, opts: categoriasMidia() })}${campoVeiculo('veiculoId', 'Veículo relacionado (digite para buscar)', m.veiculoId)}${campo('todasVersoes', 'Vale para todas as versões deste modelo', { type: 'checkbox', val: !!m.modeloChave, full: 1 })}
+      ${campo('categoria', 'Categoria', { type: 'select', val: m.categoria, opts: categoriasMidia() })}${campoVeiculo('veiculoId', 'Veículos relacionados (pode escolher vários)', [m.veiculoId, ...(m.veiculoIds || [])])}${campo('todasVersoes', 'Vale para todas as versões dos modelos escolhidos', { type: 'checkbox', val: !!m.modeloChave, full: 1 })}
       ${campo('locadoraId', 'Locadora (origem)', { type: 'select', val: m.locadoraId, opts: opLoc('Nenhuma') })}${campo('tags', 'Tags', { val: (m.tags || []).join(', '), hint: 'Separe por vírgula' })}
       ${cli ? `<div class="form-sec">Cliente e autorização</div>${campo('clienteNome', 'Nome ou identificação autorizada', { val: m.cliente?.nome || '' })}${campo('clienteData', 'Data da retirada', { type: 'date', val: m.cliente?.data || '' })}${campo('autorizacao', 'Autorização de uso comercial', { type: 'select', val: m.autorizacao, opts: [['pendente', 'Pendente (restrito)'], ['autorizado', 'Autorizado'], ['nao_autorizado', 'Não autorizado (restrito)']] })}` : ''}
       ${campo('permiteDownload', 'Permitir download do arquivo original', { type: 'checkbox', val: m.permiteDownload !== false, full: 1 })}`,
@@ -190,7 +210,7 @@ function abrirFormMidia(id, pre = {}) {
       if (unico && !fv(fd, 'titulo') && !(files[0])) e.titulo = 'Informe o título.';
       if (cli && fv(fd, 'autorizacao') === 'autorizado' && !fv(fd, 'clienteNome')) e.clienteNome = 'Para marcar como autorizado, identifique o cliente.';
       if (Object.keys(e).length) return e;
-      const meta = { titulo: fv(fd, 'titulo'), descricao: fv(fd, 'descricao'), categoria: fv(fd, 'categoria'), veiculoId: fv(fd, 'veiculoId'), locadoraId: fv(fd, 'locadoraId'), tags: csv(fv(fd, 'tags')), permiteDownload: !!fd.get('permiteDownload'), modeloChave: (fd.get('todasVersoes') && veiculo(fv(fd, 'veiculoId'))) ? modeloChaveDe(veiculo(fv(fd, 'veiculoId'))) : '' };
+      const meta = { titulo: fv(fd, 'titulo'), descricao: fv(fd, 'descricao'), categoria: fv(fd, 'categoria'), locadoraId: fv(fd, 'locadoraId'), tags: csv(fv(fd, 'tags')), permiteDownload: !!fd.get('permiteDownload'), ...vinculosDoForm(fd) };
       if (cli) { meta.cliente = { nome: fv(fd, 'clienteNome'), data: fv(fd, 'clienteData') }; meta.autorizacao = fv(fd, 'autorizacao'); }
       if (ed) { Object.assign(ed, meta); if (ed.origem === 'link') ed.url = url; if (!meta.titulo) ed.titulo = ed.nomeOriginal || 'Sem título'; }
       else if (orig === 'giro') {

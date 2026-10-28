@@ -241,7 +241,7 @@ function fichaMidia(v) {
     return g.length ? `<div class="grid g-media">${g.map(m => cardMidia(m)).join('')}</div>` : vazio('refresh', 'Sem visão 360° deste veículo', 'Envie uma sequência de fotos em volta do carro (24 a 36 quadros) ou um modelo 3D (.glb) e o atendente poderá girar o carro com o mouse.', isAdmin() ? `<button class="btn primary" data-act="novaMidia" data-vid="${v.id}">Adicionar giro 360°</button>` : '');
   }
   const l = grupoVideos(v.id, fichaTab);
-  const refs = fichaTab === 'clientes' ? 0 : S.midias.filter(m => ehSugerida(m) && m.veiculoId === v.id && m.tipo === 'video').length;
+  const refs = fichaTab === 'clientes' ? 0 : S.midias.filter(m => ehSugerida(m) && midiaTemVeic(m, v.id) && m.tipo === 'video').length;
   const nota = refs ? `<div class="infobox" style="margin-top:14px">${ico('info', 'sm')} ${refs} referência(s) do YouTube ${S.config.mostrarSugeridos ? 'visível(is)' : 'oculta(s)'}: só para consulta, <b>não baixáveis</b>. <button class="btn" data-act="toggleSugeridos">${S.config.mostrarSugeridos ? 'Ocultar' : 'Mostrar'}</button></div>` : '';
   if (!l.length) return vazio('video', 'Nenhum vídeo para baixar nesta aba', fichaTab === 'clientes' ? 'Nenhum vídeo de cliente para este modelo.' : 'Ainda não há vídeos deste veículo na biblioteca.', isAdmin() ? `<button class="btn primary" data-act="novaMidia" data-vid="${v.id}">Adicionar vídeo</button>` : '') + nota;
   return `<div class="grid g-media">${l.map(m => cardMidia(m)).join('')}</div>` + nota;
@@ -286,8 +286,8 @@ function pintarBiblioteca() {
   const box = $('#bibRes'); if (!box) return;
   const q = norm(B.q);
   let l = S.midias.filter(m => !m.arquivado).filter(m => {
-    if (B.cat && m.categoria !== B.cat) return false; if (B.loc && m.locadoraId !== B.loc && veiculo(m.veiculoId)?.locadoraId !== B.loc) return false;
-    if (B.vid === '_sem' ? m.veiculoId : (B.vid && m.veiculoId !== B.vid)) return false; if (B.tipo && m.tipo !== B.tipo) return false;
+    if (B.cat && m.categoria !== B.cat) return false; if (B.loc && m.locadoraId !== B.loc && !midiaVeics(m).some(i => veiculo(i)?.locadoraId === B.loc)) return false;
+    if (B.vid === '_sem' ? m.veiculoId : (B.vid && !midiaTemVeic(m, B.vid))) return false; if (B.tipo && m.tipo !== B.tipo) return false;
     if (B.escopo === 'comercial' && !CATS_COMERCIAIS.includes(m.categoria)) return false; if (B.escopo === 'apoio' && !CATS_APOIO.includes(m.categoria)) return false;
     if (q && !q.split(/\s+/).every(t => norm([m.titulo, m.descricao, m.nomeOriginal, (m.tags || []).join(' '), nomeVeiculo(veiculo(m.veiculoId)), nomeCat(m.categoria), locadora(m.locadoraId)?.nome].join(' ')).includes(t))) return false;
     return true;
@@ -317,7 +317,7 @@ function pintarClientes() {
   const box = $('#cliRes'); if (!box) return;
   const l = S.midias.filter(m => !m.arquivado && m.tipo === 'video' && m.cliente).filter(m => {
     const v = veiculo(m.veiculoId), d = m.cliente.data || '';
-    if (C.vid && m.veiculoId !== C.vid) return false; if (C.loc && m.locadoraId !== C.loc && v?.locadoraId !== C.loc) return false; if (C.cat && m.categoria !== C.cat) return false;
+    if (C.vid && !midiaTemVeic(m, C.vid)) return false; if (C.loc && m.locadoraId !== C.loc && v?.locadoraId !== C.loc) return false; if (C.cat && m.categoria !== C.cat) return false;
     if (C.de && (!d || d < C.de)) return false; if (C.ate && (!d || d > C.ate)) return false; return true;
   }).sort((a, b) => (b.cliente.data || '').localeCompare(a.cliente.data || ''));
   box.innerHTML = l.length ? `<div class="grid g-media">${l.map(m => cardMidia(m)).join('')}</div>` : vazio('users', 'Nenhum vídeo de cliente', 'Quando houver vídeos de retirada ou depoimentos cadastrados, eles aparecem aqui.', isAdmin() ? `<button class="btn primary" data-act="novoCliente">Cadastrar vídeo de cliente</button>` : '');

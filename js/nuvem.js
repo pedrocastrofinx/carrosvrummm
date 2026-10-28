@@ -43,6 +43,7 @@ window.Nuvem = {
     return {
       id: 'n_' + r.id, nuvem: true, nuvemId: r.id, nuvemPendente: false, tipo: r.tipo, titulo: r.titulo, descricao: r.descricao || '', categoria: r.categoria || 'outros',
       veiculoId: v ? v.id : '', locadoraId: loc ? loc.id : (v ? v.locadoraId : ''), modeloChave: r.todas_versoes ? norm(r.marca + '|' + r.modelo) : '',
+      veiculoIds: (r.vinculos || []).map(Nuvem.acharVeiculo).filter(Boolean).map(x => x.id), modeloChaves: r.todas_versoes ? [...new Set((r.vinculos || []).map(x => norm(x.marca + '|' + x.modelo)))] : [],
       origem: 'arquivo', fileId: 'cloud:' + r.storage_path, thumbId: r.thumb_path ? 'cloud:' + r.thumb_path : '', url: '', nomeOriginal: r.nome_original || r.titulo,
       tamanho: r.tamanho || 0, tags: r.tags || [], criadoEm: r.criado_em, autorizacao: r.autorizacao || '', cliente: r.cliente || null,
       permiteDownload: r.permite_download !== false, arquivado: false, _veic: { marca: r.marca, modelo: r.modelo, versao: r.versao, locadora: r.locadora }
@@ -51,7 +52,9 @@ window.Nuvem = {
 
   paraLinha(m) {
     const v = veiculo(m.veiculoId), id = x => String(x || '').replace(/^cloud:/, '');
+    const extras = (m.veiculoIds || []).map(veiculo).filter(Boolean).map(x => ({ marca: x.marca, modelo: x.modelo, versao: x.versao || '', locadora: locadora(x.locadoraId)?.nome || '' }));
     return {
+      ...(extras.length || Nuvem.colVinc ? { vinculos: extras } : {}),
       id: m.nuvemId, tipo: m.tipo, titulo: m.titulo, descricao: m.descricao || '', categoria: m.categoria || 'outros',
       marca: v?.marca || m._veic?.marca || '', modelo: v?.modelo || m._veic?.modelo || '', versao: v?.versao || m._veic?.versao || '',
       locadora: locadora(m.locadoraId)?.nome || (v && locadora(v.locadoraId)?.nome) || m._veic?.locadora || '', todas_versoes: !!m.modeloChave,
@@ -64,6 +67,7 @@ window.Nuvem = {
   mesclar() {
     if (!Nuvem.ativo()) return;
     const linhas = window.DRYVE.midiasNuvem, ids = new Set(linhas.map(r => r.id));
+    Nuvem.colVinc = linhas.some(r => 'vinculos' in r);   // coluna criada por supabase/midias-vinculos.sql
     S.midias = S.midias.filter(m => !m.nuvem || (m.nuvemPendente && !ids.has(m.nuvemId)));
     for (const r of linhas) S.midias.push(Nuvem.deLinha(r));
     Nuvem.remotos = ids;
@@ -82,7 +86,7 @@ window.Nuvem = {
       if (apagar.length) { const { error } = await sb.from('midias_compartilhadas').delete().in('id', apagar); if (error) throw error; }
       locais.forEach(m => { m.nuvemPendente = false; });
       Nuvem.remotos = new Set(locais.map(m => m.nuvemId)); Nuvem._ultima = assin;
-    } catch (e) { toast('Não consegui sincronizar a biblioteca na nuvem: ' + (e.message || e), 'err'); }
+    } catch (e) { toast(/vinculos/.test(e.message || '') ? 'Para ligar uma mídia a vários veículos na nuvem, rode supabase/midias-vinculos.sql no Supabase (SQL Editor).' : 'Não consegui sincronizar a biblioteca na nuvem: ' + (e.message || e), 'err'); }
     finally { Nuvem._ocupado = false; }
   }
 };

@@ -143,7 +143,9 @@ const veiculo = id => S.veiculos.find(v => v.id === id);
 const midia = id => S.midias.find(m => m.id === id);
 const veiculosAtivos = () => S.veiculos.filter(v => !v.arquivado);
 const modeloChaveDe = v => v ? norm(v.marca + '|' + v.modelo) : '';
-const midiasDe = vid => S.midias.filter(m => (m.veiculoId === vid || (m.modeloChave && m.modeloChave === modeloChaveDe(veiculo(vid)))) && !m.arquivado);
+const midiaVeics = m => [m.veiculoId, ...(m.veiculoIds || [])].filter(Boolean);   // um video pode servir a varios carros (ex.: mesma Toro na Movida e na Localiza)
+const midiaTemVeic = (m, vid) => m.veiculoId === vid || (m.veiculoIds || []).includes(vid);
+const midiasDe = vid => { const k = modeloChaveDe(veiculo(vid)); return S.midias.filter(m => !m.arquivado && (midiaTemVeic(m, vid) || (k && (m.modeloChave === k || (m.modeloChaves || []).includes(k))))); };
 /* referencias do YouTube (tag sugerido-auto) ficam ocultas por padrao: sao so consulta, nao baixaveis */
 const ehSugerida = m => (m.tags || []).includes('sugerido-auto');
 function aplicarSugeridas() { for (const m of S.midias) if (ehSugerida(m)) m.arquivado = !S.config.mostrarSugeridos; }
