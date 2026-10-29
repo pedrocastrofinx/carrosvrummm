@@ -1,13 +1,18 @@
 {
-  "geradoEm": "2026-10-28T13:54:00.341Z",
-  "data": "2026-10-28",
+  "geradoEm": "2026-10-29T15:44:19.635Z",
+  "data": "2026-10-29",
   "locadoras": {
     "movida": {
-      "total": 105,
+      "total": 104,
       "antes": 105,
       "semMudancas": false,
-      "novos": [],
-      "removidos": [],
+      "novos": [
+        "Fiat PULSE Audace Turbo 200 Aut. (hibrído)"
+      ],
+      "removidos": [
+        "Hyundai HB20S Limited 1.0 TB Flex 12V Aut.",
+        "Chevrolet Onix Plus Onix Sedan Plus LTZ 1.0 12V TB Flex Aut."
+      ],
       "preco": []
     },
     "localiza": {
