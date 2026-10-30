@@ -1,25 +1,26 @@
 {
-  "geradoEm": "2026-10-29T15:44:19.635Z",
-  "data": "2026-10-29",
+  "geradoEm": "2026-10-30T15:26:20.209Z",
+  "data": "2026-10-30",
   "locadoras": {
     "movida": {
       "total": 104,
-      "antes": 105,
+      "antes": 104,
       "semMudancas": false,
       "novos": [
-        "Fiat PULSE Audace Turbo 200 Aut. (hibrído)"
+        "Chevrolet Onix Plus Onix Sedan Plus LTZ 1.0 12V TB Flex Aut."
       ],
       "removidos": [
-        "Hyundai HB20S Limited 1.0 TB Flex 12V Aut.",
-        "Chevrolet Onix Plus Onix Sedan Plus LTZ 1.0 12V TB Flex Aut."
+        "Hyundai CRETA Comfort Safety 1.0 TB 12V Aut."
       ],
       "preco": []
     },
     "localiza": {
-      "total": 175,
+      "total": 176,
       "antes": 175,
       "semMudancas": false,
-      "novos": [],
+      "novos": [
+        "BYD Atto 2 GS DM-I Híbrido Flex AT"
+      ],
       "removidos": [],
       "preco": []
     }
